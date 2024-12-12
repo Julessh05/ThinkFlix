@@ -11,6 +11,8 @@ struct GameView: View {
     
     @Binding internal var gameRunning : Bool
     
+    @State private var questions : [String] = []
+    
     var body: some View {
         VStack {
             
