@@ -13,53 +13,53 @@ struct ContentView: View {
     
     @State private var gameConfigShown : Bool = false
     
+    @State private var gameRunning : Bool = false
+    
     var body: some View {
         NavigationSplitView {
-            VStack {
-                NavigationLink {
-                    GameConfig()
-                } label: {
-                    Label("New Game", systemImage: "play")
-                        .foregroundStyle(.white)
-                        .frame(width: 210, height: 70)
-                        .background(in: .rect(cornerRadius: 20), fillStyle: .init(eoFill: true, antialiased: true))
-                        .backgroundStyle(colorScheme == .dark ? .gray : .blue)
-                }
-                Button {
-                    gameConfigShown.toggle()
-                } label: {
-                    Label("New Game", systemImage: "play")
-                        .foregroundStyle(.white)
-                        .frame(width: 210, height: 70)
-                        .background(in: .rect(cornerRadius: 20), fillStyle: .init(eoFill: true, antialiased: true))
-                        .backgroundStyle(colorScheme == .dark ? .gray : .blue)
-                }
-#if os(iOS)
-                .sheet(isPresented: $gameConfigShown) {
-                    GameConfig()
-                }
-#endif
-                Button {
-                    
-                } label: {
-                    Label("Statistics", systemImage: "chart.bar")
-                        .foregroundStyle(.white)
-                        .frame(width: 210, height: 70)
-                        .background(in: .rect(cornerRadius: 20), fillStyle: .init(eoFill: true, antialiased: true))
-                        .backgroundStyle(colorScheme == .dark ? .gray : .blue)
-                }
-            }
+            builder()
 #if os(macOS)
             .navigationSplitViewColumnWidth(min: 180, ideal: 200)
 #endif
-            .toolbar {
-            }
 #if os(iOS)
             .navigationTitle("ThinkFlix")
             .navigationBarTitleDisplayMode(.automatic)
 #endif
         } detail: {
             EmptyView()
+        }
+    }
+    
+    @ViewBuilder
+    private func builder() -> some View {
+        if gameRunning {
+            GameView(gameRunning: $gameRunning)
+        } else {
+            welcomeScreen()
+        }
+    }
+    
+    @ViewBuilder
+    private func welcomeScreen() -> some View {
+        VStack {
+            NavigationLink {
+                GameConfig(gameRunning: $gameRunning)
+            } label: {
+                Label("New Game", systemImage: "play")
+                    .foregroundStyle(.white)
+                    .frame(width: 210, height: 70)
+                    .background(in: .rect(cornerRadius: 20), fillStyle: .init(eoFill: true, antialiased: true))
+                    .backgroundStyle(colorScheme == .dark ? .gray : .blue)
+            }
+            Button {
+                
+            } label: {
+                Label("Statistics", systemImage: "chart.bar")
+                    .foregroundStyle(.white)
+                    .frame(width: 210, height: 70)
+                    .background(in: .rect(cornerRadius: 20), fillStyle: .init(eoFill: true, antialiased: true))
+                    .backgroundStyle(colorScheme == .dark ? .gray : .blue)
+            }
         }
     }
 }
