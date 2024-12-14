@@ -6,15 +6,17 @@
 //
 
 import Foundation
+import SwiftData
 
-internal enum Difficulty {
+internal enum Difficulty : Codable {
     case easy
     case normal
     case hard
     case insane
 }
 
-internal struct Question {
+@Model
+internal final class Question : Codable {
     
     internal var id : UUID
     
@@ -39,8 +41,35 @@ internal struct Question {
         self.answered = checkCacheForAnswered()
     }
     
+    private enum QuestionCodingKeys : CodingKey {
+        case id
+        case question
+        case answer
+        case difficulty
+        case answered
+    }
+    
+    init(from decoder: any Decoder) throws {
+        let container = try decoder.container(keyedBy: QuestionCodingKeys.self)
+        self.id = try container.decode(UUID.self, forKey: .id)
+        self.question = try container.decode(String.self, forKey: .question)
+        self.answer = try container.decode(String.self, forKey: .answer)
+        self.difficulty = try container.decode(Difficulty.self, forKey: .difficulty)
+        self.answered = try container.decode(Bool.self, forKey: .answered)
+    }
+    
+    func encode(to encoder: any Encoder) throws {
+        var container = encoder.container(keyedBy: QuestionCodingKeys.self)
+        try container.encode(id, forKey: .id)
+        try container.encode(question, forKey: .question)
+        try container.encode(answer, forKey: .answer)
+        try container.encode(difficulty, forKey: .difficulty)
+        try container.encode(answered, forKey: .answered)
+    }
+    
+    /// Checks if the question was already answered by the user and is therefore in the cache
     private func checkCacheForAnswered() -> Bool {
-        // TODO: update function to check in cache if question was answered
+        // TODO: implement function to check in cache if question was answered
         return false
     }
 }

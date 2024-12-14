@@ -116,13 +116,18 @@ struct GameConfig: View {
 internal struct NameSheet : View {
     @Environment(\.dismiss) private var dismiss
     
+    // Number of Player
     @State private var numberPlayer : String = "2"
     
+    @State private var numberPlayerCache : String = ""
+    
+    // Player names
     @Binding internal var playerNames : [String]
     
     @State private var localPlayerNames : [String] = Array(repeating: "", count: 2)
     
     @State private var localPlayerNameCache : [String] = []
+    
     
     var body: some View {
         NavigationStack {
@@ -130,15 +135,21 @@ internal struct NameSheet : View {
                 Section("Player") {
                     TextField("Number Player", text: $numberPlayer)
                         .onChange(of: numberPlayer) {
+                            guard !numberPlayer.isEmpty else { return }
+                            numberPlayerCache = numberPlayer
                             localPlayerNameCache = localPlayerNames
-                            localPlayerNames = Array(repeating: "", count: Int(numberPlayer) ?? 2)
+                            localPlayerNames = Array(
+                                repeating: "",
+                                count: Int(numberPlayer) ?? 2
+                            )
                             for i in 0..<localPlayerNameCache.count {
+                                guard i < localPlayerNames.count else { return }
                                 localPlayerNames[i] = localPlayerNameCache[i]
                             }
                         }
                 }
                 Section("Names") {
-                    ForEach(0..<(Int(numberPlayer) ?? 2), id: \.self) {
+                    ForEach(0..<getNumberPlayer(), id: \.self) {
                         index in
                         TextField("Player \(String(index + 1))", text: $localPlayerNames[index])
                     }
@@ -167,6 +178,13 @@ internal struct NameSheet : View {
             numberPlayer = String(playerNames.count)
             localPlayerNames = playerNames
         }
+    }
+    
+    /// Returns the number of Player either directly from the value, or from the cache.
+    /// Return 2 otherwise, if both fail
+    private func getNumberPlayer() -> Int {
+        // (Int(numberPlayer) ?? Int(numberPlayerCache)) ?? 2 is shorthand for returning 'numberPlayer' as an Int if possible,(Int(numberPlayer) ?? Int(numberPlayerCache)) ?? 2) otherwise trying to return numberPlayerCache as an Int (for keeping number of Player when deleting current number in the field and waiting for new input), and otherwise reutrn 2
+        return (Int(numberPlayer) ?? Int(numberPlayerCache)) ?? 2
     }
 }
 
