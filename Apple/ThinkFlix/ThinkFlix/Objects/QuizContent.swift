@@ -8,7 +8,7 @@
 import Foundation
 
 internal struct QuizContent : Codable {
-    let version : Double
+    internal let version : Double
     
-    let categories : [Category]
+    internal let categories : [Category]
 }

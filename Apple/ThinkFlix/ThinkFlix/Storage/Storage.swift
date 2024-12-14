@@ -8,11 +8,6 @@
 import Foundation
 
 internal struct Storage {
-    
-    internal static func loadCategories() -> [Category] {
-        return []
-    }
-    
     private static func loadCategoriesFromSource() throws -> [Category] {
         let path = Bundle.main.path(forResource: "categories", ofType: "json")
         let data = try Data(contentsOf: URL(filePath: path!), options: .mappedIfSafe)
@@ -21,7 +16,7 @@ internal struct Storage {
         do {
             latestVersion = try Network.fetchLatestVersion()
         } catch {
-            return content.categories
+            latestVersion = content.version
         }
         if content.version < latestVersion {
             return try Network.fetchLatestCategories()
@@ -30,27 +25,31 @@ internal struct Storage {
         }
     }
     
-    private static func updateCategories() -> Void {
-        
-    }
+//    private static func updateCategories() -> Void {
+//        
+//    }
     
-    internal static func loadQuestions(category : Category) throws -> [Question] {
-        return []
-    }
+//    private static func storeQuestionsToSystem() -> Void {
+//        
+//    }
     
-    private static func loadQuestionsFromJSON(category : Category) throws -> [Question] {
+//    internal static func loadQuestions(category : Category) throws -> [Question] {
+//        return []
+//    }
+    
+    private static func loadQuestionsFromSource(category : Category) throws -> [Question] {
         let path = Bundle.main.path(forResource: category.name, ofType: "json")
         let data = try Data(contentsOf: URL(filePath: path!), options: .mappedIfSafe)
         let questions =  try JSONDecoder().decode([Question].self, from: data)
-        storeQuestionsToSystem(questions)
+//        storeQuestionsToSystem(questions)
         return questions
     }
     
-    private static func storeQuestionsToSystem(_ questions : [Question]) -> Void {
-        
-    }
+//    private static func storeQuestionsToSystem(_ questions : [Question]) -> Void {
+//        
+//    }
     
-    internal static func loadAllQuestionIDs() -> [UUID] {
-        return []
-    }
+//    internal static func loadAllQuestionIDs() -> [UUID] {
+//        return []
+//    }
 }

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		845DC62B2D0CDE700082408E /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 845DC62A2D0CDE700082408E /* Settings.bundle */; };
+		8443AB7D2D0DCB04006D8AAF /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8443AB7C2D0DCB04006D8AAF /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,10 +28,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8443AB7C2D0DCB04006D8AAF /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		845413772D0AD2430023BF68 /* ThinkFlix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThinkFlix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8454138B2D0AD2450023BF68 /* ThinkFlixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThinkFlixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		845413952D0AD2450023BF68 /* ThinkFlixUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThinkFlixUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		845DC62A2D0CDE700082408E /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -93,7 +93,7 @@
 		8454136E2D0AD2430023BF68 = {
 			isa = PBXGroup;
 			children = (
-				845DC62A2D0CDE700082408E /* Settings.bundle */,
+				8443AB7C2D0DCB04006D8AAF /* Settings.bundle */,
 				845413792D0AD2430023BF68 /* ThinkFlix */,
 				8454138E2D0AD2450023BF68 /* ThinkFlixTests */,
 				845413982D0AD2450023BF68 /* ThinkFlixUITests */,
@@ -233,7 +233,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				845DC62B2D0CDE700082408E /* Settings.bundle in Resources */,
+				8443AB7D2D0DCB04006D8AAF /* Settings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

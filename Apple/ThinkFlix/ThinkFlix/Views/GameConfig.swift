@@ -7,7 +7,9 @@
 
 import SwiftUI
 
-internal enum GameMode : String, CaseIterable {
+internal enum GameMode : String, CaseIterable, Identifiable {
+    var id: Self { self }
+
     case quizCore
     case factFusion
     
@@ -30,10 +32,37 @@ internal enum GameMode : String, CaseIterable {
     }
 }
 
+internal enum GameSpeed : String, CaseIterable, Identifiable {
+    var id: Self { self }
+    
+    case rapidFire
+    case roundUp
+    
+    func getImage() -> String {
+        switch self {
+            case .rapidFire:
+                return "bolt.circle"
+            case .roundUp:
+                return "arrow.trianglehead.2.clockwise.rotate.90"
+        }
+    }
+    
+    func getCorrectName() -> String {
+        switch self {
+            case .rapidFire:
+                return "RapidFire"
+            case .roundUp:
+                return "RoundUp"
+        }
+    }
+}
+
 struct GameConfig: View {
     @Environment(\.colorScheme) private var colorScheme
     
     @State private var selectedGameMode : GameMode = .quizCore
+    
+    @State private var selectedGameSpeed : GameSpeed = .roundUp
     
     @State private var playerNames : [String] =  Array(repeating: "", count: 2)
     
@@ -44,56 +73,79 @@ struct GameConfig: View {
     @Binding internal var gameRunning : Bool
     
     var body: some View {
-        VStack {
-            ForEach(GameMode.allCases, id: \GameMode.rawValue) {
-                mode in
-                Label(mode.getCorrectName(), systemImage: mode.getImage())
-                    .foregroundStyle(.white)
-                    .frame(width: 210, height: 70)
-                    .background(in: .rect(cornerRadius: 20), fillStyle: .init(eoFill: true, antialiased: true))
-                    .backgroundStyle(colorScheme == .dark ? .gray : .blue)
-            }
-            Toggle("Use names", isOn: $useNames.animation())
-                .frame(width: 210, height: 70)
-                .onChange(of: useNames) {
-                    guard useNames else { return }
-                    nameConfigShown.toggle()
-                }
-                .sheet(isPresented: $nameConfigShown) {
-                    NameSheet(playerNames: $playerNames)
-                }
-            if playerNames.count(where: { !$0.isEmpty }) > 0 {
-                Text("Players:")
-            }
-            ScrollView(.horizontal) {
-                HStack {
-                    ForEach(playerNames, id: \.self) {
-                        name in
-                        if !name.isEmpty {
-                            nameContainer(name)
-                        } else {
-                            EmptyView()
+        NavigationStack {
+            List {
+                Section {
+                    Picker("Mode", selection: $selectedGameMode) {
+                        ForEach(GameMode.allCases, id: \.id) {
+                            mode in
+                            Label(mode.getCorrectName(), systemImage: mode.getImage())
+                                .foregroundStyle(.primary)
                         }
+                    }
+                    Picker("Speed", selection: $selectedGameSpeed) {
+                        ForEach(GameSpeed.allCases, id: \.id) {
+                            speed in
+                            Label(speed.getCorrectName(), systemImage: speed.getImage())
+                                .foregroundStyle(.primary)
+                        }
+                    }
+                } header: {
+                    Text("Game mode")
+                } footer: {
+                    Text("Configure your game")
+                }
+                Section {
+                    Toggle("Use names", isOn: $useNames.animation())
+                        .onChange(of: useNames) {
+                            guard useNames else { return }
+                            nameConfigShown.toggle()
+                        }
+                        .sheet(isPresented: $nameConfigShown) {
+                            NameSheet(playerNames: $playerNames)
+                        }
+                    if useNames {
+                        ForEach(playerNames, id: \.self) {
+                            name in
+                            if !name.isEmpty {
+                                HStack {
+                                    Button {
+                                        playerNames.removeAll(where: { $0 == name })
+                                    } label: {
+                                        Image(systemName: "person.fill.xmark")
+                                    }
+                                    .foregroundStyle(.primary)
+                                    Text(name)
+                                }
+                            }
+                        }
+                        Button {
+                            nameConfigShown.toggle()
+                        } label: {
+                            Label("Edit Names", systemImage: "person.2.badge.gearshape")
+                        }
+                    }
+                } header: {
+                    Label("Player", systemImage: "person.3.fill")
+                } footer: {
+                    Text("Add all player and their names if you want to, or play without entering names")
+                }
+                Section("Categories") {
+                    
+                }
+            }
+            .toolbar {
+                ToolbarItem(placement: .confirmationAction) {
+                    Button("Start") {
+                        gameRunning = true
                     }
                 }
             }
-            Button {
-                nameConfigShown.toggle()
-            } label: {
-                Label("Edit Names", systemImage: "person.2.badge.gearshape")
-            }
-        }
-        .toolbar {
-            ToolbarItem(placement: .confirmationAction) {
-                Button("Start") {
-                    gameRunning = true
-                }
-            }
-        }
 #if os(iOS)
-        .navigationTitle("New Game")
-        .navigationBarTitleDisplayMode(.automatic)
+            .navigationTitle("New Game")
+            .navigationBarTitleDisplayMode(.automatic)
 #endif
+        }
     }
     
     @ViewBuilder

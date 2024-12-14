@@ -42,14 +42,17 @@ struct ContentView: View {
     @ViewBuilder
     private func welcomeScreen() -> some View {
         VStack {
-            NavigationLink {
-                GameConfig(gameRunning: $gameRunning)
+            Button {
+                gameConfigShown.toggle()
             } label: {
                 Label("New Game", systemImage: "play")
                     .foregroundStyle(.white)
                     .frame(width: 210, height: 70)
                     .background(in: .rect(cornerRadius: 20), fillStyle: .init(eoFill: true, antialiased: true))
                     .backgroundStyle(colorScheme == .dark ? .gray : .blue)
+            }
+            .sheet(isPresented: $gameConfigShown) {
+                GameConfig(gameRunning: $gameRunning)
             }
             Button {
                 

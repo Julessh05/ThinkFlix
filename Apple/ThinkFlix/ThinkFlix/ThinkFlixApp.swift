@@ -10,7 +10,7 @@ import SwiftData
 
 @main
 struct ThinkFlixApp: App {
-    var sharedModelContainer: ModelContainer = {
+    private var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Category.self,
             Question.self

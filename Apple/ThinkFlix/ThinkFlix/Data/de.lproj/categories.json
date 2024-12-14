@@ -1,3 +1,48 @@
 {
-
+    "version": 1.0
+    "categories": [
+        {
+            "name": "Jahrzehnte"
+            "subcategories": [
+                {
+                    "name": "60er"
+                },
+                {
+                    "name": "70er"
+                },
+                {
+                    "name": "80er"
+                },
+                {
+                    "name": "90er"
+                },
+                {
+                    "name": "00er"
+                },
+                {
+                    "name": "10er"
+                },
+                {
+                    "name": "20er"
+                }
+            ]
+        },
+        {
+            "name": "Sport"
+        },
+        {
+            "name": "Filme"
+        },
+        {
+            "name": "Internet",
+            "subcategories": [
+                {
+                    "name": "Memes"
+                },
+                {
+                    "name": "Influencer"
+                }
+            ]
+        },
+    ]
 }

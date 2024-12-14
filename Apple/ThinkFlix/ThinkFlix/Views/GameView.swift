@@ -6,16 +6,19 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct GameView: View {
     
     @Binding internal var gameRunning : Bool
     
-    @State private var questions : [String] = []
+    @State private var questions : [Question] = []
     
     var body: some View {
         VStack {
             
+        }
+        .onAppear {
         }
     }
 }
