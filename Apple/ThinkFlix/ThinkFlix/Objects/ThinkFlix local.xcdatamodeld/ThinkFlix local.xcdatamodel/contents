@@ -1,13 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="23605" systemVersion="24C101" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="23605" systemVersion="24C101" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Category" representedClassName="Category" syncable="YES" codeGenerationType="class">
         <attribute name="name" optional="YES" attributeType="String" allowsCloudEncryption="YES"/>
+        <attribute name="uuid" optional="YES" attributeType="UUID" allowsCloudEncryption="YES" usesScalarValueType="NO"/>
+        <relationship name="masterCategory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="subcategories" inverseEntity="Category"/>
         <relationship name="quetions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Question" inverseName="category" inverseEntity="Question"/>
+        <relationship name="subcategories" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Category" inverseName="masterCategory" inverseEntity="Category"/>
+    </entity>
+    <entity name="DB_Management" representedClassName="DB_Management" syncable="YES" codeGenerationType="class">
+        <attribute name="version" optional="YES" attributeType="Double" defaultValueString="0" allowsCloudEncryption="YES" usesScalarValueType="YES"/>
     </entity>
     <entity name="Question" representedClassName="Question" syncable="YES" codeGenerationType="class">
         <attribute name="answer" optional="YES" attributeType="String" allowsCloudEncryption="YES"/>
         <attribute name="answered" optional="YES" attributeType="Boolean" defaultValueString="NO" allowsCloudEncryption="YES" usesScalarValueType="YES"/>
         <attribute name="question" optional="YES" attributeType="String" allowsCloudEncryption="YES"/>
+        <attribute name="uuid" optional="YES" attributeType="UUID" allowsCloudEncryption="YES" usesScalarValueType="NO"/>
         <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="quetions" inverseEntity="Category"/>
     </entity>
+    <configuration name="CloudConfig" usedWithCloudKit="YES"/>
+    <configuration name="LocalConfig">
+        <memberEntity name="Category"/>
+        <memberEntity name="DB_Management"/>
+        <memberEntity name="Question"/>
+    </configuration>
 </model>

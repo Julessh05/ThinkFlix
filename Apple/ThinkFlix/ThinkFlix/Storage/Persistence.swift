@@ -33,9 +33,18 @@ struct PersistenceController {
 
     let container: NSPersistentContainer
 
-    init(isLocal: Bool, inMemory: Bool = false) {
+    init(isLocal: Bool, inMemory: Bool = false) throws {
         if isLocal {
             container = NSPersistentCloudKitContainer(name: "ThinkFlix cloud")
+            try container.persistentStoreCoordinator.addPersistentStore(
+                type: .sqlite,
+                at: FileManager.default.url(
+                    for: .applicationSupportDirectory,
+                    in: .userDomainMask,
+                    appropriateFor: nil,
+                    create: false
+                )
+            )
         } else {
             container = NSPersistentContainer(name: "ThinkFlix local")
         }

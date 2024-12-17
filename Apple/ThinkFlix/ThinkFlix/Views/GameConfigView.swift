@@ -114,14 +114,14 @@ internal struct GameConfigView: View {
                                 }
                             }
                         }
-                    }
-                    Button {
-                        editNamesPresented.toggle()
-                    } label: {
-                        Label("Edit Names", systemImage: "person.2.badge.gearshape.fill")
-                    }
-                    .sheet(isPresented: $editNamesPresented) {
-                        NameSheet(playerNames: $playerNames)
+                        Button {
+                            editNamesPresented.toggle()
+                        } label: {
+                            Label("Edit Names", systemImage: "person.2.badge.gearshape.fill")
+                        }
+                        .sheet(isPresented: $editNamesPresented) {
+                            NameSheet(playerNames: $playerNames)
+                        }
                     }
                 } header: {
                     Text("Player")
@@ -136,7 +136,6 @@ internal struct GameConfigView: View {
                     Text("Select the categories you want to play with")
                 }
             }
-            .toolbarRole(.editor)
             .toolbarVisibility(.automatic, for: .automatic)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {

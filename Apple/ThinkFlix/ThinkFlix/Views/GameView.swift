@@ -19,6 +19,8 @@ internal struct GameView: View {
     
     @State private var gameOver : Bool = false
     
+    @State private var errFetchingQuestionsPresented : Bool = false
+    
     var body: some View {
         VStack {
             Text(currentQuestion?.question ?? "Current Question")
@@ -39,10 +41,19 @@ internal struct GameView: View {
             }
         }
         .onAppear {
-            questions = Storage.fetchQuestions(
-                with: gameContext!,
-                for: gameConfig.categories
-            )
+            do {
+                questions = try Storage.fetchQuestions(
+                    with: gameContext!,
+                    for: gameConfig.categories
+                )
+            } catch {
+                errFetchingQuestionsPresented.toggle()
+            }
+        }
+        .alert("Error loading Questions", isPresented: $errFetchingQuestionsPresented) {
+            
+        } message: {
+            Text("There's been an error while fetching the questions. Please restart the App and try again.")
         }
     }
     
