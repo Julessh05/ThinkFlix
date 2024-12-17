@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="23605" systemVersion="24C101" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="Game" representedClassName="Game" syncable="YES" codeGenerationType="class">
+        <attribute name="duration" optional="YES" attributeType="Composite" composite="GameDuration" allowsCloudEncryption="YES"/>
+        <relationship name="player" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Player" inverseName="games" inverseEntity="Player"/>
+    </entity>
+    <entity name="Player" representedClassName="Player" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String" allowsCloudEncryption="YES"/>
+        <relationship name="games" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Game" inverseName="player" inverseEntity="Game"/>
+    </entity>
+    <composite name="GameDuration">
+        <attribute name="hours" optional="YES" attributeType="Decimal" defaultValueString="0.0" allowsCloudEncryption="YES"/>
+        <attribute name="minutes" optional="YES" attributeType="Decimal" defaultValueString="0.0" allowsCloudEncryption="YES"/>
+        <attribute name="seconds" optional="YES" attributeType="Decimal" defaultValueString="0.0" allowsCloudEncryption="YES"/>
+    </composite>
+</model>

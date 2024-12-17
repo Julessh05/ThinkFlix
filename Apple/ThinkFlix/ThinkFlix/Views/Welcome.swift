@@ -1,46 +1,19 @@
 //
-//  ContentView.swift
+//  Welcome.swift
 //  ThinkFlix
 //
-//  Created by Julian Schumacher on 12.12.24.
+//  Created by Julian Schumacher on 15.12.24.
 //
 
 import SwiftUI
-import SwiftData
 
-struct ContentView: View {
+struct Welcome: View {
+    
     @Environment(\.colorScheme) private var colorScheme
     
     @State private var gameConfigShown : Bool = false
     
-    @State private var gameRunning : Bool = false
-    
     var body: some View {
-        NavigationSplitView {
-            builder()
-#if os(macOS)
-            .navigationSplitViewColumnWidth(min: 180, ideal: 200)
-#endif
-#if os(iOS)
-            .navigationTitle("ThinkFlix")
-            .navigationBarTitleDisplayMode(.automatic)
-#endif
-        } detail: {
-            EmptyView()
-        }
-    }
-    
-    @ViewBuilder
-    private func builder() -> some View {
-        if gameRunning {
-            GameView(gameRunning: $gameRunning)
-        } else {
-            welcomeScreen()
-        }
-    }
-    
-    @ViewBuilder
-    private func welcomeScreen() -> some View {
         VStack {
             Button {
                 gameConfigShown.toggle()
@@ -52,10 +25,10 @@ struct ContentView: View {
                     .backgroundStyle(colorScheme == .dark ? .gray : .blue)
             }
             .sheet(isPresented: $gameConfigShown) {
-                GameConfig(gameRunning: $gameRunning)
+                GameConfigView()
             }
-            Button {
-                
+            NavigationLink {
+                StatisticsView()
             } label: {
                 Label("Statistics", systemImage: "chart.bar")
                     .foregroundStyle(.white)
@@ -64,9 +37,10 @@ struct ContentView: View {
                     .backgroundStyle(colorScheme == .dark ? .gray : .blue)
             }
         }
+        .navigationTitle("ThinkFlix")
     }
 }
 
 #Preview {
-    ContentView()
+    Welcome()
 }

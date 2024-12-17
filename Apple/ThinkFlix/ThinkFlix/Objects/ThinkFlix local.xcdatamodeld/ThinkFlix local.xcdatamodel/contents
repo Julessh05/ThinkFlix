@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="23605" systemVersion="24C101" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+    <entity name="Category" representedClassName="Category" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String" allowsCloudEncryption="YES"/>
+        <relationship name="quetions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Question" inverseName="category" inverseEntity="Question"/>
+    </entity>
+    <entity name="Question" representedClassName="Question" syncable="YES" codeGenerationType="class">
+        <attribute name="answer" optional="YES" attributeType="String" allowsCloudEncryption="YES"/>
+        <attribute name="answered" optional="YES" attributeType="Boolean" defaultValueString="NO" allowsCloudEncryption="YES" usesScalarValueType="YES"/>
+        <attribute name="question" optional="YES" attributeType="String" allowsCloudEncryption="YES"/>
+        <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="quetions" inverseEntity="Category"/>
+    </entity>
+</model>

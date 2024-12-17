@@ -2,32 +2,41 @@
 //  ThinkFlixApp.swift
 //  ThinkFlix
 //
-//  Created by Julian Schumacher on 12.12.24.
+//  Created by Julian Schumacher on 15.12.24.
 //
 
 import SwiftUI
-import SwiftData
+import CoreData
 
 @main
 struct ThinkFlixApp: App {
-    private var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            Category.self,
-            Question.self
-        ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
-
-        do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
-        } catch {
-            fatalError("Could not create ModelContainer: \(error)")
-        }
-    }()
+    private let localController = PersistenceController.local
+    private let cloudController = PersistenceController.cloud
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
+                .environment(\.cloudContext, cloudController.container.viewContext)
         }
-        .modelContainer(sharedModelContainer)
     }
+}
+
+extension EnvironmentValues {
+    var cloudContext: NSManagedObjectContext? {
+        get { self[CloudContextKey.self] }
+        set { self[CloudContextKey.self] = newValue }
+    }
+    
+    var localContext: NSManagedObjectContext? {
+        get { self[LocalContextKey.self] }
+        set { self[LocalContextKey.self] = newValue }
+    }
+}
+
+private struct CloudContextKey : EnvironmentKey {
+    static let defaultValue: NSManagedObjectContext? = nil
+}
+
+private struct LocalContextKey : EnvironmentKey {
+    static let defaultValue: NSManagedObjectContext? = nil
 }

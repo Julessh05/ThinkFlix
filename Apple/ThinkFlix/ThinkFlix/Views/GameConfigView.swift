@@ -1,15 +1,15 @@
 //
-//  GameConfig.swift
+//  GameConfigView.swift
 //  ThinkFlix
 //
-//  Created by Julian Schumacher on 12.12.24.
+//  Created by Julian Schumacher on 16.12.24.
 //
 
 import SwiftUI
 
 internal enum GameMode : String, CaseIterable, Identifiable {
     var id: Self { self }
-
+    
     case quizCore
     case factFusion
     
@@ -57,20 +57,20 @@ internal enum GameSpeed : String, CaseIterable, Identifiable {
     }
 }
 
-struct GameConfig: View {
-    @Environment(\.colorScheme) private var colorScheme
+
+internal struct GameConfigView: View {
+    
+    @Environment(\.dismiss) private var dismiss
     
     @State private var selectedGameMode : GameMode = .quizCore
     
-    @State private var selectedGameSpeed : GameSpeed = .roundUp
+    @State private var selectedSpeed : GameSpeed = .roundUp
     
-    @State private var playerNames : [String] =  Array(repeating: "", count: 2)
+    @State private var usePlayer : Bool = true
     
-    @State private var useNames : Bool = true
+    @State private var playerNames : [String] = Array(repeating: "", count: 2)
     
-    @State private var nameConfigShown : Bool = false
-    
-    @Binding internal var gameRunning : Bool
+    @State private var editNamesPresented : Bool = false
     
     var body: some View {
         NavigationStack {
@@ -80,36 +80,31 @@ struct GameConfig: View {
                         ForEach(GameMode.allCases, id: \.id) {
                             mode in
                             Label(mode.getCorrectName(), systemImage: mode.getImage())
-                                .foregroundStyle(.primary)
                         }
                     }
-                    Picker("Speed", selection: $selectedGameSpeed) {
+                    Picker("Speed", selection: $selectedSpeed) {
                         ForEach(GameSpeed.allCases, id: \.id) {
                             speed in
                             Label(speed.getCorrectName(), systemImage: speed.getImage())
-                                .foregroundStyle(.primary)
                         }
                     }
                 } header: {
-                    Text("Game mode")
+                    Text("Game Mode")
                 } footer: {
-                    Text("Configure your game")
+                    Text("Select your game mode and speed for this game")
                 }
                 Section {
-                    Toggle("Use names", isOn: $useNames.animation())
-                        .onChange(of: useNames) {
-                            guard useNames else { return }
-                            nameConfigShown.toggle()
+                    Toggle("Use player", isOn: $usePlayer.animation())
+                        .onChange(of: usePlayer) {
+                            guard usePlayer else { return }
+                            editNamesPresented.toggle()
                         }
-                        .sheet(isPresented: $nameConfigShown) {
-                            NameSheet(playerNames: $playerNames)
-                        }
-                    if useNames {
+                    if usePlayer {
                         ForEach(playerNames, id: \.self) {
                             name in
                             if !name.isEmpty {
                                 HStack {
-                                    Button {
+                                    Button(role: .destructive) {
                                         playerNames.removeAll(where: { $0 == name })
                                     } label: {
                                         Image(systemName: "person.fill.xmark")
@@ -119,49 +114,43 @@ struct GameConfig: View {
                                 }
                             }
                         }
-                        Button {
-                            nameConfigShown.toggle()
-                        } label: {
-                            Label("Edit Names", systemImage: "person.2.badge.gearshape")
-                        }
+                    }
+                    Button {
+                        editNamesPresented.toggle()
+                    } label: {
+                        Label("Edit Names", systemImage: "person.2.badge.gearshape.fill")
+                    }
+                    .sheet(isPresented: $editNamesPresented) {
+                        NameSheet(playerNames: $playerNames)
                     }
                 } header: {
-                    Label("Player", systemImage: "person.3.fill")
+                    Text("Player")
                 } footer: {
-                    Text("Add all player and their names if you want to, or play without entering names")
+                    Text("Add all the player names, or disable them, if you'd like to play without players")
                 }
-                Section("Categories") {
-                    
+                Section {
+                    // TODO: implement category section
+                } header: {
+                    Text("Categories")
+                } footer: {
+                    Text("Select the categories you want to play with")
                 }
             }
+            .toolbarRole(.editor)
+            .toolbarVisibility(.automatic, for: .automatic)
             .toolbar {
+                ToolbarItem(placement: .cancellationAction) {
+                    Button("Cancel", role: .cancel) {
+                        dismiss()
+                    }
+                }
                 ToolbarItem(placement: .confirmationAction) {
                     Button("Start") {
-                        gameRunning = true
+                        // TODO: implement Button
                     }
                 }
             }
-#if os(iOS)
-            .navigationTitle("New Game")
-            .navigationBarTitleDisplayMode(.automatic)
-#endif
-        }
-    }
-    
-    @ViewBuilder
-    private func nameContainer(_ name : String) -> some View {
-        HStack {
-            Button {
-                playerNames.removeAll(where: { $0 == name })
-            } label: {
-                Image(systemName: "xmark")
-            }
-            Text(name)
-        }
-        .foregroundStyle(.white)
-        .frame(width: 50 + (CGFloat(name.count) * 10), height: 50)
-        .background(in: .rect(cornerRadius: 20), fillStyle: .init(eoFill: true, antialiased: true))
-        .backgroundStyle(.blue)
+        }   
     }
 }
 
@@ -179,7 +168,6 @@ internal struct NameSheet : View {
     @State private var localPlayerNames : [String] = Array(repeating: "", count: 2)
     
     @State private var localPlayerNameCache : [String] = []
-    
     
     var body: some View {
         NavigationStack {
@@ -241,8 +229,7 @@ internal struct NameSheet : View {
 }
 
 #Preview {
-    @Previewable @State var gameRunning : Bool = false
-    GameConfig(gameRunning: $gameRunning)
+    GameConfigView()
 }
 
 #Preview("Name Sheet") {
