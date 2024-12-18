@@ -13,12 +13,21 @@ internal struct GameView: View {
     
     @EnvironmentObject private var gameConfig : GameConfig
     
+    // Question objects
     @State private var questions : [Question] = []
     
+    // Current data
     @State private var currentQuestion : Question? = nil
     
+    @State private var currentPlayer : Player? = nil
+    
+    @State private var currentPlayerIndex : Int = 0
+    
+    /// Whether the game is over or not
     @State private var gameOver : Bool = false
     
+    
+    // Error control variables
     @State private var errFetchingQuestionsPresented : Bool = false
     
     var body: some View {
@@ -65,6 +74,22 @@ internal struct GameView: View {
         }
         currentQuestion = question
         questions.removeAll(where: { $0.id == question.id })
+    }
+    
+    /// Function to use when entering next turn
+    private func nextTurn() -> Void {
+        updateCurrentQuestion()
+        guard let p = currentPlayer else {
+            currentPlayer = gameConfig.player.first!
+            currentPlayerIndex = 0
+            return
+        }
+        if currentPlayerIndex == gameConfig.player.count - 1 {
+            currentPlayerIndex = 0
+        } else {
+            currentPlayerIndex += 1
+        }
+        currentPlayer = gameConfig.player[currentPlayerIndex]
     }
 }
 

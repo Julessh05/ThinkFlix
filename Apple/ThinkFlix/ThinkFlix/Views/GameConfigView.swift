@@ -261,8 +261,8 @@ internal struct NameSheet : View {
 #Preview("Name Sheet") {
     @Previewable @State var previewPlayerNames : [String] = Array(repeating: "", count: 2)
     @Previewable @StateObject var previewGameConfig = GameConfig(categories: [], player: [])
+    let previewContainer = PersistenceController.preview
     
-    var previewContainer = PersistenceController.preview
     NameSheet(playerNames: $previewPlayerNames)
         .environment(\.managedObjectContext, previewContainer.container.viewContext)
         .environmentObject(previewGameConfig)

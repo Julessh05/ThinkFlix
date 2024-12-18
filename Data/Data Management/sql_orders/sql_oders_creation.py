@@ -3,12 +3,12 @@ class SQLOrdersCreation:
     def question_table():
         return """
                 CREATE TABLE IF NOT EXISTS question (
-                id INTEGER PRIMARY KEY,
-                questions TEXT NOT NULL,
+                id TEXT PRIMARY KEY,
+                question TEXT NOT NULL,
                 answer TEXT NOT NULL,
                 answered BIT,
                 difficulty INTEGER,
-                category_id INTEGER
+                category_id TEXT
                 )
                 """
 
@@ -16,9 +16,9 @@ class SQLOrdersCreation:
     def category_table():
         return """
         CREATE TABLE IF NOT EXISTS category (
-        id INTEGER PRIMARY KEY,
+        id TEXT PRIMARY KEY,
         name TEXT NOT NULL,
-        master_category_id INTEGER
+        master_category_id TEXT
         )
         """
 
@@ -26,12 +26,12 @@ class SQLOrdersCreation:
     def fact_table():
         return """
         CREATE TABLE IF NOT EXISTS fact (
-        id INTEGER PRIMARY KEY,
+        id TEXT PRIMARY KEY,
         true_fact TEXT NOT NULL,
         false_fact_1 TEXT NOT NULL,
         false_fact_2 TEXT,
         false_fact_3 TEXT,
-        master_category_id INTEGER
+        master_category_id TEXT
         )
         """
 
