@@ -23,14 +23,14 @@ internal struct GameView: View {
     
     var body: some View {
         VStack {
-            Text(currentQuestion?.question ?? "Current Question")
+            Text(currentQuestion?.question ?? "Question loading...")
             Button {
                 
             } label: {
                 
             }
         }
-        .navigationTitle(currentQuestion?.category?.name ?? "Category")
+        .navigationTitle(currentQuestion?.category?.name ?? "Category loading...")
         .toolbar {
             ToolbarItem(placement: .primaryAction) {
                 Menu {
@@ -46,6 +46,7 @@ internal struct GameView: View {
                     with: gameContext,
                     for: gameConfig.categories
                 )
+                updateCurrentQuestion()
             } catch {
                 errFetchingQuestionsPresented.toggle()
             }

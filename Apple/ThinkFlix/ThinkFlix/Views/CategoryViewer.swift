@@ -69,13 +69,14 @@ private struct SelectableRow: View {
     }
 }
 
-#Preview {
-    @Previewable @State var selectedCategories : [Category] = []
-    var controller : PersistenceController = PersistenceController.preview
-    CategoryViewer(
-        selectedCategories: $selectedCategories,
-        in: try! Storage.fetchCategories(
-            with: controller.container.viewContext)
-    )
-    .environment(\.managedObjectContext, controller.container.viewContext)
-}
+// TODO: work on preview, currently not working, because sqlite file is not found
+//#Preview {
+//    @Previewable @State var selectedCategories : [Category] = []
+//    var controller : PersistenceController = PersistenceController.preview
+//    CategoryViewer(
+//        selectedCategories: $selectedCategories,
+//        in: try! Storage.fetchCategories(
+//            with: controller.container.viewContext)
+//    )
+//    .environment(\.managedObjectContext, controller.container.viewContext)
+//}

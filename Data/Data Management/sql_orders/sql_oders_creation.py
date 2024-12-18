@@ -23,6 +23,19 @@ class SQLOrdersCreation:
         """
 
     @staticmethod
+    def fact_table():
+        return """
+        CREATE TABLE IF NOT EXISTS fact (
+        id INTEGER PRIMARY KEY,
+        true_fact TEXT NOT NULL,
+        false_fact_1 TEXT NOT NULL,
+        false_fact_2 TEXT,
+        false_fact_3 TEXT,
+        master_category_id INTEGER
+        )
+        """
+
+    @staticmethod
     def management_table():
         return """
         CREATE TABLE IF NOT EXISTS management (

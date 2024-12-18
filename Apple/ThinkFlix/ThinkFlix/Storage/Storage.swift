@@ -50,12 +50,12 @@ internal struct Storage {
     internal static func fetchQuestions(with context : NSManagedObjectContext, for categories : [Category]) throws -> [Question] {
         let fetchRequest = Question.fetchRequest()
         fetchRequest.predicate = NSPredicate(format: "category.uuid IN %@", categories.map({ $0.uuid! }))
-        return try fetchRequest.execute()
+        return try context.fetch(fetchRequest)
     }
     
     internal static func fetchCategories(with context : NSManagedObjectContext) throws -> [Category] {
         let fetchRequest = Category.fetchRequest()
-        let categories = try fetchRequest.execute()
+        let categories : [Category] = try context.fetch(fetchRequest)
         return categories
     }
 }

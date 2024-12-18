@@ -1,5 +1,6 @@
 import json
 
+
 class JSONInput:
 
     @staticmethod
@@ -10,6 +11,11 @@ class JSONInput:
     @staticmethod
     def read_category_file():
         with open("data/categories.json", 'r') as json_file:
+            return json.load(json_file)
+
+    @staticmethod
+    def read_facts_file():
+        with open("data/facts.json", 'r') as json_file:
             return json.load(json_file)
 
     @staticmethod
