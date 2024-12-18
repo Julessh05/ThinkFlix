@@ -12,10 +12,13 @@ internal struct Storage {
     
     private static let fm : FileManager = FileManager.default
     
-    private static let fileName : String = "questions.sqlite"
+    internal static let quizContentDBName : String = "quizContent.sqlite"
+    
+    internal static let userDBName : String = "userdata.sqlite"
+    
     
     internal static func checkDatabases(with context : NSManagedObjectContext) throws -> Void {
-        let url = try fm.url(for: .applicationSupportDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appending(path: fileName, directoryHint: .notDirectory)
+        let url = try fm.url(for: .applicationSupportDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appending(path: quizContentDBName, directoryHint: .notDirectory)
         if !fm.fileExists(atPath: url.absoluteString) {
             try copyDatabase()
         } else {
@@ -30,7 +33,7 @@ internal struct Storage {
     }
     
     private static func copyDatabase() throws -> Void {
-        guard let path : String = Bundle.main.path(forResource: "questions", ofType: "sqlite") else {
+        guard let path : String = Bundle.main.path(forResource: "quizContent", ofType: "sqlite") else {
             throw InitialDatabaseNotFoundError()
         }
         try fm.copyItem(
@@ -40,7 +43,7 @@ internal struct Storage {
                 in: .userDomainMask,
                 appropriateFor: nil,
                 create: true
-            ).appending(path: fileName, directoryHint: .notDirectory)
+            ).appending(path: quizContentDBName, directoryHint: .notDirectory)
         )
     }
     

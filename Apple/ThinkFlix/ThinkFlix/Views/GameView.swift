@@ -9,7 +9,7 @@ import SwiftUI
 import CoreData
 
 internal struct GameView: View {
-    @Environment(\.localContext) private var gameContext
+    @Environment(\.managedObjectContext) private var gameContext
     
     @EnvironmentObject private var gameConfig : GameConfig
     
@@ -43,7 +43,7 @@ internal struct GameView: View {
         .onAppear {
             do {
                 questions = try Storage.fetchQuestions(
-                    with: gameContext!,
+                    with: gameContext,
                     for: gameConfig.categories
                 )
             } catch {
@@ -68,9 +68,9 @@ internal struct GameView: View {
 }
 
 #Preview {
-    let container = PersistenceController.previewlocal
-    let gameConfig = GameConfig(categories: [])
+    let container = PersistenceController.preview
+    let gameConfig = GameConfig(categories: [], player: [])
     GameView()
-        .environment(\.localContext, container.container.viewContext)
+        .environment(\.managedObjectContext, container.container.viewContext)
         .environmentObject(gameConfig)
 }

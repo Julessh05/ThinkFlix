@@ -10,6 +10,15 @@
     <entity name="DB_Management" representedClassName="DB_Management" syncable="YES" codeGenerationType="class">
         <attribute name="version" optional="YES" attributeType="Double" defaultValueString="0" allowsCloudEncryption="YES" usesScalarValueType="YES"/>
     </entity>
+    <entity name="Game" representedClassName="Game" syncable="YES" codeGenerationType="class">
+        <attribute name="duration" optional="YES" attributeType="Composite" composite="GameDuration"/>
+        <relationship name="player" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Player" inverseName="games" inverseEntity="Player"/>
+    </entity>
+    <entity name="Player" representedClassName="Player" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String" allowsCloudEncryption="YES"/>
+        <attribute name="points" optional="YES" attributeType="Integer 16" defaultValueString="0" allowsCloudEncryption="YES" usesScalarValueType="YES"/>
+        <relationship name="games" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Game" inverseName="player" inverseEntity="Game"/>
+    </entity>
     <entity name="Question" representedClassName="Question" syncable="YES" codeGenerationType="class">
         <attribute name="answer" optional="YES" attributeType="String" allowsCloudEncryption="YES"/>
         <attribute name="answered" optional="YES" attributeType="Boolean" defaultValueString="NO" allowsCloudEncryption="YES" usesScalarValueType="YES"/>
@@ -17,7 +26,15 @@
         <attribute name="uuid" optional="YES" attributeType="UUID" allowsCloudEncryption="YES" usesScalarValueType="NO"/>
         <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="quetions" inverseEntity="Category"/>
     </entity>
-    <configuration name="CloudConfig" usedWithCloudKit="YES"/>
+    <composite name="GameDuration">
+        <attribute name="seconds" optional="YES" attributeType="Integer 16" defaultValueString="0" allowsCloudEncryption="YES" usesScalarValueType="YES"/>
+        <attribute name="minutes" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="hours" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+    </composite>
+    <configuration name="CloudConfig" usedWithCloudKit="YES">
+        <memberEntity name="Game"/>
+        <memberEntity name="Player"/>
+    </configuration>
     <configuration name="LocalConfig">
         <memberEntity name="Category"/>
         <memberEntity name="DB_Management"/>

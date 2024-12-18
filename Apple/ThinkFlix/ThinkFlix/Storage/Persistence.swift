@@ -8,13 +8,12 @@
 import CoreData
 
 struct PersistenceController {
-    static let local = PersistenceController(isLocal: true)
     
-    static let cloud = PersistenceController(isLocal: false)
-
+    static let shared : PersistenceController = PersistenceController()
+    
     @MainActor
-    static let previewlocal: PersistenceController = {
-        let result = PersistenceController(isLocal: true, inMemory: true)
+    static let preview: PersistenceController = {
+        let result : PersistenceController = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
         for i in 0..<10 {
             let cat = Category(context: viewContext)
@@ -30,32 +29,42 @@ struct PersistenceController {
         }
         return result
     }()
-
+    
     let container: NSPersistentContainer
-
-    init(isLocal: Bool, inMemory: Bool = false) throws {
-        if isLocal {
-            container = NSPersistentCloudKitContainer(name: "ThinkFlix cloud")
-            try container.persistentStoreCoordinator.addPersistentStore(
-                type: .sqlite,
-                at: FileManager.default.url(
+    
+    init(inMemory: Bool = false) {
+        container = NSPersistentCloudKitContainer(name: "ThinkFlix")
+        if inMemory {
+            container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
+        } else {
+            // Local Description for store
+            let localDescription = NSPersistentStoreDescription(
+                url: try! FileManager.default.url(
                     for: .applicationSupportDirectory,
                     in: .userDomainMask,
                     appropriateFor: nil,
-                    create: false
-                )
+                    create: true
+                ).appending(path: Storage.quizContentDBName)
             )
-        } else {
-            container = NSPersistentContainer(name: "ThinkFlix local")
-        }
-        if inMemory {
-            container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
+            localDescription.configuration = "LocalConfig"
+            
+            // Cloud Description for store
+            let cloudDescription = NSPersistentStoreDescription(
+                url: try! FileManager.default.url(
+                    for: .applicationSupportDirectory,
+                    in: .userDomainMask,
+                    appropriateFor: nil,
+                    create: true
+                ).appending(path: Storage.userDBName)
+            )
+            cloudDescription.configuration = "CloudConfig"
+            container.persistentStoreDescriptions = [localDescription, cloudDescription]
         }
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.
                 // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-
+                
                 /*
                  Typical reasons for an error here include:
                  * The parent directory does not exist, cannot be created, or disallows writing.

@@ -62,6 +62,10 @@ internal struct GameConfigView: View {
     
     @Environment(\.dismiss) private var dismiss
     
+    @Environment(\.managedObjectContext) private var context
+    
+    @EnvironmentObject private var gameConfig : GameConfig
+    
     @State private var selectedGameMode : GameMode = .quizCore
     
     @State private var selectedSpeed : GameSpeed = .roundUp
@@ -71,6 +75,10 @@ internal struct GameConfigView: View {
     @State private var playerNames : [String] = Array(repeating: "", count: 2)
     
     @State private var editNamesPresented : Bool = false
+    
+    @State private var selectedCategories : [Category] = []
+    
+    @State private var errFetchingCategories : Bool = false
     
     var body: some View {
         NavigationStack {
@@ -145,11 +153,30 @@ internal struct GameConfigView: View {
                 }
                 ToolbarItem(placement: .confirmationAction) {
                     Button("Start") {
+                        gameConfig.categories = selectedCategories
+                        gameConfig.player = playerNames.map({
+                            let p = Player(context: context)
+                            p.name = $0
+                            p.points = 0
+                            return p
+                        })
                         // TODO: implement Button
                     }
                 }
             }
-        }   
+        }
+        .onAppear {
+            do {
+                selectedCategories = try Storage.fetchCategories(with: context)
+            } catch {
+                errFetchingCategories.toggle()
+            }
+        }
+        .alert("Error fetching categories", isPresented: $errFetchingCategories) {
+            
+        } message: {
+            Text("Ann error rose, trying to fetch the categories from the storage")
+        }
     }
 }
 
@@ -233,5 +260,10 @@ internal struct NameSheet : View {
 
 #Preview("Name Sheet") {
     @Previewable @State var previewPlayerNames : [String] = Array(repeating: "", count: 2)
+    @Previewable @StateObject var previewGameConfig = GameConfig(categories: [], player: [])
+    
+    var previewContainer = PersistenceController.preview
     NameSheet(playerNames: $previewPlayerNames)
+        .environment(\.managedObjectContext, previewContainer.container.viewContext)
+        .environmentObject(previewGameConfig)
 }

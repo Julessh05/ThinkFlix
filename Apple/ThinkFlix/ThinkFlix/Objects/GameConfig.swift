@@ -11,7 +11,10 @@ internal final class GameConfig : ObservableObject {
     
     @Published internal var categories : [Category]
     
-    internal init(categories : [Category]) {
+    @Published internal var player : [Player]
+    
+    internal init(categories : [Category], player : [Player]) {
         self.categories = categories
+        self.player = player
     }
 }
