@@ -6,7 +6,6 @@ class SQLOrdersAdding:
     @staticmethod
     def questions(cursor, question_data):
         for question in question_data:
-            print(question)
             cursor.execute("""
             INSERT OR REPLACE INTO question (id, question, answer, answered, difficulty, category_id)
             VALUES (?, ?, ?, ?, ?, ?)

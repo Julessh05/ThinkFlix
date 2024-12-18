@@ -32,7 +32,6 @@ with sqlite3.connect(FILE_PATH) as connection:
     # Create the question table
     cursor.execute(SQLOrdersCreation.question_table())
     # Add data to the question table
-    print(JSONInput.read_questions_file())
     SQLOrdersAdding.questions(cursor, JSONInput.read_questions_file())
     connection.commit()
 
