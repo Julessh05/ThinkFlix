@@ -13,6 +13,7 @@ struct Welcome: View {
     
     @State private var gameConfigShown : Bool = false
     
+    
     var body: some View {
         VStack {
             Button {

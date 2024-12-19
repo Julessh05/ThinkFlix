@@ -6,7 +6,7 @@
       <synchronize>true</synchronize>
       <remarks>The initial file containing the content of the ThiknFlix Quiz App</remarks>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/../Data Creation/export/quizContent.sqlite</jdbc-url>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/../Data Creation/Python Script/export/quizContent.sqlite</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
     <data-source source="LOCAL" name="iOS simulator quizContent.sqlite" uuid="e5954bce-e45a-448a-bcbb-c150e0c0e5e4">

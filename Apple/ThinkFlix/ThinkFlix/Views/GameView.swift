@@ -16,12 +16,15 @@ internal struct GameView: View {
     @Environment(\.colorScheme) private var colorScheme
     
     // Question objects
-    @State private var questions : [Question] = []
+//    @State private var questions : [Question] = []
+    @State private var questions : [QuestionJSON] = []
     
     // Current data
-    @State private var currentQuestion : Question? = nil
+//    @State private var currentQuestion : Question? = nil
+    @State private var currentQuestion : QuestionJSON? = nil
     
-    @State private var currentPlayer : Player? = nil
+//    @State private var currentPlayer : Player? = nil
+    @State private var currentPlayer : GamePlayer? = nil
     
     @State private var currentPlayerIndex : Int = 0
     
@@ -34,7 +37,8 @@ internal struct GameView: View {
     
     var body: some View {
         VStack {
-            Text("Category: \(currentQuestion?.category?.name ?? "Category loading...")")
+//            Text("Category: \(currentQuestion?.category?.name ?? "Category loading...")")
+            Text("\(gameConfig.gameMode)")
                 .font(.subheadline)
                 .padding(.top, 20)
             Spacer()
@@ -67,19 +71,25 @@ internal struct GameView: View {
         .navigationTitle(currentPlayer?.name ?? "Player")
         .toolbar {
             ToolbarItem(placement: .primaryAction) {
-                Menu {
-                    
+                Button {
+                    gameConfig.gameRunning = false
                 } label: {
                     Image(systemName: "xmark")
                 }
+//                Menu {
+//                    
+//                } label: {
+//                    Image(systemName: "xmark")
+//                }
             }
         }
         .onAppear {
             do {
-                questions = try Storage.fetchQuestions(
-                    with: gameContext,
-                    for: gameConfig.categories
-                )
+                questions = try Storage.loadQuestionsFor(categories: gameConfig.categories)
+//                questions = try Storage.fetchQuestions(
+//                    with: gameContext,
+//                    for: gameConfig.categories
+//                )
                 updateCurrentQuestion()
             } catch {
                 errFetchingQuestionsPresented.toggle()
@@ -121,7 +131,12 @@ internal struct GameView: View {
 
 #Preview {
     let container = PersistenceController.preview
-    let gameConfig = GameConfig(categories: [], player: [])
+    let gameConfig = GameConfig(
+        categories: [],
+        player: [],
+        gameMode: .quizCore,
+        speed: .roundUp
+    )
     NavigationStack {
         GameView()
             .environment(\.managedObjectContext, container.container.viewContext)

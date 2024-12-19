@@ -11,20 +11,20 @@ import CoreData
 @main
 struct ThinkFlixApp: App {
     
-    private var persistence : PersistenceController = PersistenceController.shared
+//    private var persistence : PersistenceController = PersistenceController.shared
     
     @State private var errLoadingDataShown : Bool = false
 
     var body: some Scene {
         WindowGroup {
             MainView()
-                .environment(\.managedObjectContext, persistence.container.viewContext)
+//                .environment(\.managedObjectContext, persistence.container.viewContext)
                 .onAppear {
-                    do {
-                        try Storage.checkDatabases(with: persistence.container.viewContext)
-                    } catch {
-                        errLoadingDataShown.toggle()
-                    }
+//                    do {
+//                        try Storage.checkDatabases(with: persistence.container.viewContext)
+//                    } catch {
+//                        errLoadingDataShown.toggle()
+//                    }
                 }
                 .alert("Error loading Data", isPresented: $errLoadingDataShown) {
                 } message: {

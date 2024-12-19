@@ -1,19 +1,17 @@
 //
 //  CategoryJSON.swift
-//  ThinkFlix
+//  ThinkFlix Data Creation
 //
 //  Created by Julian Schumacher on 19.12.24.
 //
 
 import Foundation
 
-internal struct CategoryJSON: Decodable, Equatable {
+internal struct CategoryJSON : Decodable {
     
     internal let name : String
     
     internal let id : String
     
-    private let subCategories : [CategoryJSON]?
-    
-    private let masterCategoryID : String?
+    internal let subcategories : [CategoryJSON]?
 }

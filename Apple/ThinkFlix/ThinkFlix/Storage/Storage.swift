@@ -16,8 +16,36 @@ internal struct Storage {
     
     internal static let userDBName : String = "userdata.sqlite"
     
-    internal static func loadCategoriesFromJSON() -> [CategoryJSON] {
-        
+    internal static var categories : [CategoryJSON] = []
+    
+    internal static var questions : [QuestionJSON] = []
+    
+    internal static func loadCategoriesFromJSON() throws -> [CategoryJSON] {
+        let decoder = JSONDecoder()
+        let path = Bundle.main.path(forResource: "categories", ofType: "json")
+        print(path)
+        let jsonData = try Data(contentsOf: URL(filePath: path!), options: .mappedIfSafe)
+        print(jsonData)
+        print(String(data: jsonData, encoding: .utf8))
+        let cats = try decoder.decode([CategoryJSON].self, from: jsonData)
+        categories = cats
+        return cats
+    }
+    
+    internal static func loadQuestionsFromJSON() throws -> [QuestionJSON] {
+        let decoder = JSONDecoder()
+        let path = Bundle.main.path(forResource: "questions", ofType: "json")
+        let jsonData = try Data(contentsOf: URL(filePath: path!), options: .mappedIfSafe)
+        let qu = try decoder.decode([QuestionJSON].self, from: jsonData)
+        questions = qu
+        return qu
+    }
+    
+    internal static func loadQuestionsFor(categories : [CategoryJSON]) throws -> [QuestionJSON] {
+        if questions.isEmpty {
+            let _ = try loadQuestionsFromJSON()
+        }
+        return questions.filter { categories.map(\.id).contains($0.categoryID) }
     }
     
     

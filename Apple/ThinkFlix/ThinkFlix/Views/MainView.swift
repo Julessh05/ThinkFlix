@@ -10,7 +10,7 @@ import SwiftUI
 struct MainView: View {
     
     // TODO: update to private, is internal for preview
-    @State internal var gameRunning : Bool = false
+    @StateObject private var gameConfig : GameConfig = GameConfig()
     
     var body: some View {
         NavigationStack {
@@ -20,18 +20,16 @@ struct MainView: View {
     
     @ViewBuilder
     private func builder() -> some View {
-        if gameRunning {
+        if gameConfig.gameRunning {
             GameView()
+                .environmentObject(gameConfig)
         } else {
             Welcome()
+                .environmentObject(gameConfig)
         }
     }
 }
 
 #Preview("Game not running") {
     MainView()
-}
-
-#Preview("Game running") {
-    MainView(gameRunning: true)
 }

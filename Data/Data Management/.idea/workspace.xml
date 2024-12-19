@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9457373d-f98f-4d53-8a53-79c7f46a7025" name="Changes" comment="" />
+    <list default="true" id="9457373d-f98f-4d53-8a53-79c7f46a7025" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Apple/Data Management/ThinkFlix Data Creation/ThinkFlix Data Creation/JSONInput.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Apple/Data Management/ThinkFlix Data Creation/ThinkFlix Data Creation/Local/exportPath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Apple/Data Management/ThinkFlix Data Creation/ThinkFlix Data Creation/Persistence.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Apple/Data Management/ThinkFlix Data Creation/ThinkFlix Data Creation/ThinkFlix.xcdatamodeld/.xccurrentversion" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Apple/Data Management/ThinkFlix Data Creation/ThinkFlix Data Creation/ThinkFlix.xcdatamodeld/ThinkFlix.xcdatamodel/contents" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Apple/ThinkFlix/ThinkFlix/Objects/JSON Objects/QuestionJSON.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Apple/Data Management/ThinkFlix Data Creation/ThinkFlix Data Creation/main.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../../Apple/Data Management/ThinkFlix Data Creation/ThinkFlix Data Creation/main.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Apple/ThinkFlix/ThinkFlix.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../Apple/ThinkFlix/ThinkFlix.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Apple/ThinkFlix/ThinkFlix/Objects/JSON Objects/CategoryJSON.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../../Apple/ThinkFlix/ThinkFlix/Objects/JSON Objects/CategoryJSON.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Apple/ThinkFlix/ThinkFlix/Storage/Storage.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../../Apple/ThinkFlix/ThinkFlix/Storage/Storage.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

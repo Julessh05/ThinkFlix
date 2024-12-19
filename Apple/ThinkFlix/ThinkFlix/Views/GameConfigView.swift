@@ -63,13 +63,14 @@ internal struct GameConfigView: View {
     // Environment variables
     @Environment(\.dismiss) private var dismiss
     
-    @Environment(\.managedObjectContext) private var context
+    //    @Environment(\.managedObjectContext) private var context
     
     // Environment objects
     @EnvironmentObject private var gameConfig : GameConfig
     
     // General data
-    @State private var allCategories : [Category] = []
+//    @State private var allCategories : [Category] = []
+    @State private var allCategories : [CategoryJSON] = []
     
     
     // game data
@@ -77,7 +78,7 @@ internal struct GameConfigView: View {
     
     @State private var selectedSpeed : GameSpeed = .roundUp
     
-    @State private var selectedCategories : [Category] = []
+    @State private var selectedCategories : [CategoryJSON] = []
     
     @State private var usePlayer : Bool = true
     
@@ -156,10 +157,6 @@ internal struct GameConfigView: View {
                     } label: {
                         Label("Edit categories", systemImage: "pencil.and.list.clipboard")
                     }
-                    CategoryViewer(
-                        selectedCategories: $selectedCategories,
-                        in: allCategories
-                    )
                 } header: {
                     Text("Categories")
                 } footer: {
@@ -177,22 +174,25 @@ internal struct GameConfigView: View {
                     Button("Start") {
                         gameConfig.categories = selectedCategories
                         gameConfig.player = playerNames.map({
-                            let p = Player(context: context)
-                            p.name = $0
-                            p.points = 0
-                            return p
+                            return GamePlayer(name: $0, points: 0)
+                            //                            let p = Player(context: context)
+                            //                            p.name = $0
+                            //                            p.points = 0
+                            //                            return p
                         })
-                        // TODO: implement Button
+                        gameConfig.gameRunning = true
                     }
                 }
             }
         }
         .onAppear {
             do {
-                allCategories = try Storage.fetchCategories(with: context)
+                allCategories = try Storage.loadCategoriesFromJSON()
+//                allCategories = try Storage.fetchCategories(with: context)
                 selectedCategories = allCategories
             } catch {
                 errFetchingCategories.toggle()
+                print(error)
             }
         }
         .alert("Error fetching categories", isPresented: $errFetchingCategories) {
@@ -283,7 +283,12 @@ internal struct NameSheet : View {
 
 #Preview("Name Sheet") {
     @Previewable @State var previewPlayerNames : [String] = Array(repeating: "", count: 2)
-    @Previewable @StateObject var previewGameConfig = GameConfig(categories: [], player: [])
+    @Previewable @StateObject var previewGameConfig = GameConfig(
+        categories: [],
+        player: [],
+        gameMode: .factFusion,
+        speed: .rapidFire
+    )
     let previewContainer = PersistenceController.preview
     
     NameSheet(playerNames: $previewPlayerNames)

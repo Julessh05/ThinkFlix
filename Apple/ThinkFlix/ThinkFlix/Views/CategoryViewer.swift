@@ -12,13 +12,15 @@ internal struct CategoryViewer: View {
     
     @Environment(\.managedObjectContext) private var context
     
-    @State private var allCategories : [Category] = []
+//    @State private var allCategories : [Category] = []
+    @State private var allCategories : [CategoryJSON] = []
     
-    private var selectedCategories : Binding<[Category]>
+//    private var selectedCategories : Binding<[Category]>
+    private var selectedCategories : Binding<[CategoryJSON]>
     
     internal init(
-        selectedCategories : Binding<[Category]>,
-        in allCategories : [Category]
+        selectedCategories : Binding<[CategoryJSON]>,
+        in allCategories : [CategoryJSON]
     ) {
         self.allCategories = allCategories
         self.selectedCategories = selectedCategories
@@ -26,7 +28,7 @@ internal struct CategoryViewer: View {
     
     var body: some View {
         List {
-            ForEach(allCategories) {
+            ForEach(allCategories, id: \CategoryJSON.name) {
                 cat in
                 SelectableRow(selection: selectedCategories, category: cat)
             }
@@ -36,15 +38,17 @@ internal struct CategoryViewer: View {
 
 private struct SelectableRow: View {
     
-    private var selection : Binding<[Category]>
+//    private var selection : Binding<[Category]>
+    private var selection : Binding<[CategoryJSON]>
     
     @State private var isSelected : Bool
     
-    private let category : Category
+//    private let category : Category
+    private let category : CategoryJSON
     
     internal init(
-        selection: Binding<[Category]>,
-        category: Category
+        selection: Binding<[CategoryJSON]>,
+        category: CategoryJSON
     ) {
         self.selection = selection
         self.category = category
@@ -64,7 +68,7 @@ private struct SelectableRow: View {
                 Image(systemName: isSelected ? "checkmark.circle" : "circle")
             }
             .foregroundStyle(.primary)
-            Text(category.name!)
+            Text(category.name)
         }
     }
 }
