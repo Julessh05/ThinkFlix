@@ -16,18 +16,22 @@ internal struct Storage {
     
     internal static let userDBName : String = "userdata.sqlite"
     
+    internal static func loadCategoriesFromJSON() -> [CategoryJSON] {
+        
+    }
+    
     
     internal static func checkDatabases(with context : NSManagedObjectContext) throws -> Void {
         let url = try fm.url(for: .applicationSupportDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appending(path: quizContentDBName, directoryHint: .notDirectory)
-        if !fm.fileExists(atPath: url.absoluteString) {
+        if !fm.fileExists(atPath: url.path(percentEncoded: false)) {
             try copyDatabase()
         } else {
             // Test for new Version
             let fr = DB_Management.fetchRequest()
-            let r = try fr.execute()
+            let r = try context.fetch(fr)
             // TODO: update to test between current core data version and current sqlite file version
             if !r.isEmpty && r.first!.version >= 1.0 {
-                
+                // TODO: update database
             }
         }
     }
@@ -37,7 +41,7 @@ internal struct Storage {
             throw InitialDatabaseNotFoundError()
         }
         try fm.copyItem(
-            at: URL(string: path)!,
+            at: URL(filePath: path),
             to: try fm.url(
                 for: .applicationSupportDirectory,
                 in: .userDomainMask,

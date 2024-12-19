@@ -60,24 +60,35 @@ internal enum GameSpeed : String, CaseIterable, Identifiable {
 
 internal struct GameConfigView: View {
     
+    // Environment variables
     @Environment(\.dismiss) private var dismiss
     
     @Environment(\.managedObjectContext) private var context
     
+    // Environment objects
     @EnvironmentObject private var gameConfig : GameConfig
     
+    // General data
+    @State private var allCategories : [Category] = []
+    
+    
+    // game data
     @State private var selectedGameMode : GameMode = .quizCore
     
     @State private var selectedSpeed : GameSpeed = .roundUp
+    
+    @State private var selectedCategories : [Category] = []
     
     @State private var usePlayer : Bool = true
     
     @State private var playerNames : [String] = Array(repeating: "", count: 2)
     
+    
+    // Sheet control variables
     @State private var editNamesPresented : Bool = false
     
-    @State private var selectedCategories : [Category] = []
     
+    // Error control variables
     @State private var errFetchingCategories : Bool = false
     
     var body: some View {
@@ -137,7 +148,18 @@ internal struct GameConfigView: View {
                     Text("Add all the player names, or disable them, if you'd like to play without players")
                 }
                 Section {
-                    // TODO: implement category section
+                    NavigationLink {
+                        CategoryViewer(
+                            selectedCategories: $selectedCategories,
+                            in: allCategories
+                        )
+                    } label: {
+                        Label("Edit categories", systemImage: "pencil.and.list.clipboard")
+                    }
+                    CategoryViewer(
+                        selectedCategories: $selectedCategories,
+                        in: allCategories
+                    )
                 } header: {
                     Text("Categories")
                 } footer: {
@@ -167,7 +189,8 @@ internal struct GameConfigView: View {
         }
         .onAppear {
             do {
-                selectedCategories = try Storage.fetchCategories(with: context)
+                allCategories = try Storage.fetchCategories(with: context)
+                selectedCategories = allCategories
             } catch {
                 errFetchingCategories.toggle()
             }

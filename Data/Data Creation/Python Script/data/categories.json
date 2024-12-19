@@ -29,6 +29,25 @@
     ]
   },
   {
+    "name": "film & tv",
+    "subcategories": [
+      {
+        "name": "superheroes"
+      },
+      {
+        "name": "tv shows"
+      }
+    ]
+  },
+  {
+    "name": "geographie",
+    "subcategories": [
+      {
+        "name": "countries"
+      }
+    ]
+  },
+  {
     "name": "internet",
     "subcategories": [
       {
@@ -41,5 +60,8 @@
   },
   {
     "name": "tech"
+  },
+  {
+    "name": "general knowledge"
   }
 ]

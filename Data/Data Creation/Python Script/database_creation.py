@@ -40,4 +40,3 @@ with sqlite3.connect(FILE_PATH) as connection:
     # Add data to the fact table
     SQLOrdersAdding.facts(cursor, JSONInput.read_facts_file())
     connection.commit()
-    connection.close()

@@ -41,14 +41,15 @@ class SQLOrdersAdding:
 
     @staticmethod
     def facts(cursor, fact_data):
-        cursor.execute("""
-            INSERT OR REPLACE INTO fact (id, true_fact, false_fact_1, false_fact_2, false_fact_3, master_category_id)
-            VALUES (?, ?, ?, ?, ?, ?)
-            """, (
-            str(uuid.uuid4()),
-            fact_data['true_fact'],
-            fact_data['false_fact_1'],
-            fact_data['false_fact_2'],
-            fact_data['false_fact_3'],
-            fact_data['master_category_id']
-        ))
+        for fact in fact_data:
+            cursor.execute("""
+                INSERT OR REPLACE INTO fact (id, true_fact, false_fact_1, false_fact_2, false_fact_3, master_category_id)
+                VALUES (?, ?, ?, ?, ?, ?)
+                """, (
+                str(uuid.uuid4()),
+                fact['true_fact'],
+                fact['false_fact_1'],
+                fact['false_fact_2'],
+                fact['false_fact_3'],
+                fact['master_category_id'] if 'master_category_id' in fact_data else None
+            ))

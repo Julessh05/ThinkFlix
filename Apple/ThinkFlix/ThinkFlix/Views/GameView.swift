@@ -13,6 +13,8 @@ internal struct GameView: View {
     
     @EnvironmentObject private var gameConfig : GameConfig
     
+    @Environment(\.colorScheme) private var colorScheme
+    
     // Question objects
     @State private var questions : [Question] = []
     
@@ -32,14 +34,37 @@ internal struct GameView: View {
     
     var body: some View {
         VStack {
+            Text("Category: \(currentQuestion?.category?.name ?? "Category loading...")")
+                .font(.subheadline)
+                .padding(.top, 20)
+            Spacer()
             Text(currentQuestion?.question ?? "Question loading...")
-            Button {
-                
-            } label: {
+            Button("Skip question") {
                 
             }
+            Spacer()
+            HStack {
+                Button {
+                    
+                } label: {
+                    Label("Correct", systemImage: "checkmark")
+                        .foregroundStyle(.white)
+                        .frame(width: 120, height: 60)
+                        .background(in: .rect(cornerRadius: 20), fillStyle: .init(eoFill: true, antialiased: true))
+                        .backgroundStyle(colorScheme == .dark ? .gray : .blue)
+                }
+                Button {
+                    
+                } label: {
+                    Label("Wrong", systemImage: "xmark")
+                        .foregroundStyle(.white)
+                        .frame(width: 120, height: 60)
+                        .background(in: .rect(cornerRadius: 20), fillStyle: .init(eoFill: true, antialiased: true))
+                        .backgroundStyle(colorScheme == .dark ? .gray : .blue)
+                }
+            }
         }
-        .navigationTitle(currentQuestion?.category?.name ?? "Category loading...")
+        .navigationTitle(currentPlayer?.name ?? "Player")
         .toolbar {
             ToolbarItem(placement: .primaryAction) {
                 Menu {
@@ -76,10 +101,11 @@ internal struct GameView: View {
         questions.removeAll(where: { $0.id == question.id })
     }
     
-    /// Function to use when entering next turn
+    /// Function to use when entering next turn.
+    /// This is only used when the game speed is set to roundUp
     private func nextTurn() -> Void {
         updateCurrentQuestion()
-        guard let p = currentPlayer else {
+        guard currentPlayer != nil else {
             currentPlayer = gameConfig.player.first!
             currentPlayerIndex = 0
             return
@@ -96,7 +122,9 @@ internal struct GameView: View {
 #Preview {
     let container = PersistenceController.preview
     let gameConfig = GameConfig(categories: [], player: [])
-    GameView()
-        .environment(\.managedObjectContext, container.container.viewContext)
-        .environmentObject(gameConfig)
+    NavigationStack {
+        GameView()
+            .environment(\.managedObjectContext, container.container.viewContext)
+            .environmentObject(gameConfig)
+    }
 }

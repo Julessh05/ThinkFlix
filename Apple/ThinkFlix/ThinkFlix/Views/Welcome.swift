@@ -42,5 +42,7 @@ struct Welcome: View {
 }
 
 #Preview {
-    Welcome()
+    NavigationStack {
+        Welcome()
+    }
 }
