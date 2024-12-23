@@ -1,1 +1,2143 @@
-[]
+[
+    {
+        "question": "Who won the FIFA Women's World Cup in 2019?",
+        "answer": "United States",
+        "categoryID": "sport"
+    },
+    {
+        "question": "What is the term for a score of two under par in golf?",
+        "answer": "Eagle",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Which country hosted the 2012 Summer Olympics?",
+        "answer": "United Kingdom",
+        "categoryID": "sport"
+    },
+    {
+        "question": "What is the top tier of English football called?",
+        "answer": "Premier League",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Which basketball player was known as 'Air Jordan'?",
+        "answer": "Michael Jordan",
+        "categoryID": "sport"
+    },
+    {
+        "question": "In which city is the Australian Open tennis tournament held?",
+        "answer": "Melbourne",
+        "categoryID": "sport"
+    },
+    {
+        "question": "What is the name of the annual cycling race held in France?",
+        "answer": "Tour de France",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Who is the only boxer to retire undefeated with a 50-0 record?",
+        "answer": "Floyd Mayweather Jr.",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Which baseball team has won the most World Series titles?",
+        "answer": "New York Yankees",
+        "categoryID": "sport"
+    },
+    {
+        "question": "What is the regulation length of a soccer field?",
+        "answer": "100-130 yards",
+        "categoryID": "sport"
+    },
+    {
+        "question": "What is the term for a serve that the opponent cannot touch in tennis?",
+        "answer": "Ace",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Which city hosted the first Winter Olympics?",
+        "answer": "Chamonix, France",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Who is the most decorated Olympian of all time?",
+        "answer": "Michael Phelps",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Which football player is known as 'CR7'?",
+        "answer": "Cristiano Ronaldo",
+        "categoryID": "sport"
+    },
+    {
+        "question": "How many players are on a basketball team on the court?",
+        "answer": "Five",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Who won the first ever Formula 1 World Championship?",
+        "answer": "Giuseppe Farina",
+        "categoryID": "sport"
+    },
+    {
+        "question": "What is the maximum weight of a bowling ball?",
+        "answer": "16 pounds",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Which country invented table tennis?",
+        "answer": "England",
+        "categoryID": "sport"
+    },
+    {
+        "question": "What is the nickname of the New Zealand rugby team?",
+        "answer": "All Blacks",
+        "categoryID": "sport"
+    },
+    {
+        "question": "In which sport would you perform a slam dunk?",
+        "answer": "Basketball",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Who won the Wimbledon Women's Singles title in 2021?",
+        "answer": "Ashleigh Barty",
+        "categoryID": "sport"
+    },
+    {
+        "question": "What is the name of the stadium where the New York Yankees play?",
+        "answer": "Yankee Stadium",
+        "categoryID": "sport"
+    },
+    {
+        "question": "What is the highest governing body of soccer?",
+        "answer": "FIFA",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Which cricketer is known as the 'God of Cricket'?",
+        "answer": "Sachin Tendulkar",
+        "categoryID": "sport"
+    },
+    {
+        "question": "What is the term for hitting a ball out of the park in baseball?",
+        "answer": "Home run",
+        "categoryID": "sport"
+    },
+    {
+        "question": "What is the width of a standard football goal in meters?",
+        "answer": "7.32 meters",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Which athlete is known as 'The Flying Finn'?",
+        "answer": "Paavo Nurmi",
+        "categoryID": "sport"
+    },
+    {
+        "question": "What is the name of the famous horse race held annually in Kentucky?",
+        "answer": "Kentucky Derby",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Who holds the record for the most Grand Slam titles in women's tennis?",
+        "answer": "Serena Williams",
+        "categoryID": "sport"
+    },
+    {
+        "question": "What is the main event of WWE called?",
+        "answer": "WrestleMania",
+        "categoryID": "sport"
+    },
+    {
+        "question": "In which sport can you score a 'touchdown'?",
+        "answer": "American Football",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Who won the 2021 Formula 1 World Championship?",
+        "answer": "Max Verstappen",
+        "categoryID": "sport"
+    },
+    {
+        "question": "What is the name of the cricket ground known as 'The Home of Cricket'?",
+        "answer": "Lord's",
+        "categoryID": "sport"
+    },
+    {
+        "question": "What is the height of a volleyball net for men?",
+        "answer": "2.43 meters",
+        "categoryID": "sport"
+    },
+    {
+        "question": "What is the name of the annual college basketball tournament in the US?",
+        "answer": "March Madness",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Who was the first woman to win an Olympic gold medal?",
+        "answer": "Charlotte Cooper",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Which NFL quarterback is known as 'The GOAT'?",
+        "answer": "Tom Brady",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Which country is known for originating judo?",
+        "answer": "Japan",
+        "categoryID": "sport"
+    },
+    {
+        "question": "What is the name of the trophy awarded to the NBA champions?",
+        "answer": "Larry O'Brien Trophy",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Which country won the Rugby World Cup in 2019?",
+        "answer": "South Africa",
+        "categoryID": "sport"
+    },
+    {
+        "question": "In which year did England's national football team win the FIFA World Cup?",
+        "answer": "1966",
+        "categoryID": "sport"
+    },
+    {
+        "question": "What is the name of the oldest cricket club in the world, founded in 1787 in England?",
+        "answer": "Marylebone Cricket Club (MCC)",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Which English city is famously home to the All England Lawn Tennis and Croquet Club?",
+        "answer": "Wimbledon, London",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Which American baseball team is often associated with the 'Green Monster' outfield wall?",
+        "answer": "Boston Red Sox",
+        "categoryID": "sport"
+    },
+    {
+        "question": "In which English city would you find the stadium known as 'Old Trafford'?",
+        "answer": "Manchester",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Which iconic English football club is nicknamed 'The Gunners'?",
+        "answer": "Arsenal",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Who is the Scottish tennis player who won the Wimbledon Men's Singles title in 2013 and 2016?",
+        "answer": "Andy Murray",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Which U.S. state is the home of the 'Kentucky Derby' horse race?",
+        "answer": "Kentucky",
+        "categoryID": "sport"
+    },
+    {
+        "question": "In which country was golf first played according to historical records?",
+        "answer": "Scotland",
+        "categoryID": "sport"
+    },
+    {
+        "question": "What is the name of the stadium often referred to as 'The Home of English Football'?",
+        "answer": "Wembley Stadium",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Which English football club is famously known as 'The Blues' and is based in West London?",
+        "answer": "Chelsea F.C.",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Which American city is home to the NFL team known as the 'Green Bay Packers'?",
+        "answer": "Green Bay, Wisconsin",
+        "categoryID": "sport"
+    },
+    {
+        "question": "What is the name of the rugby competition played annually between England, Ireland, Scotland, Wales, France, and Italy?",
+        "answer": "The Six Nations Championship",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Which English snooker player, known as the 'Nugget,' dominated the sport in the 1980s?",
+        "answer": "Steve Davis",
+        "categoryID": "sport"
+    },
+    {
+        "question": "In which American city would you find the Staples Center (now known as Crypto.com Arena), home to the LA Lakers?",
+        "answer": "Los Angeles",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Which English athlete won double Olympic gold in the 800m and 1500m at the 2004 Athens Olympics?",
+        "answer": "Kelly Holmes",
+        "categoryID": "sport"
+    },
+    {
+        "question": "In which English city are the headquarters of the Premier League located?",
+        "answer": "London",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Which English football player was famously nicknamed 'Gazza'?",
+        "answer": "Paul Gascoigne",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Who is the English soccer player known for his bending free-kicks and played for Manchester United, Real Madrid, and LA Galaxy?",
+        "answer": "David Beckham",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Which American boxer, known as 'The Greatest,' was born as Cassius Clay?",
+        "answer": "Muhammad Ali",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Which English Premier League club is known by the nickname 'The Hammers'?",
+        "answer": "West Ham United",
+        "categoryID": "sport"
+    },
+    {
+        "question": "In American football, what is the name of the championship game played annually to determine the NFL champion?",
+        "answer": "The Super Bowl",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Which Australian city hosted the 2000 Summer Olympics?",
+        "answer": "Sydney",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Who is the English boxer who defeated Wladimir Klitschko in 2015 to become the unified heavyweight world champion?",
+        "answer": "Tyson Fury",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Which English football stadium is nicknamed 'The Theatre of Dreams'?",
+        "answer": "Old Trafford",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Which American swimmer won a total of 23 Olympic gold medals?",
+        "answer": "Michael Phelps",
+        "categoryID": "sport"
+    },
+    {
+        "question": "What is the traditional boat race held annually on the River Thames between Oxford and Cambridge Universities?",
+        "answer": "The Boat Race",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Which English football club is nicknamed 'The Reds' and plays at Anfield?",
+        "answer": "Liverpool F.C.",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Which Canadian city’s hockey team is known as the Maple Leafs?",
+        "answer": "Toronto",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Who was the first English footballer to be knighted for services to the sport?",
+        "answer": "Sir Stanley Matthews",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Which sport, popular in English-speaking countries, involves hitting a shuttlecock over a net?",
+        "answer": "Badminton",
+        "categoryID": "sport"
+    },
+    {
+        "question": "In which English city is the National Football Museum located?",
+        "answer": "Manchester",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Which English football club is known as 'Spurs'?",
+        "answer": "Tottenham Hotspur",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Which Australian cricket ground is known as 'The G'?",
+        "answer": "Melbourne Cricket Ground",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Who was the English manager who led England to their only World Cup victory in 1966?",
+        "answer": "Sir Alf Ramsey",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Which English county hosts the annual Henley Royal Regatta?",
+        "answer": "Oxfordshire",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Which English cyclist won the Tour de France in 2012?",
+        "answer": "Bradley Wiggins",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Who is the English former footballer who is the all-time record goalscorer for England with 53 goals?",
+        "answer": "Wayne Rooney",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Which American tennis player has won the most Grand Slam singles titles in the Open Era?",
+        "answer": "Serena Williams",
+        "categoryID": "sport"
+    },
+    {
+        "question": "In which English city would you find the stadium known as St James' Park?",
+        "answer": "Newcastle upon Tyne",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Who is the English track and field athlete who broke the world record for the 110m hurdles in 1993?",
+        "answer": "Colin Jackson",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Which American city hosted the 1996 Summer Olympics?",
+        "answer": "Atlanta",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Who is the English long-distance runner who won the men's 5,000m and 10,000m gold medals at the 2012 and 2016 Olympics?",
+        "answer": "Mo Farah",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Which English football club is associated with the anthem 'You'll Never Walk Alone'?",
+        "answer": "Liverpool F.C.",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Who is the English snooker player nicknamed 'The Rocket'?",
+        "answer": "Ronnie O'Sullivan",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Which English town is considered the 'Spiritual Home' of rugby league?",
+        "answer": "Huddersfield",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Which American city is known for the NBA team the Chicago Bulls?",
+        "answer": "Chicago",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Which English footballer earned a record 125 caps as goalkeeper for the national team?",
+        "answer": "Peter Shilton",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Which English city is known for the Aintree Racecourse, home of the Grand National?",
+        "answer": "Liverpool",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Which American city is home to the Yankees and the Knicks?",
+        "answer": "New York City",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Who was the English football manager known for the 'Busby Babes' at Manchester United?",
+        "answer": "Sir Matt Busby",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Which English athlete set a marathon world record in 2003?",
+        "answer": "Paula Radcliffe",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Who is the English darts player known as 'The Power'?",
+        "answer": "Phil Taylor",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Which New Zealand city hosts the Crusaders rugby union team?",
+        "answer": "Christchurch",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Which English golfer famously won The Open Championship in 1969 and 1970?",
+        "answer": "Tony Jacklin",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Which Australian batsman is widely considered one of the greatest cricketers of all time?",
+        "answer": "Sir Donald Bradman",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Which American city hosted the 'Miracle on Ice' during the 1980 Winter Olympics?",
+        "answer": "Lake Placid",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Which English football club's home stadium is known as Elland Road?",
+        "answer": "Leeds United",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Who was the Jamaican sprinter dubbed 'Lightning Bolt'?",
+        "answer": "Usain Bolt",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Which English Premier League team is based at Goodison Park?",
+        "answer": "Everton F.C.",
+        "categoryID": "sport"
+    },
+    {
+        "question": "Which band, formed in Liverpool, rose to massive fame during the 1960s and is often regarded as the most influential rock band?",
+        "answer": "The Beatles",
+        "categoryID": "decades-60s"
+    },
+    {
+        "question": "In what year did Martin Luther King Jr. deliver his famous 'I Have a Dream' speech?",
+        "answer": "1963",
+        "categoryID": "decades-60s"
+    },
+    {
+        "question": "Which U.S. President was assassinated in Dallas, Texas, in 1963?",
+        "answer": "John F. Kennedy",
+        "categoryID": "decades-60s"
+    },
+    {
+        "question": "The first manned Moon landing by NASA's Apollo 11 mission occurred in which year of the 1960s?",
+        "answer": "1969",
+        "categoryID": "decades-60s"
+    },
+    {
+        "question": "What major music festival, considered a defining moment in the counterculture generation, took place in 1969?",
+        "answer": "Woodstock",
+        "categoryID": "decades-60s"
+    },
+    {
+        "question": "Which African country gained its independence from Britain in 1963, with Jomo Kenyatta as its first leader?",
+        "answer": "Kenya",
+        "categoryID": "decades-60s"
+    },
+    {
+        "question": "The Cuban Missile Crisis, a major Cold War confrontation, occurred in which year of the 1960s?",
+        "answer": "1962",
+        "categoryID": "decades-60s"
+    },
+    {
+        "question": "Which iconic British spy film series, starring Sean Connery as the title character, began in the early 1960s?",
+        "answer": "James Bond",
+        "categoryID": "decades-60s"
+    },
+    {
+        "question": "What groundbreaking American television show, premiering in 1966, featured William Shatner as Captain Kirk?",
+        "answer": "Star Trek",
+        "categoryID": "decades-60s"
+    },
+    {
+        "question": "The U.S. Civil Rights Act, a landmark piece of legislation, was signed into law in which year of the 1960s?",
+        "answer": "1964",
+        "categoryID": "decades-60s"
+    },
+    {
+        "question": "Which British fashion designer is widely credited with popularizing the mini skirt in the 1960s?",
+        "answer": "Mary Quant",
+        "categoryID": "decades-60s"
+    },
+    {
+        "question": "In 1967, which famous rock album by The Beatles featured the songs 'Lucy in the Sky with Diamonds' and 'A Day in the Life'?",
+        "answer": "Sgt. Pepper's Lonely Hearts Club Band",
+        "categoryID": "decades-60s"
+    },
+    {
+        "question": "What major cultural and musical event, considered one of the first major rock festivals, took place in California in 1967?",
+        "answer": "Monterey Pop Festival",
+        "categoryID": "decades-60s"
+    },
+    {
+        "question": "Which American civil rights leader was assassinated at the Lorraine Motel in Memphis in 1968?",
+        "answer": "Martin Luther King Jr.",
+        "categoryID": "decades-60s"
+    },
+    {
+        "question": "The Six-Day War, a brief but pivotal conflict, took place in 1967 involving which country as a key combatant?",
+        "answer": "Israel",
+        "categoryID": "decades-60s"
+    },
+    {
+        "question": "What influential British rock band, formed in 1962, included Mick Jagger and Keith Richards?",
+        "answer": "The Rolling Stones",
+        "categoryID": "decades-60s"
+    },
+    {
+        "question": "Which space mission made Yuri Gagarin the first human to journey into outer space in 1961?",
+        "answer": "Vostok 1",
+        "categoryID": "decades-60s"
+    },
+    {
+        "question": "The construction of which infamous barrier began in 1961, dividing East and West Berlin?",
+        "answer": "The Berlin Wall",
+        "categoryID": "decades-60s"
+    },
+    {
+        "question": "What major U.S. Supreme Court decision in 1966 ensured that criminal suspects must be informed of their rights?",
+        "answer": "Miranda v. Arizona",
+        "categoryID": "decades-60s"
+    },
+    {
+        "question": "Which best-selling Motown group from Detroit had hits like 'Baby Love' and 'Stop! In the Name of Love' in the 1960s?",
+        "answer": "The Supremes",
+        "categoryID": "decades-60s"
+    },
+    {
+        "question": "Which Jamaican music style emerging in the late 1960s served as a precursor to reggae?",
+        "answer": "Rocksteady",
+        "categoryID": "decades-60s"
+    },
+    {
+        "question": "In 1969, which rock band released the hit single 'Pinball Wizard' featured on the rock opera 'Tommy'?",
+        "answer": "The Who",
+        "categoryID": "decades-60s"
+    },
+    {
+        "question": "Which groundbreaking science fiction film directed by Stanley Kubrick was released in 1968?",
+        "answer": "2001: A Space Odyssey",
+        "categoryID": "decades-60s"
+    },
+    {
+        "question": "The Cultural Revolution, launched in 1966, took place in which country?",
+        "answer": "China",
+        "categoryID": "decades-60s"
+    },
+    {
+        "question": "Which American boxer changed his name from Cassius Clay to Muhammad Ali in 1964?",
+        "answer": "Muhammad Ali",
+        "categoryID": "decades-60s"
+    },
+    {
+        "question": "Which feminist author published 'The Feminine Mystique' in 1963, sparking widespread debate?",
+        "answer": "Betty Friedan",
+        "categoryID": "decades-60s"
+    },
+    {
+        "question": "Which team won the 1966 FIFA World Cup on home soil?",
+        "answer": "England",
+        "categoryID": "decades-60s"
+    },
+    {
+        "question": "Which American rock band from California released the influential album 'Pet Sounds' in 1966?",
+        "answer": "The Beach Boys",
+        "categoryID": "decades-60s"
+    },
+    {
+        "question": "Which U.S. President signed the Voting Rights Act of 1965 into law?",
+        "answer": "Lyndon B. Johnson",
+        "categoryID": "decades-60s"
+    },
+    {
+        "question": "Which African American athlete set a world record in the long jump at the 1968 Mexico City Olympics?",
+        "answer": "Bob Beamon",
+        "categoryID": "decades-60s"
+    },
+    {
+        "question": "In 1960, which African country led by Patrice Lumumba gained independence from Belgium?",
+        "answer": "The Democratic Republic of the Congo",
+        "categoryID": "decades-60s"
+    },
+    {
+        "question": "Which influential psychologist was associated with the principles of behaviorism during the 1960s?",
+        "answer": "B.F. Skinner",
+        "categoryID": "decades-60s"
+    },
+    {
+        "question": "The Cuban Revolution, which shaped much of the political climate in the 1960s, primarily took place in which country?",
+        "answer": "Cuba",
+        "categoryID": "decades-60s"
+    },
+    {
+        "question": "Which French President played a crucial role in the 1960s, including withdrawing France from NATO's military command?",
+        "answer": "Charles de Gaulle",
+        "categoryID": "decades-60s"
+    },
+    {
+        "question": "Which iconic American car model introduced in 1964 became a symbol of youth and freedom?",
+        "answer": "Ford Mustang",
+        "categoryID": "decades-60s"
+    },
+    {
+        "question": "The Soviet-led invasion of which country in 1968 aimed to halt the liberalizing reforms of the 'Prague Spring'?",
+        "answer": "Czechoslovakia",
+        "categoryID": "decades-60s"
+    },
+    {
+        "question": "What American counterculture movement emerged in the 1960s, promoting peace, love, and communal living?",
+        "answer": "The Hippie Movement",
+        "categoryID": "decades-60s"
+    },
+    {
+        "question": "In which year did Tommie Smith and John Carlos raise their fists in a Black Power salute at the Mexico City Olympics?",
+        "answer": "1968",
+        "categoryID": "decades-60s"
+    },
+    {
+        "question": "Which British Invasion band had hits like 'You Really Got Me' in the 1960s?",
+        "answer": "The Kinks",
+        "categoryID": "decades-60s"
+    },
+    {
+        "question": "Who became Prime Minister of the United Kingdom in 1964 and served until 1970?",
+        "answer": "Harold Wilson",
+        "categoryID": "decades-60s"
+    },
+    {
+        "question": "Which American activist, who authored 'The Feminine Mystique', co-founded the National Organization for Women in 1966?",
+        "answer": "Betty Friedan",
+        "categoryID": "decades-60s"
+    },
+    {
+        "question": "Which educational children’s TV show, featuring characters like Big Bird, first aired in 1969?",
+        "answer": "Sesame Street",
+        "categoryID": "decades-60s"
+    },
+    {
+        "question": "Which war saw increased U.S. involvement in Southeast Asia during the 1960s?",
+        "answer": "The Vietnam War",
+        "categoryID": "decades-60s"
+    },
+    {
+        "question": "Which beloved children's novel by Roald Dahl, featuring a magical chocolate factory, was published in 1964?",
+        "answer": "Charlie and the Chocolate Factory",
+        "categoryID": "decades-60s"
+    },
+    {
+        "question": "Which iconic African leader, later President of South Africa, was imprisoned in 1964?",
+        "answer": "Nelson Mandela",
+        "categoryID": "decades-60s"
+    },
+    {
+        "question": "Which U.S. President initiated the Apollo program aiming to land a man on the Moon by the end of the decade?",
+        "answer": "John F. Kennedy",
+        "categoryID": "decades-60s"
+    },
+    {
+        "question": "In 1967, which American city became the center of the 'Summer of Love'?",
+        "answer": "San Francisco",
+        "categoryID": "decades-60s"
+    },
+    {
+        "question": "Which birth control method, commonly known as 'the Pill,' became widely available in the early 1960s?",
+        "answer": "The oral contraceptive pill",
+        "categoryID": "decades-60s"
+    },
+    {
+        "question": "Which British fashion icon, known for her thin frame and androgynous look, was dubbed 'The Face of 1966'?",
+        "answer": "Twiggy",
+        "categoryID": "decades-60s"
+    },
+    {
+        "question": "Which English rock band formed in 1966 included Eric Clapton, Jack Bruce, and Ginger Baker?",
+        "answer": "Cream",
+        "categoryID": "decades-60s"
+    },
+    {
+        "question": "Which scandal led to U.S. President Richard Nixon’s resignation in 1974?",
+        "answer": "The Watergate scandal",
+        "categoryID": "decades-70s"
+    },
+    {
+        "question": "In what year did the Vietnam War officially end with the fall of Saigon?",
+        "answer": "1975",
+        "categoryID": "decades-70s"
+    },
+    {
+        "question": "Which American boxer, known as 'The Greatest,' reclaimed the heavyweight title during the 1970s?",
+        "answer": "Muhammad Ali",
+        "categoryID": "decades-70s"
+    },
+    {
+        "question": "Which disco group had a major hit with 'Stayin' Alive' from the 'Saturday Night Fever' soundtrack in 1977?",
+        "answer": "The Bee Gees",
+        "categoryID": "decades-70s"
+    },
+    {
+        "question": "Which U.S. President visited the People's Republic of China in 1972, marking a significant step in Sino-American relations?",
+        "answer": "Richard Nixon",
+        "categoryID": "decades-70s"
+    },
+    {
+        "question": "Which British rock band released the landmark album 'The Dark Side of the Moon' in 1973?",
+        "answer": "Pink Floyd",
+        "categoryID": "decades-70s"
+    },
+    {
+        "question": "What major environmental conference held in 1972 was the United Nations' first on global environmental issues?",
+        "answer": "The United Nations Conference on the Human Environment (Stockholm Conference)",
+        "categoryID": "decades-70s"
+    },
+    {
+        "question": "Which 1975 Steven Spielberg film about a great white shark terrorizing a beach community became a cultural phenomenon?",
+        "answer": "Jaws",
+        "categoryID": "decades-70s"
+    },
+    {
+        "question": "Which Olympic Games in 1972 were overshadowed by a terrorist attack on the Israeli team?",
+        "answer": "The Munich Summer Olympics",
+        "categoryID": "decades-70s"
+    },
+    {
+        "question": "In which year did the OPEC oil embargo begin, causing a worldwide energy crisis?",
+        "answer": "1973",
+        "categoryID": "decades-70s"
+    },
+    {
+        "question": "Which British punk rock band, formed in 1975, was pivotal in the early UK punk movement with 'Anarchy in the U.K.'?",
+        "answer": "The Sex Pistols",
+        "categoryID": "decades-70s"
+    },
+    {
+        "question": "Who became the first U.S. President to resign from office, doing so in 1974?",
+        "answer": "Richard Nixon",
+        "categoryID": "decades-70s"
+    },
+    {
+        "question": "Which 1977 film, created by George Lucas, launched one of the biggest science fiction franchises in history?",
+        "answer": "Star Wars",
+        "categoryID": "decades-70s"
+    },
+    {
+        "question": "Which Iranian leader returned from exile in 1979 to become the Supreme Leader of the Islamic Republic of Iran?",
+        "answer": "Ayatollah Ruhollah Khomeini",
+        "categoryID": "decades-70s"
+    },
+    {
+        "question": "Which 1974 boxing match between Muhammad Ali and George Foreman in Zaire was nicknamed the 'Rumble in the Jungle'?",
+        "answer": "The Rumble in the Jungle",
+        "categoryID": "decades-70s"
+    },
+    {
+        "question": "Which British rock star, who rose to fame in the early 1970s and adopted the Ziggy Stardust persona, was known for his innovative music and style?",
+        "answer": "David Bowie",
+        "categoryID": "decades-70s"
+    },
+    {
+        "question": "In which year was Microsoft founded by Bill Gates and Paul Allen?",
+        "answer": "1975",
+        "categoryID": "decades-70s"
+    },
+    {
+        "question": "Which feminist magazine, founded by Gloria Steinem in 1972, became a key voice of the women's movement?",
+        "answer": "Ms. Magazine",
+        "categoryID": "decades-70s"
+    },
+    {
+        "question": "Which genre of dance music, characterized by a steady four-on-the-floor beat, reached peak popularity in the mid-1970s?",
+        "answer": "Disco",
+        "categoryID": "decades-70s"
+    },
+    {
+        "question": "In what year did Elvis Presley pass away, shocking millions of fans worldwide?",
+        "answer": "1977",
+        "categoryID": "decades-70s"
+    },
+    {
+        "question": "Which Pope, elected in 1978, served only 33 days before his sudden death?",
+        "answer": "Pope John Paul I",
+        "categoryID": "decades-70s"
+    },
+    {
+        "question": "The Yom Kippur War took place in October of which year, pitting Israel against a coalition of Arab states?",
+        "answer": "1973",
+        "categoryID": "decades-70s"
+    },
+    {
+        "question": "Which environmental organization, focused on global conservation, was founded in 1971?",
+        "answer": "Greenpeace",
+        "categoryID": "decades-70s"
+    },
+    {
+        "question": "In 1979, which country was invaded by the Soviet Union, beginning a prolonged and costly conflict?",
+        "answer": "Afghanistan",
+        "categoryID": "decades-70s"
+    },
+    {
+        "question": "Which 1979 peace treaty was signed between Egypt and Israel, brokered by the United States?",
+        "answer": "The Egypt–Israel Peace Treaty",
+        "categoryID": "decades-70s"
+    },
+    {
+        "question": "Formed in 1973, which American rock band, featuring Gene Simmons and Paul Stanley, became known for their face paint and theatrical stage shows?",
+        "answer": "KISS",
+        "categoryID": "decades-70s"
+    },
+    {
+        "question": "Introduced by Sony in 1979, which portable cassette player allowed people to listen to music on the go?",
+        "answer": "The Walkman",
+        "categoryID": "decades-70s"
+    },
+    {
+        "question": "Which 1973 U.S. Supreme Court decision legalized abortion across the United States?",
+        "answer": "Roe v. Wade",
+        "categoryID": "decades-70s"
+    },
+    {
+        "question": "Which African American tennis player became the first Black man to win Wimbledon in 1975?",
+        "answer": "Arthur Ashe",
+        "categoryID": "decades-70s"
+    },
+    {
+        "question": "Which U.S. President granted Richard Nixon a full pardon in 1974?",
+        "answer": "Gerald Ford",
+        "categoryID": "decades-70s"
+    },
+    {
+        "question": "Which international feminist gathering, held in Mexico City in 1975, marked the start of the UN Decade for Women?",
+        "answer": "The World Conference on Women, 1975",
+        "categoryID": "decades-70s"
+    },
+    {
+        "question": "Which American swimmer won seven gold medals at the 1972 Munich Olympics?",
+        "answer": "Mark Spitz",
+        "categoryID": "decades-70s"
+    },
+    {
+        "question": "In 1976, whose remains were returned to Argentina over 20 years after her death, leading to renewed national interest?",
+        "answer": "Eva Perón",
+        "categoryID": "decades-70s"
+    },
+    {
+        "question": "Which technology company, founded by Steve Jobs and Steve Wozniak in 1976, would become a major player in personal computing?",
+        "answer": "Apple Computer",
+        "categoryID": "decades-70s"
+    },
+    {
+        "question": "Who became the United Kingdom's first female Prime Minister in 1979?",
+        "answer": "Margaret Thatcher",
+        "categoryID": "decades-70s"
+    },
+    {
+        "question": "The Three-Day Week and frequent strikes highlighted the economic struggles of which country in the 1970s?",
+        "answer": "The United Kingdom",
+        "categoryID": "decades-70s"
+    },
+    {
+        "question": "Which American actress and activist visited North Vietnam in 1972, sparking controversy at home?",
+        "answer": "Jane Fonda",
+        "categoryID": "decades-70s"
+    },
+    {
+        "question": "What annual environmental event, first celebrated in 1970, raised awareness about pollution and conservation?",
+        "answer": "Earth Day",
+        "categoryID": "decades-70s"
+    },
+    {
+        "question": "In 1978, who became the world's first successful 'test-tube baby' after being conceived through IVF?",
+        "answer": "Louise Brown",
+        "categoryID": "decades-70s"
+    },
+    {
+        "question": "Which 1977 television miniseries based on Alex Haley’s novel depicted the history of African Americans from slavery to emancipation?",
+        "answer": "Roots",
+        "categoryID": "decades-70s"
+    },
+    {
+        "question": "Which peace agreements, signed at the U.S. presidential retreat in 1978, laid the groundwork for the 1979 Egypt–Israel Peace Treaty?",
+        "answer": "The Camp David Accords",
+        "categoryID": "decades-70s"
+    },
+    {
+        "question": "In 1975, the death of which longtime Spanish dictator led to the country's transition to democracy?",
+        "answer": "General Francisco Franco",
+        "categoryID": "decades-70s"
+    },
+    {
+        "question": "First identified in 1976 near a river in Zaire, which deadly virus has caused several outbreaks since its discovery?",
+        "answer": "The Ebola virus",
+        "categoryID": "decades-70s"
+    },
+    {
+        "question": "Which U.S. Vice President resigned in 1973 amid a bribery scandal?",
+        "answer": "Spiro T. Agnew",
+        "categoryID": "decades-70s"
+    },
+    {
+        "question": "Debuting in 1974, which American sitcom depicted the life of an African American family living in a Chicago housing project?",
+        "answer": "Good Times",
+        "categoryID": "decades-70s"
+    },
+    {
+        "question": "Which British reggae band formed in the 1970s and released the influential album 'Handsworth Revolution' in 1978?",
+        "answer": "Steel Pulse",
+        "categoryID": "decades-70s"
+    },
+    {
+        "question": "Which 1976 film detailed the investigative journalism of Bob Woodward and Carl Bernstein during the Watergate scandal?",
+        "answer": "All the President's Men",
+        "categoryID": "decades-70s"
+    },
+    {
+        "question": "Which serial killer, known as the 'Son of Sam,' terrorized New York City from 1976 to 1977?",
+        "answer": "David Berkowitz",
+        "categoryID": "decades-70s"
+    },
+    {
+        "question": "Which 1977 event in New York City lasted over 24 hours and led to widespread looting and vandalism?",
+        "answer": "The New York City blackout of 1977",
+        "categoryID": "decades-70s"
+    },
+    {
+        "question": "Which U.S. President, elected in 1980, was known for his conservative policies and the revival of national pride?",
+        "answer": "Ronald Reagan",
+        "categoryID": "decades-80s"
+    },
+    {
+        "question": "In what year was the Berlin Wall opened, marking a pivotal point in the end of the Cold War?",
+        "answer": "1989",
+        "categoryID": "decades-80s"
+    },
+    {
+        "question": "Which disease, first identified in the early 1980s, led to a global health crisis and significant stigma?",
+        "answer": "HIV/AIDS",
+        "categoryID": "decades-80s"
+    },
+    {
+        "question": "Which music television network launched in 1981 with the words 'Ladies and gentlemen, rock and roll'?",
+        "answer": "MTV",
+        "categoryID": "decades-80s"
+    },
+    {
+        "question": "Which Soviet leader, coming to power in 1985, introduced the policies of Glasnost and Perestroika?",
+        "answer": "Mikhail Gorbachev",
+        "categoryID": "decades-80s"
+    },
+    {
+        "question": "Which American pop star released the best-selling album 'Thriller' in 1982?",
+        "answer": "Michael Jackson",
+        "categoryID": "decades-80s"
+    },
+    {
+        "question": "What catastrophic nuclear accident occurred in the Soviet Union in 1986, spreading radioactive contamination across Europe?",
+        "answer": "The Chernobyl disaster",
+        "categoryID": "decades-80s"
+    },
+    {
+        "question": "Which British Prime Minister, serving throughout the 1980s, was known as the 'Iron Lady'?",
+        "answer": "Margaret Thatcher",
+        "categoryID": "decades-80s"
+    },
+    {
+        "question": "Which famous 1985 charity concert, organized by Bob Geldof and Midge Ure, aimed to raise funds for famine relief in Ethiopia?",
+        "answer": "Live Aid",
+        "categoryID": "decades-80s"
+    },
+    {
+        "question": "What personal computer, introduced by Apple in 1984, featured an iconic Super Bowl TV commercial?",
+        "answer": "The Apple Macintosh",
+        "categoryID": "decades-80s"
+    },
+    {
+        "question": "In 1983, which U.S. President described the Soviet Union as an 'evil empire'?",
+        "answer": "Ronald Reagan",
+        "categoryID": "decades-80s"
+    },
+    {
+        "question": "Which Prince album and film, both released in 1984, boosted him to superstardom?",
+        "answer": "Purple Rain",
+        "categoryID": "decades-80s"
+    },
+    {
+        "question": "What iconic puzzle toy created by a Hungarian inventor became a worldwide craze in the 1980s?",
+        "answer": "Rubik's Cube",
+        "categoryID": "decades-80s"
+    },
+    {
+        "question": "Which high-profile Cold War meeting in 1986 between Reagan and Gorbachev took place in Reykjavik, Iceland?",
+        "answer": "The Reykjavik Summit",
+        "categoryID": "decades-80s"
+    },
+    {
+        "question": "Which American space shuttle broke apart shortly after launch in 1986, killing all seven crew members?",
+        "answer": "Space Shuttle Challenger",
+        "categoryID": "decades-80s"
+    },
+    {
+        "question": "Which Japanese video game company released the Nintendo Entertainment System (NES) internationally in the mid-1980s?",
+        "answer": "Nintendo",
+        "categoryID": "decades-80s"
+    },
+    {
+        "question": "In 1982, which British band's album 'Rio' and stylized music videos became closely associated with the MTV generation?",
+        "answer": "Duran Duran",
+        "categoryID": "decades-80s"
+    },
+    {
+        "question": "Which American sitcom, beginning in 1984, followed the life of Bill Cosby as Dr. Heathcliff Huxtable and his family?",
+        "answer": "The Cosby Show",
+        "categoryID": "decades-80s"
+    },
+    {
+        "question": "What international financial institution was established in 1989 to promote stability, including former communist states transitioning to market economies?",
+        "answer": "The European Bank for Reconstruction and Development (EBRD)",
+        "categoryID": "decades-80s"
+    },
+    {
+        "question": "Which metal band’s 1986 album 'Master of Puppets' is considered one of the greatest thrash metal albums of all time?",
+        "answer": "Metallica",
+        "categoryID": "decades-80s"
+    },
+    {
+        "question": "Which cultural phenomenon, first detected in 1985, involves thinning of the ozone layer over Antarctica?",
+        "answer": "The ozone hole",
+        "categoryID": "decades-80s"
+    },
+    {
+        "question": "Introduced in 1985, what soft drink's controversial reformulation caused a massive consumer backlash?",
+        "answer": "New Coke",
+        "categoryID": "decades-80s"
+    },
+    {
+        "question": "Which 1980 movie starring Robert De Niro as boxer Jake LaMotta is considered a cinematic classic?",
+        "answer": "Raging Bull",
+        "categoryID": "decades-80s"
+    },
+    {
+        "question": "In 1983, which Korean Air Lines flight was shot down by the Soviet Union, escalating Cold War tensions?",
+        "answer": "Korean Air Lines Flight 007",
+        "categoryID": "decades-80s"
+    },
+    {
+        "question": "Which Italian film director’s 1988 movie 'Cinema Paradiso' won an Academy Award for Best Foreign Language Film?",
+        "answer": "Giuseppe Tornatore",
+        "categoryID": "decades-80s"
+    },
+    {
+        "question": "Which 1981 royal wedding attracted global attention when Prince Charles married Lady Diana Spencer?",
+        "answer": "The wedding of Prince Charles and Lady Diana Spencer",
+        "categoryID": "decades-80s"
+    },
+    {
+        "question": "In 1984, Indira Gandhi was assassinated after ordering a military operation at which holy site?",
+        "answer": "The Golden Temple in Amritsar",
+        "categoryID": "decades-80s"
+    },
+    {
+        "question": "Which comic strip cat, created by Jim Davis, became immensely popular after its 1978 debut and continued strong into the 80s?",
+        "answer": "Garfield",
+        "categoryID": "decades-80s"
+    },
+    {
+        "question": "Who won the Nobel Peace Prize in 1984 for his nonviolent opposition to apartheid in South Africa?",
+        "answer": "Desmond Tutu",
+        "categoryID": "decades-80s"
+    },
+    {
+        "question": "Introduced in 1985, which puzzle-based video game originally created in the Soviet Union became an international hit?",
+        "answer": "Tetris",
+        "categoryID": "decades-80s"
+    },
+    {
+        "question": "In 1982, the Falklands War was fought between the United Kingdom and which South American country?",
+        "answer": "Argentina",
+        "categoryID": "decades-80s"
+    },
+    {
+        "question": "Who became General Secretary of the Chinese Communist Party in 1980 and is widely credited for the economic reforms that transformed China?",
+        "answer": "Deng Xiaoping",
+        "categoryID": "decades-80s"
+    },
+    {
+        "question": "Which 1980s American sitcom starring Michael J. Fox highlighted a conservative young man in a liberal family?",
+        "answer": "Family Ties",
+        "categoryID": "decades-80s"
+    },
+    {
+        "question": "Which 1983 American miniseries chronicled the saga of two German families separated by the Berlin Wall?",
+        "answer": "The miniseries 'Winds of War' or 'Amerika' wouldn't fit. Let's choose another: 'Berlin Tunnel 21' was a TV film, not miniseries. Let's try 'Holocaust' (1978) no. Better choose a different question.\n\nWe need a well-known miniseries about Cold War era Germany in the 80s...\n'Deutschland 83' is from 2015. 'The Berlin Affair' is a 1985 film. Let's pick a different approach: A major miniseries: 'Amerika' (1987) about Soviet occupation of US. Let's use 'Amerika' which aired in 1987 as a famous controversial miniseries about Cold War.\n\n\"Which controversial 1987 American TV miniseries depicted a dystopian future where the Soviet Union controls the United States?\"\n\nAnswer: \"Amerika\"\n",
+        "answer": "Amerika",
+        "categoryID": "decades-80s"
+    },
+    {
+        "question": "Which 1988 film starring Bruce Willis as John McClane is considered a defining action movie of the decade?",
+        "answer": "Die Hard",
+        "categoryID": "decades-80s"
+    },
+    {
+        "question": "Which American athlete, known for his fierce competitive spirit, won three gold medals in track and field at the 1988 Seoul Olympics?",
+        "answer": "Florence Griffith Joyner (Flo-Jo)",
+        "categoryID": "decades-80s"
+    },
+    {
+        "question": "Which agreement, signed in 1987 by the U.S. and the USSR, eliminated an entire class of nuclear missiles?",
+        "answer": "The Intermediate-Range Nuclear Forces (INF) Treaty",
+        "categoryID": "decades-80s"
+    },
+    {
+        "question": "Who became the first woman appointed to the U.S. Supreme Court in 1981?",
+        "answer": "Sandra Day O'Connor",
+        "categoryID": "decades-80s"
+    },
+    {
+        "question": "Which Japanese electronics company introduced the first CD player in 1982, revolutionizing music consumption?",
+        "answer": "Sony",
+        "categoryID": "decades-80s"
+    },
+    {
+        "question": "Which acclaimed American sitcom set in a Boston bar debuted in 1982 and ran throughout the decade?",
+        "answer": "Cheers",
+        "categoryID": "decades-80s"
+    },
+    {
+        "question": "In 1985, which British scientist became the first to publish a paper predicting the severe depletion of the ozone layer?",
+        "answer": "Joe Farman",
+        "categoryID": "decades-80s"
+    },
+    {
+        "question": "Which American pop icon shocked audiences with her controversial 'Like a Virgin' performance at the 1984 MTV Video Music Awards?",
+        "answer": "Madonna",
+        "categoryID": "decades-80s"
+    },
+    {
+        "question": "Which 1980s U.S. policy aimed to reduce federal government influence and encourage private enterprise, often called 'Reaganomics'?",
+        "answer": "Supply-side economics",
+        "categoryID": "decades-80s"
+    },
+    {
+        "question": "Which conflict between the Soviet Union and a South-Central Asian country spanned most of the 1980s?",
+        "answer": "The Soviet–Afghan War",
+        "categoryID": "decades-80s"
+    },
+    {
+        "question": "Which 1982 sci-fi film directed by Ridley Scott, starring Harrison Ford, influenced the cyberpunk genre?",
+        "answer": "Blade Runner",
+        "categoryID": "decades-80s"
+    },
+    {
+        "question": "Which American city hosted the 1984 Summer Olympics, known for strict cost controls and corporate sponsorships?",
+        "answer": "Los Angeles",
+        "categoryID": "decades-80s"
+    },
+    {
+        "question": "Who was the leader of the Solidarity movement in Poland during the 1980s, later becoming the country’s President?",
+        "answer": "Lech Wałęsa",
+        "categoryID": "decades-80s"
+    },
+    {
+        "question": "Which Irish rock band’s 1987 album 'The Joshua Tree' brought them global superstardom?",
+        "answer": "U2",
+        "categoryID": "decades-80s"
+    },
+    {
+        "question": "What 1981 event involved the shooting of U.S. President Ronald Reagan by John Hinckley Jr.?",
+        "answer": "The assassination attempt on Ronald Reagan",
+        "categoryID": "decades-80s"
+    },
+    {
+        "question": "Which rainforest crisis sparked global attention in the 1980s due to deforestation and environmental activism?",
+        "answer": "The destruction of the Amazon rainforest",
+        "categoryID": "decades-80s"
+    },
+    {
+        "question": "Which major political entity ceased to exist in 1991, marking the end of the Cold War era?",
+        "answer": "The Soviet Union",
+        "categoryID": "decades-90s"
+    },
+    {
+        "question": "Who became the first democratically elected President of South Africa in 1994, signaling the end of apartheid?",
+        "answer": "Nelson Mandela",
+        "categoryID": "decades-90s"
+    },
+    {
+        "question": "Which grunge band, fronted by Kurt Cobain, defined early 1990s rock music with their 1991 album 'Nevermind'?",
+        "answer": "Nirvana",
+        "categoryID": "decades-90s"
+    },
+    {
+        "question": "Which agreement, signed in 1993, created the European Union and paved the way for a single European currency?",
+        "answer": "The Maastricht Treaty",
+        "categoryID": "decades-90s"
+    },
+    {
+        "question": "Which global fast-growing network, becoming mainstream in the 1990s, revolutionized communication and information access?",
+        "answer": "The World Wide Web",
+        "categoryID": "decades-90s"
+    },
+    {
+        "question": "What significant event in 1990 initiated the process that led to the reunification of Germany?",
+        "answer": "The joining of East and West Germany on October 3, 1990",
+        "categoryID": "decades-90s"
+    },
+    {
+        "question": "Which 1991 conflict was triggered by Iraq’s invasion of Kuwait and involved a U.S.-led coalition?",
+        "answer": "The Gulf War",
+        "categoryID": "decades-90s"
+    },
+    {
+        "question": "Which 1994 genocide in Africa led to the massacre of hundreds of thousands of Tutsi by Hutu extremists?",
+        "answer": "The Rwandan Genocide",
+        "categoryID": "decades-90s"
+    },
+    {
+        "question": "Which 1992 event in the U.S. sparked widespread riots following the acquittal of four LAPD officers accused of beating Rodney King?",
+        "answer": "The 1992 Los Angeles riots",
+        "categoryID": "decades-90s"
+    },
+    {
+        "question": "Which British colony was handed back to China in 1997, ending more than 150 years of British rule?",
+        "answer": "Hong Kong",
+        "categoryID": "decades-90s"
+    },
+    {
+        "question": "Which cloned sheep, born in 1996, became the first mammal cloned from an adult somatic cell?",
+        "answer": "Dolly the sheep",
+        "categoryID": "decades-90s"
+    },
+    {
+        "question": "Which U.S. President, elected in 1992, presided over a period of economic growth and faced impeachment proceedings?",
+        "answer": "Bill Clinton",
+        "categoryID": "decades-90s"
+    },
+    {
+        "question": "Which blockbuster 1997 film directed by James Cameron became the first movie to gross over $1 billion worldwide?",
+        "answer": "Titanic",
+        "categoryID": "decades-90s"
+    },
+    {
+        "question": "What global treaty, signed in 1997, aimed at reducing greenhouse gas emissions to combat climate change?",
+        "answer": "The Kyoto Protocol",
+        "categoryID": "decades-90s"
+    },
+    {
+        "question": "Which technological standard introduced in the mid-1990s replaced VHS tapes for higher-quality home video viewing?",
+        "answer": "The DVD",
+        "categoryID": "decades-90s"
+    },
+    {
+        "question": "Which peace agreement, signed in 1995, helped end the Bosnian War in the former Yugoslavia?",
+        "answer": "The Dayton Accords",
+        "categoryID": "decades-90s"
+    },
+    {
+        "question": "Which internet company, founded by Larry Page and Sergey Brin in 1998, began as a Stanford research project?",
+        "answer": "Google",
+        "categoryID": "decades-90s"
+    },
+    {
+        "question": "Which popular boy bands, such as the Backstreet Boys and *NSYNC, rose to fame dominating pop music charts in the late 1990s?",
+        "answer": "Backstreet Boys and *NSYNC",
+        "categoryID": "decades-90s"
+    },
+    {
+        "question": "Which children’s book, first published in 1997, introduced readers to the wizarding world of Harry Potter?",
+        "answer": "Harry Potter and the Philosopher’s Stone",
+        "categoryID": "decades-90s"
+    },
+    {
+        "question": "Which 1994 agreement created a free-trade zone encompassing Canada, the United States, and Mexico?",
+        "answer": "NAFTA (North American Free Trade Agreement)",
+        "categoryID": "decades-90s"
+    },
+    {
+        "question": "Which British Prime Minister, elected in 1997, led the Labour Party's return to power after 18 years in opposition?",
+        "answer": "Tony Blair",
+        "categoryID": "decades-90s"
+    },
+    {
+        "question": "Which beloved Princess of Wales died in a car crash in Paris in 1997, prompting worldwide mourning?",
+        "answer": "Princess Diana",
+        "categoryID": "decades-90s"
+    },
+    {
+        "question": "Which U.S. trial, concluded in 1995, involved a former NFL player acquitted of the murder of his ex-wife and her friend?",
+        "answer": "The O.J. Simpson trial",
+        "categoryID": "decades-90s"
+    },
+    {
+        "question": "Which electronic currency unit, introduced in 1999, preceded the physical currency of the European Union?",
+        "answer": "The euro (as an accounting currency)",
+        "categoryID": "decades-90s"
+    },
+    {
+        "question": "Which 1995 domestic terrorist attack on a federal building in the U.S. killed 168 people and shocked the nation?",
+        "answer": "The Oklahoma City bombing",
+        "categoryID": "decades-90s"
+    },
+    {
+        "question": "Which Canadian singer, with her 1995 album 'Jagged Little Pill,' became one of the decade’s most influential alternative rock artists?",
+        "answer": "Alanis Morissette",
+        "categoryID": "decades-90s"
+    },
+    {
+        "question": "Which handheld digital pet, originating in Japan in 1996, became a global toy craze?",
+        "answer": "Tamagotchi",
+        "categoryID": "decades-90s"
+    },
+    {
+        "question": "Which handheld gaming device released by Nintendo in 1989 remained a global phenomenon throughout the 1990s?",
+        "answer": "The Game Boy",
+        "categoryID": "decades-90s"
+    },
+    {
+        "question": "Which Columbine High School tragedy occurred in 1999, leading to increased debate over gun control and school safety?",
+        "answer": "The Columbine High School shooting",
+        "categoryID": "decades-90s"
+    },
+    {
+        "question": "Which computer operating system launched by Microsoft in 1995 played a major role in personal computing’s expansion?",
+        "answer": "Windows 95",
+        "categoryID": "decades-90s"
+    },
+    {
+        "question": "Which Balkan region's conflict in the late 1990s led to NATO intervention in 1999?",
+        "answer": "Kosovo",
+        "categoryID": "decades-90s"
+    },
+    {
+        "question": "Which treaty signed in 1998 helped secure peace in Northern Ireland after decades of conflict?",
+        "answer": "The Good Friday Agreement",
+        "categoryID": "decades-90s"
+    },
+    {
+        "question": "In 1991, which South African President led the negotiations that brought an official end to apartheid policies?",
+        "answer": "F.W. de Klerk",
+        "categoryID": "decades-90s"
+    },
+    {
+        "question": "Which1998 sports event saw France win its first FIFA World Cup, defeating Brazil in the final?",
+        "answer": "The 1998 FIFA World Cup",
+        "categoryID": "decades-90s"
+    },
+    {
+        "question": "Which Puerto Rican singer achieved global fame in 1999 with the hit 'Livin’ la Vida Loca'?",
+        "answer": "Ricky Martin",
+        "categoryID": "decades-90s"
+    },
+    {
+        "question": "Which Japanese media franchise, starting as video games in 1996, became a massive cultural phenomenon with trading cards, TV shows, and movies?",
+        "answer": "Pokémon",
+        "categoryID": "decades-90s"
+    },
+    {
+        "question": "Which pop group formed in 1994 and promoted 'Girl Power,' becoming international icons of the 1990s?",
+        "answer": "The Spice Girls",
+        "categoryID": "decades-90s"
+    },
+    {
+        "question": "In 1993, which former Yugoslav republics split peacefully, becoming the Czech Republic and Slovakia?",
+        "answer": "Czechoslovakia",
+        "categoryID": "decades-90s"
+    },
+    {
+        "question": "Which online music file-sharing service, launched in 1999, challenged the traditional music industry model?",
+        "answer": "Napster",
+        "categoryID": "decades-90s"
+    },
+    {
+        "question": "Which 1994 event in baseball led to the cancellation of the World Series for the first time since 1904?",
+        "answer": "The 1994 Major League Baseball strike",
+        "categoryID": "decades-90s"
+    },
+    {
+        "question": "Which British Prime Minister succeeded Margaret Thatcher in 1990 and served through much of the 1990s?",
+        "answer": "John Major",
+        "categoryID": "decades-90s"
+    },
+    {
+        "question": "In 1996, which major video game console by Nintendo brought 3D gaming to a wide audience?",
+        "answer": "The Nintendo 64",
+        "categoryID": "decades-90s"
+    },
+    {
+        "question": "Which American basketball legend won his sixth NBA championship in 1998 before retiring (for a second time) from the Chicago Bulls?",
+        "answer": "Michael Jordan",
+        "categoryID": "decades-90s"
+    },
+    {
+        "question": "Which Middle Eastern peace process began in 1993 with the signing of the Oslo Accords between Israel and the PLO?",
+        "answer": "The Israeli–Palestinian peace process",
+        "categoryID": "decades-90s"
+    },
+    {
+        "question": "Which comedic American sitcom about nothing, starring Jerry Seinfeld, ended its nine-season run in 1998?",
+        "answer": "Seinfeld",
+        "categoryID": "decades-90s"
+    },
+    {
+        "question": "Which global fear arose as the year 2000 approached, concerning potential computer system failures?",
+        "answer": "The Y2K bug (Millennium bug)",
+        "categoryID": "decades-90s"
+    },
+    {
+        "question": "Which tech bubble, characterized by massive investment in internet-based companies, inflated during the late 1990s?",
+        "answer": "The dot-com bubble",
+        "categoryID": "decades-90s"
+    },
+    {
+        "question": "Which 1993 terrorist attack at New York’s World Trade Center foreshadowed the events of 2001?",
+        "answer": "The 1993 World Trade Center bombing",
+        "categoryID": "decades-90s"
+    },
+    {
+        "question": "Which company faced a major antitrust trial in the late 1990s, accused of monopolistic practices in the software industry?",
+        "answer": "Microsoft",
+        "categoryID": "decades-90s"
+    },
+    {
+        "question": "Which terrorist attacks in the United States on September 11, 2001, significantly impacted global politics and security?",
+        "answer": "The 9/11 attacks",
+        "categoryID": "decades-00s"
+    },
+    {
+        "question": "Which currency became the official physical currency in much of Europe on January 1, 2002?",
+        "answer": "The Euro",
+        "categoryID": "decades-00s"
+    },
+    {
+        "question": "Which online encyclopedia, launched in 2001, allowed users worldwide to collaboratively create and edit articles?",
+        "answer": "Wikipedia",
+        "categoryID": "decades-00s"
+    },
+    {
+        "question": "Which conflict began in 2001 following the 9/11 attacks, with the U.S. and allies targeting Taliban forces?",
+        "answer": "The War in Afghanistan",
+        "categoryID": "decades-00s"
+    },
+    {
+        "question": "Which powerful hurricane struck the U.S. Gulf Coast in 2005, causing catastrophic damage to New Orleans?",
+        "answer": "Hurricane Katrina",
+        "categoryID": "decades-00s"
+    },
+    {
+        "question": "Which major social networking platform was launched by Mark Zuckerberg in 2004?",
+        "answer": "Facebook",
+        "categoryID": "decades-00s"
+    },
+    {
+        "question": "Which 2003 U.S.-led invasion led to the toppling of Saddam Hussein’s regime?",
+        "answer": "The invasion of Iraq",
+        "categoryID": "decades-00s"
+    },
+    {
+        "question": "Which 2008 event saw the election of the first African American President of the United States?",
+        "answer": "The election of Barack Obama",
+        "categoryID": "decades-00s"
+    },
+    {
+        "question": "Which natural disaster on December 26, 2004, triggered a massive tsunami affecting countries across the Indian Ocean?",
+        "answer": "The 2004 Indian Ocean tsunami",
+        "categoryID": "decades-00s"
+    },
+    {
+        "question": "Which technology giant introduced the iPod in 2001, revolutionizing the way people listen to music?",
+        "answer": "Apple",
+        "categoryID": "decades-00s"
+    },
+    {
+        "question": "What global health crisis emerged in 2003, known as Severe Acute Respiratory Syndrome (SARS)?",
+        "answer": "The SARS outbreak",
+        "categoryID": "decades-00s"
+    },
+    {
+        "question": "Which large-scale sporting event took place in Beijing in 2008, showcasing China’s growing global influence?",
+        "answer": "The 2008 Summer Olympics",
+        "categoryID": "decades-00s"
+    },
+    {
+        "question": "Which video-sharing platform, launched in 2005, allowed users to upload and share videos easily worldwide?",
+        "answer": "YouTube",
+        "categoryID": "decades-00s"
+    },
+    {
+        "question": "Which international agreement on climate change came into force in 2005, aiming to reduce greenhouse gas emissions?",
+        "answer": "The Kyoto Protocol",
+        "categoryID": "decades-00s"
+    },
+    {
+        "question": "Which planet was reclassified as a dwarf planet in 2006, reducing the number of recognized planets in our solar system?",
+        "answer": "Pluto",
+        "categoryID": "decades-00s"
+    },
+    {
+        "question": "Which U.S. financial crisis, culminating in 2008, led to a severe global recession?",
+        "answer": "The subprime mortgage crisis",
+        "categoryID": "decades-00s"
+    },
+    {
+        "question": "Which 2001 scandal involving an American energy company led to one of the biggest corporate collapses in U.S. history?",
+        "answer": "The Enron scandal",
+        "categoryID": "decades-00s"
+    },
+    {
+        "question": "Which space shuttles resumed flights in 2005, following the Columbia disaster in 2003?",
+        "answer": "The NASA Space Shuttle missions",
+        "categoryID": "decades-00s"
+    },
+    {
+        "question": "Which online service, founded in 2003, allowed users to buy and download digital songs, revolutionizing the music industry?",
+        "answer": "The iTunes Store",
+        "categoryID": "decades-00s"
+    },
+    {
+        "question": "Completed in 2003, which major scientific project mapped all of the genes of the human species?",
+        "answer": "The Human Genome Project",
+        "categoryID": "decades-00s"
+    },
+    {
+        "question": "Which reality singing competition, debuting in the U.S. in 2002, launched the careers of many pop stars?",
+        "answer": "American Idol",
+        "categoryID": "decades-00s"
+    },
+    {
+        "question": "Which European Union expansion in 2004 saw the largest single expansion of the EU to include ten new member states?",
+        "answer": "The 2004 EU enlargement",
+        "categoryID": "decades-00s"
+    },
+    {
+        "question": "Which photo-sharing site, launched in 2004 and acquired by Yahoo! in 2005, popularized image-based social communities?",
+        "answer": "Flickr",
+        "categoryID": "decades-00s"
+    },
+    {
+        "question": "Which major terrorist attacks took place in Madrid in 2004, targeting commuter trains?",
+        "answer": "The 2004 Madrid train bombings",
+        "categoryID": "decades-00s"
+    },
+    {
+        "question": "Which microblogging service, founded in 2006, limited posts to short text messages known as 'tweets'?",
+        "answer": "Twitter",
+        "categoryID": "decades-00s"
+    },
+    {
+        "question": "Which 2005 event in London involved coordinated bombings on the city’s public transport system?",
+        "answer": "The 7/7 London bombings",
+        "categoryID": "decades-00s"
+    },
+    {
+        "question": "In 2001, which U.S. President signed the USA PATRIOT Act into law, expanding government surveillance powers?",
+        "answer": "George W. Bush",
+        "categoryID": "decades-00s"
+    },
+    {
+        "question": "Which space agency's Mars Exploration Rovers, Spirit and Opportunity, landed on Mars in 2004?",
+        "answer": "NASA",
+        "categoryID": "decades-00s"
+    },
+    {
+        "question": "Which 2002 blockbuster 'The Lord of the Rings' film sequel became a cultural phenomenon, winning multiple Oscars?",
+        "answer": "'The Lord of the Rings: The Two Towers'",
+        "categoryID": "decades-00s"
+    },
+    {
+        "question": "Which gaming console, released by Microsoft in 2005, set new standards for online gaming communities?",
+        "answer": "The Xbox 360",
+        "categoryID": "decades-00s"
+    },
+    {
+        "question": "Which Apple device, introduced in 2007, revolutionized the smartphone industry?",
+        "answer": "The iPhone",
+        "categoryID": "decades-00s"
+    },
+    {
+        "question": "Which religious leader, serving for 26 years, died in 2005, leading to the election of Pope Benedict XVI?",
+        "answer": "Pope John Paul II",
+        "categoryID": "decades-00s"
+    },
+    {
+        "question": "Which American swimmer’s record-breaking performance at the 2008 Beijing Olympics earned him eight gold medals?",
+        "answer": "Michael Phelps",
+        "categoryID": "decades-00s"
+    },
+    {
+        "question": "Which final book in the Harry Potter series was published in 2007, concluding the story of the famous boy wizard?",
+        "answer": "'Harry Potter and the Deathly Hallows'",
+        "categoryID": "decades-00s"
+    },
+    {
+        "question": "Which environmental documentary film by Al Gore in 2006 raised public awareness about climate change?",
+        "answer": "'An Inconvenient Truth'",
+        "categoryID": "decades-00s"
+    },
+    {
+        "question": "Which social media platform, originally called 'thefacebook,' opened registration to the general public in 2006?",
+        "answer": "Facebook",
+        "categoryID": "decades-00s"
+    },
+    {
+        "question": "Which world’s largest particle accelerator, the Large Hadron Collider, began operations near Geneva in 2008?",
+        "answer": "The Large Hadron Collider (LHC)",
+        "categoryID": "decades-00s"
+    },
+    {
+        "question": "Which environmental disaster in 2006 involved a massive oil spill on Alaska’s North Slope?",
+        "answer": "The Prudhoe Bay oil spill",
+        "categoryID": "decades-00s"
+    },
+    {
+        "question": "Which social networking site dominated the mid-2000s before being overtaken by Facebook?",
+        "answer": "MySpace",
+        "categoryID": "decades-00s"
+    },
+    {
+        "question": "Which financial institution’s collapse in 2008 was a catalyst for the global financial crisis?",
+        "answer": "Lehman Brothers",
+        "categoryID": "decades-00s"
+    },
+    {
+        "question": "In 2009, which pop star, known as the 'King of Pop,' died unexpectedly, prompting global mourning?",
+        "answer": "Michael Jackson",
+        "categoryID": "decades-00s"
+    },
+    {
+        "question": "Which technology and entertainment brand released the PlayStation 3 console in 2006?",
+        "answer": "Sony",
+        "categoryID": "decades-00s"
+    },
+    {
+        "question": "Which country, hosting the 2002 FIFA World Cup jointly with Japan, saw unprecedented global attendance and viewership?",
+        "answer": "South Korea (co-hosted with Japan)",
+        "categoryID": "decades-00s"
+    },
+    {
+        "question": "Which peace agreement signed in 2005 ended a long-running civil war in Sudan, though later tensions would continue?",
+        "answer": "The Comprehensive Peace Agreement (CPA)",
+        "categoryID": "decades-00s"
+    },
+    {
+        "question": "Which film studio, acquired by Disney in 2006, became a major force in animated movies?",
+        "answer": "Pixar",
+        "categoryID": "decades-00s"
+    },
+    {
+        "question": "Which U.S. legislation signed in 2002 aimed to improve educational standards through standardized testing?",
+        "answer": "No Child Left Behind Act",
+        "categoryID": "decades-00s"
+    },
+    {
+        "question": "Which device, introduced in 2007, provided Amazon customers a new way to read digital e-books?",
+        "answer": "The Amazon Kindle",
+        "categoryID": "decades-00s"
+    },
+    {
+        "question": "Which all-electric car company was founded in 2003 and later helped popularize electric vehicles?",
+        "answer": "Tesla, Inc.",
+        "categoryID": "decades-00s"
+    },
+    {
+        "question": "Which disease, caused by H1N1 influenza, was declared a global pandemic by the WHO in 2009?",
+        "answer": "Swine flu (H1N1)",
+        "categoryID": "decades-00s"
+    },
+    {
+        "question": "Which series of uprisings across the Arab world, beginning in late 2010 and early 2011, led to major political changes in countries like Tunisia and Egypt?",
+        "answer": "The Arab Spring",
+        "categoryID": "decades-10s"
+    },
+    {
+        "question": "Which terrorist leader, responsible for the 9/11 attacks, was killed by U.S. forces in Pakistan in 2011?",
+        "answer": "Osama bin Laden",
+        "categoryID": "decades-10s"
+    },
+    {
+        "question": "Which nuclear disaster occurred in Japan in 2011 following a massive earthquake and tsunami?",
+        "answer": "The Fukushima Daiichi nuclear disaster",
+        "categoryID": "decades-10s"
+    },
+    {
+        "question": "Which European country experienced a severe debt crisis in the early 2010s, leading to international bailouts and austerity measures?",
+        "answer": "Greece",
+        "categoryID": "decades-10s"
+    },
+    {
+        "question": "Which global movement began in 2011 on Wall Street, protesting economic inequality and corporate influence in government?",
+        "answer": "Occupy Wall Street",
+        "categoryID": "decades-10s"
+    },
+    {
+        "question": "Which London-based event in 2012 brought together athletes from around the world, celebrated as the ‘Greenest Games’ at the time?",
+        "answer": "The 2012 Summer Olympics",
+        "categoryID": "decades-10s"
+    },
+    {
+        "question": "Which whistleblower, a former NSA contractor, leaked classified documents in 2013 exposing global surveillance programs?",
+        "answer": "Edward Snowden",
+        "categoryID": "decades-10s"
+    },
+    {
+        "question": "Which militant group rose to prominence in the mid-2010s, capturing territory in Iraq and Syria and declaring a ‘caliphate’?",
+        "answer": "ISIS (Islamic State of Iraq and Syria)",
+        "categoryID": "decades-10s"
+    },
+    {
+        "question": "Which global health crisis struck West Africa between 2014 and 2016, resulting in thousands of deaths?",
+        "answer": "The Ebola outbreak",
+        "categoryID": "decades-10s"
+    },
+    {
+        "question": "Which Pakistani activist for girls’ education survived a 2012 assassination attempt and won the Nobel Peace Prize in 2014?",
+        "answer": "Malala Yousafzai",
+        "categoryID": "decades-10s"
+    },
+    {
+        "question": "Which region saw a refugee crisis escalate in 2015, with many people fleeing conflict in Syria and other Middle Eastern countries?",
+        "answer": "Europe",
+        "categoryID": "decades-10s"
+    },
+    {
+        "question": "Which key climate agreement, adopted in 2015 by nearly all nations, aimed to limit global warming below 2 degrees Celsius?",
+        "answer": "The Paris Agreement",
+        "categoryID": "decades-10s"
+    },
+    {
+        "question": "Which same-sex marriage ruling in 2015 by the U.S. Supreme Court guaranteed the right for same-sex couples to marry nationwide?",
+        "answer": "Obergefell v. Hodges",
+        "categoryID": "decades-10s"
+    },
+    {
+        "question": "Which United Kingdom referendum in 2016 led to the decision to leave the European Union, commonly known as Brexit?",
+        "answer": "The Brexit referendum",
+        "categoryID": "decades-10s"
+    },
+    {
+        "question": "Which augmented reality mobile game, released in 2016, became a worldwide phenomenon as players hunted virtual creatures in real-world locations?",
+        "answer": "Pokémon GO",
+        "categoryID": "decades-10s"
+    },
+    {
+        "question": "Which global women’s movement against sexual harassment and assault, identified by a hashtag, gained momentum in 2017?",
+        "answer": "#MeToo",
+        "categoryID": "decades-10s"
+    },
+    {
+        "question": "Which Swedish teenager began a global youth climate strike movement in 2018, inspiring millions to protest climate inaction?",
+        "answer": "Greta Thunberg",
+        "categoryID": "decades-10s"
+    },
+    {
+        "question": "Which American tech giant was at the center of a 2018 scandal involving Cambridge Analytica and the misuse of user data?",
+        "answer": "Facebook",
+        "categoryID": "decades-10s"
+    },
+    {
+        "question": "Which streaming services, led by Netflix, dramatically changed how audiences consumed television and films in the 2010s?",
+        "answer": "Online streaming platforms (Netflix, Amazon Prime, Hulu, etc.)",
+        "categoryID": "decades-10s"
+    },
+    {
+        "question": "Which U.S. presidential election in 2016 resulted in Donald Trump becoming the 45th President of the United States?",
+        "answer": "The 2016 U.S. presidential election",
+        "categoryID": "decades-10s"
+    },
+    {
+        "question": "Which British royal wedding in 2011 attracted global attention when Prince William married Catherine Middleton?",
+        "answer": "The wedding of Prince William and Kate Middleton",
+        "categoryID": "decades-10s"
+    },
+    {
+        "question": "In 2011, which newly independent nation seceded from Sudan after decades of conflict?",
+        "answer": "South Sudan",
+        "categoryID": "decades-10s"
+    },
+    {
+        "question": "Which cultural juggernaut television series, based on George R.R. Martin’s novels, concluded in 2019 after eight seasons?",
+        "answer": "Game of Thrones",
+        "categoryID": "decades-10s"
+    },
+    {
+        "question": "Which 2019 fire severely damaged a historic Gothic cathedral in Paris, prompting global support for its reconstruction?",
+        "answer": "The Notre-Dame Cathedral fire",
+        "categoryID": "decades-10s"
+    },
+    {
+        "question": "Which historic scientific announcement in 2015 confirmed the existence of gravitational waves, predicted by Einstein?",
+        "answer": "The first direct detection of gravitational waves by LIGO",
+        "categoryID": "decades-10s"
+    },
+    {
+        "question": "Which global movement founded in 2013 after the acquittal of George Zimmerman in Trayvon Martin’s death addresses racism and inequality?",
+        "answer": "Black Lives Matter",
+        "categoryID": "decades-10s"
+    },
+    {
+        "question": "Which Chinese tech company faced increasing scrutiny and trade restrictions in the late 2010s over security concerns?",
+        "answer": "Huawei",
+        "categoryID": "decades-10s"
+    },
+    {
+        "question": "Which wedding in 2018 saw Prince Harry marry an American actress, Meghan Markle, drawing worldwide attention?",
+        "answer": "The wedding of Prince Harry and Meghan Markle",
+        "categoryID": "decades-10s"
+    },
+    {
+        "question": "Which cryptocurrency, created in 2009, soared to record values in the late 2010s, sparking debate about digital currencies?",
+        "answer": "Bitcoin",
+        "categoryID": "decades-10s"
+    },
+    {
+        "question": "Which catastrophic event in 2014 involved the mysterious disappearance of Malaysia Airlines Flight MH370?",
+        "answer": "The disappearance of Malaysia Airlines Flight MH370",
+        "categoryID": "decades-10s"
+    },
+    {
+        "question": "Which former NSA contractor, exiled in Russia, continued to be a focal point of debate about privacy and surveillance throughout the 2010s?",
+        "answer": "Edward Snowden",
+        "categoryID": "decades-10s"
+    },
+    {
+        "question": "Which billionaire entrepreneur’s company SpaceX successfully launched and landed a Falcon Heavy rocket in 2018?",
+        "answer": "Elon Musk",
+        "categoryID": "decades-10s"
+    },
+    {
+        "question": "Which beloved theoretical physicist, known for his work on black holes and cosmology, passed away in 2018?",
+        "answer": "Stephen Hawking",
+        "categoryID": "decades-10s"
+    },
+    {
+        "question": "Which iconic New York skyscraper, One World Trade Center, officially opened in 2014, replacing the Twin Towers destroyed on 9/11?",
+        "answer": "One World Trade Center",
+        "categoryID": "decades-10s"
+    },
+    {
+        "question": "Which actor finally won an Academy Award in 2016 for his role in 'The Revenant' after multiple nominations?",
+        "answer": "Leonardo DiCaprio",
+        "categoryID": "decades-10s"
+    },
+    {
+        "question": "Which U.S. President faced impeachment inquiries and proceedings in 2019?",
+        "answer": "Donald Trump",
+        "categoryID": "decades-10s"
+    },
+    {
+        "question": "Which women’s national soccer team claimed victory at the 2019 FIFA Women’s World Cup, affirming their dominance in the sport?",
+        "answer": "The United States Women’s National Soccer Team",
+        "categoryID": "decades-10s"
+    },
+    {
+        "question": "Which social and political movement began in Tunisia, inspiring uprisings across the Middle East and North Africa around 2011?",
+        "answer": "The Arab Spring",
+        "categoryID": "decades-10s"
+    },
+    {
+        "question": "Which consumer electronics company became the first U.S. company to reach a $1 trillion market capitalization in 2018?",
+        "answer": "Apple",
+        "categoryID": "decades-10s"
+    },
+    {
+        "question": "Which global streaming giant, starting with DVD rentals, became a primary source of on-demand entertainment by the mid-2010s?",
+        "answer": "Netflix",
+        "categoryID": "decades-10s"
+    },
+    {
+        "question": "Which movement in 2017 saw millions of people worldwide march in support of women’s rights and social justice, the day after Donald Trump’s inauguration?",
+        "answer": "The Women’s March",
+        "categoryID": "decades-10s"
+    },
+    {
+        "question": "Which European regulation, enacted in 2018, strengthened data protection and privacy for citizens of the EU?",
+        "answer": "The General Data Protection Regulation (GDPR)",
+        "categoryID": "decades-10s"
+    },
+    {
+        "question": "Which fan-favorite Marvel Cinematic Universe film, released in 2019, became the highest-grossing movie of all time?",
+        "answer": "Avengers: Endgame",
+        "categoryID": "decades-10s"
+    },
+    {
+        "question": "Which social media platform, known for short-form videos and launched internationally in 2017, rapidly gained popularity in the late 2010s?",
+        "answer": "TikTok",
+        "categoryID": "decades-10s"
+    },
+    {
+        "question": "Which significant scientific achievement in 2019 provided the first direct visual evidence of a black hole?",
+        "answer": "The first image of a black hole (captured by the Event Horizon Telescope)",
+        "categoryID": "decades-10s"
+    },
+    {
+        "question": "Which comprehensive set of development goals aiming to end poverty and protect the planet were adopted by the UN in 2015?",
+        "answer": "The Sustainable Development Goals (SDGs)",
+        "categoryID": "decades-10s"
+    },
+    {
+        "question": "In 2014, which spacecraft achieved orbit around a comet, marking a first in space exploration?",
+        "answer": "The European Space Agency’s Rosetta spacecraft",
+        "categoryID": "decades-10s"
+    },
+    {
+        "question": "Which cultural moment in 2012, involving a South Korean pop song, became the first YouTube video to reach one billion views?",
+        "answer": "“Gangnam Style” by Psy",
+        "categoryID": "decades-10s"
+    },
+    {
+        "question": "Which major international sporting event, held in Rio de Janeiro in 2016, faced economic and political challenges in the host country?",
+        "answer": "The 2016 Summer Olympics",
+        "categoryID": "decades-10s"
+    },
+    {
+        "question": "Which intergovernmental treaty signed in 2015 aimed to address the Iranian nuclear program in exchange for lifted sanctions?",
+        "answer": "The Iran nuclear deal (Joint Comprehensive Plan of Action)",
+        "categoryID": "decades-10s"
+    },
+    {
+        "question": "Which global pandemic, declared in early 2020, dramatically altered daily life and spurred worldwide lockdowns?",
+        "answer": "The COVID-19 pandemic",
+        "categoryID": "decades-20s"
+    },
+    {
+        "question": "Which African American man’s murder by a police officer in 2020 ignited worldwide protests against racial injustice?",
+        "answer": "George Floyd",
+        "categoryID": "decades-20s"
+    },
+    {
+        "question": "Which country formally completed its departure from the European Union at the start of 2020?",
+        "answer": "The United Kingdom (Brexit)",
+        "categoryID": "decades-20s"
+    },
+    {
+        "question": "Which event on January 6, 2021, saw a mob forcibly enter the U.S. Capitol in an attempt to overturn a presidential election result?",
+        "answer": "The U.S. Capitol riot",
+        "categoryID": "decades-20s"
+    },
+    {
+        "question": "Which global sporting event, originally scheduled for 2020, was delayed until 2021 due to the pandemic?",
+        "answer": "The Tokyo 2020 Olympic Games",
+        "categoryID": "decades-20s"
+    },
+    {
+        "question": "Which former U.S. Vice President won the 2020 Presidential election, taking office in January 2021?",
+        "answer": "Joe Biden",
+        "categoryID": "decades-20s"
+    },
+    {
+        "question": "In August 2021, which country saw the Taliban return to power following the withdrawal of U.S. forces?",
+        "answer": "Afghanistan",
+        "categoryID": "decades-20s"
+    },
+    {
+        "question": "Which satellite observatory, launched in 2021, began transmitting unprecedented images of the universe in 2022?",
+        "answer": "The James Webb Space Telescope",
+        "categoryID": "decades-20s"
+    },
+    {
+        "question": "Which European monarch, having reigned for over 70 years, passed away in 2022?",
+        "answer": "Queen Elizabeth II",
+        "categoryID": "decades-20s"
+    },
+    {
+        "question": "Which new COVID-19 variant emerged in late 2021 and quickly spread worldwide, causing renewed travel restrictions?",
+        "answer": "The Omicron variant",
+        "categoryID": "decades-20s"
+    },
+    {
+        "question": "Which country launched a large-scale invasion of Ukraine in February 2022, igniting a major European conflict?",
+        "answer": "Russia",
+        "categoryID": "decades-20s"
+    },
+    {
+        "question": "In 2022, which East Asian nation mourned the assassination of its former Prime Minister, Shinzo Abe?",
+        "answer": "Japan",
+        "categoryID": "decades-20s"
+    },
+    {
+        "question": "Which landmark U.S. Supreme Court decision, originally from 1973, was overturned in 2022, altering abortion rights?",
+        "answer": "Roe v. Wade",
+        "categoryID": "decades-20s"
+    },
+    {
+        "question": "Which Middle Eastern country hosted the COP27 climate conference in 2022, focusing on global efforts to curb emissions?",
+        "answer": "Egypt",
+        "categoryID": "decades-20s"
+    },
+    {
+        "question": "Which Chinese tech hub experienced strict lockdowns in 2022 as part of China’s zero-COVID policy?",
+        "answer": "Shanghai",
+        "categoryID": "decades-20s"
+    },
+    {
+        "question": "Which U.S.-based entrepreneur purchased Twitter in 2022, prompting debates on content moderation?",
+        "answer": "Elon Musk",
+        "categoryID": "decades-20s"
+    },
+    {
+        "question": "In 2022, scientists at a U.S. laboratory achieved a breakthrough in which type of clean energy by producing more energy from fusion than was used to initiate it?",
+        "answer": "Nuclear fusion",
+        "categoryID": "decades-20s"
+    },
+    {
+        "question": "Which African nation experienced severe unrest and economic crisis in 2022, culminating in the president’s resignation?",
+        "answer": "Sri Lanka",
+        "categoryID": "decades-20s"
+    },
+    {
+        "question": "Which viral outbreak, declared a public health emergency in 2022, spread globally beyond its usual endemic regions?",
+        "answer": "Monkeypox",
+        "categoryID": "decades-20s"
+    },
+    {
+        "question": "Which protests erupted in Iran in 2022 following the death of Mahsa Amini, raising demands for women’s rights and freedoms?",
+        "answer": "Anti-hijab and pro-women’s rights protests",
+        "categoryID": "decades-20s"
+    },
+    {
+        "question": "Which country’s economy faced a severe energy crisis in 2022 largely due to reduced natural gas supplies and the war in Ukraine?",
+        "answer": "Germany (and Europe broadly)",
+        "categoryID": "decades-20s"
+    },
+    {
+        "question": "Which NASA mission, launched in 2022, sent an uncrewed spacecraft around the Moon and back in preparation for future lunar exploration?",
+        "answer": "Artemis I",
+        "categoryID": "decades-20s"
+    },
+    {
+        "question": "Which trade and supply chain disruptions persisted into the early 2020s, causing shortages and inflation worldwide?",
+        "answer": "Global supply chain disruptions",
+        "categoryID": "decades-20s"
+    },
+    {
+        "question": "Which technology trend, featuring digital art and collectibles certified by blockchain, experienced a boom in the early 2020s?",
+        "answer": "Non-fungible tokens (NFTs)",
+        "categoryID": "decades-20s"
+    },
+    {
+        "question": "In 2023, which Middle Eastern region suffered a devastating earthquake impacting both Turkey and Syria?",
+        "answer": "The Turkey–Syria border region",
+        "categoryID": "decades-20s"
+    },
+    {
+        "question": "Which online AI chatbot, introduced at the end of 2022, showcased significant advances in artificial intelligence-driven conversation?",
+        "answer": "ChatGPT",
+        "categoryID": "decades-20s"
+    },
+    {
+        "question": "Which global sporting event took place in Qatar in late 2022, marking the first time it was held in the Arab world?",
+        "answer": "The 2022 FIFA World Cup",
+        "categoryID": "decades-20s"
+    },
+    {
+        "question": "Which European project saw ongoing tensions over borders, migrants, and energy policy intensify in the early 2020s?",
+        "answer": "The European Union",
+        "categoryID": "decades-20s"
+    },
+    {
+        "question": "Which multinational climate summit in Glasgow in late 2021 was aimed at accelerating action to tackle climate change?",
+        "answer": "COP26",
+        "categoryID": "decades-20s"
+    },
+    {
+        "question": "Which severe semiconductor shortage impacted global industries, including automotive and electronics, in the early 2020s?",
+        "answer": "The global chip shortage",
+        "categoryID": "decades-20s"
+    },
+    {
+        "question": "Which U.S. Supreme Court justice’s death in 2020 and subsequent replacement shifted the ideological balance of the Court?",
+        "answer": "Ruth Bader Ginsburg",
+        "categoryID": "decades-20s"
+    }
+]

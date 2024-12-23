@@ -13,17 +13,17 @@ internal final class GameConfig : ObservableObject {
     @Published internal var categories : [CategoryJSON]
     
 //    @Published internal var player : [Player]
-    @Published internal var player : [GamePlayer]
+    @Published internal var player : [GamePlayer]?
     
-    internal let gameMode : GameMode
+    @Published internal var gameMode : GameMode
     
-    internal let speed : GameSpeed
+    @Published internal var speed : GameSpeed
     
     @Published internal var gameRunning : Bool = false
     
     internal init(
         categories : [CategoryJSON],
-        player : [GamePlayer],
+        player : [GamePlayer]?,
         gameMode : GameMode,
         speed : GameSpeed
     ) {
@@ -35,7 +35,7 @@ internal final class GameConfig : ObservableObject {
     
     internal init() {
         self.categories = []
-        self.player = []
+        self.player = nil
         self.gameMode = .quizCore
         self.speed = .roundUp
     }

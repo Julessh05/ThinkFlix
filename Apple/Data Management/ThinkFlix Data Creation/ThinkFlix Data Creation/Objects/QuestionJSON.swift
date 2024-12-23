@@ -7,7 +7,7 @@
 
 import Foundation
 
-internal struct QuestionJSON : Decodable {
+internal struct QuestionJSON : Codable {
     
     internal let question : String
     
@@ -16,4 +16,6 @@ internal struct QuestionJSON : Decodable {
     internal let answered : Bool
     
     internal let categoryID : String
+    
+    internal var id : UUID?
 }

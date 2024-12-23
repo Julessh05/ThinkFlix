@@ -12,7 +12,7 @@ internal struct QuestionJSON : Decodable {
     
     internal let answer : String
     
-    internal let id : UUID
+    internal let id : UUID?
     
     internal let categoryID : String
 }

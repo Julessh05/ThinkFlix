@@ -3,12 +3,20 @@
     <entity name="Category" representedClassName="Category" syncable="YES" codeGenerationType="class">
         <attribute name="name" optional="YES" attributeType="String" allowsCloudEncryption="YES"/>
         <attribute name="uuid" optional="YES" attributeType="UUID" allowsCloudEncryption="YES" usesScalarValueType="NO"/>
+        <relationship name="facts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Fact" inverseName="category" inverseEntity="Fact"/>
         <relationship name="masterCategory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="subcategories" inverseEntity="Category"/>
         <relationship name="quetions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Question" inverseName="category" inverseEntity="Question"/>
         <relationship name="subcategories" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Category" inverseName="masterCategory" inverseEntity="Category"/>
     </entity>
     <entity name="DB_Management" representedClassName="DB_Management" syncable="YES" codeGenerationType="class">
         <attribute name="version" optional="YES" attributeType="Double" defaultValueString="0" allowsCloudEncryption="YES" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Fact" representedClassName="Fact" syncable="YES" codeGenerationType="class">
+        <attribute name="correct" optional="YES" attributeType="String" allowsCloudEncryption="YES"/>
+        <attribute name="wrongFirst" optional="YES" attributeType="String" allowsCloudEncryption="YES"/>
+        <attribute name="wrongSecond" optional="YES" attributeType="String" allowsCloudEncryption="YES"/>
+        <attribute name="wrongThird" optional="YES" attributeType="String" allowsCloudEncryption="YES"/>
+        <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="facts" inverseEntity="Category"/>
     </entity>
     <entity name="Game" representedClassName="Game" syncable="YES" codeGenerationType="class">
         <attribute name="duration" optional="YES" attributeType="Composite" composite="GameDuration"/>
@@ -17,6 +25,7 @@
     <entity name="Player" representedClassName="Player" syncable="YES" codeGenerationType="class">
         <attribute name="name" optional="YES" attributeType="String" allowsCloudEncryption="YES"/>
         <attribute name="points" optional="YES" attributeType="Integer 16" defaultValueString="0" allowsCloudEncryption="YES" usesScalarValueType="YES"/>
+        <attribute name="totalPoints" optional="YES" attributeType="Integer 64" defaultValueString="0" allowsCloudEncryption="YES" usesScalarValueType="YES"/>
         <relationship name="games" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Game" inverseName="player" inverseEntity="Game"/>
     </entity>
     <entity name="Question" representedClassName="Question" syncable="YES" codeGenerationType="class">

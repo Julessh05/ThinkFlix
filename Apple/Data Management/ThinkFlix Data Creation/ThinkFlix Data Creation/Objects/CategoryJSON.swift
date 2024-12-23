@@ -7,7 +7,7 @@
 
 import Foundation
 
-internal struct CategoryJSON : Decodable {
+internal struct CategoryJSON : Codable {
     
     internal let name : String
     

@@ -28,9 +28,18 @@ internal struct CategoryViewer: View {
     
     var body: some View {
         List {
-            ForEach(allCategories, id: \CategoryJSON.name) {
-                cat in
-                SelectableRow(selection: selectedCategories, category: cat)
+            ForEach(allCategories, id: \CategoryJSON.id) {
+                category in
+                Section(category.name) {
+                    if let subs = category.subcategories {
+                        ForEach(subs, id: \CategoryJSON.name) {
+                            subcategory in
+                            SelectableRow(selection: selectedCategories, category: subcategory)
+                        }
+                    } else {
+                        SelectableRow(selection: selectedCategories, category: category)
+                    }
+                }
             }
         }
     }

@@ -69,7 +69,7 @@ internal struct GameConfigView: View {
     @EnvironmentObject private var gameConfig : GameConfig
     
     // General data
-//    @State private var allCategories : [Category] = []
+    //    @State private var allCategories : [Category] = []
     @State private var allCategories : [CategoryJSON] = []
     
     
@@ -91,6 +91,8 @@ internal struct GameConfigView: View {
     
     // Error control variables
     @State private var errFetchingCategories : Bool = false
+    
+    @State private var errNotEnoughPlayer : Bool = false
     
     var body: some View {
         NavigationStack {
@@ -114,7 +116,7 @@ internal struct GameConfigView: View {
                     Text("Select your game mode and speed for this game")
                 }
                 Section {
-                    Toggle("Use player", isOn: $usePlayer.animation())
+                    Toggle("Use custom player", isOn: $usePlayer.animation())
                         .onChange(of: usePlayer) {
                             guard usePlayer else { return }
                             editNamesPresented.toggle()
@@ -173,13 +175,21 @@ internal struct GameConfigView: View {
                 ToolbarItem(placement: .confirmationAction) {
                     Button("Start") {
                         gameConfig.categories = selectedCategories
-                        gameConfig.player = playerNames.map({
-                            return GamePlayer(name: $0, points: 0)
-                            //                            let p = Player(context: context)
-                            //                            p.name = $0
-                            //                            p.points = 0
-                            //                            return p
-                        })
+                        gameConfig.gameMode = selectedGameMode
+                        gameConfig.speed = selectedSpeed
+                        if usePlayer && playerNames.count(where: { !$0.isEmpty }) > 1 {
+                            gameConfig.player = playerNames.map({
+                                return GamePlayer(name: $0, points: 0)
+                                //                            let p = Player(context: context)
+                                //                            p.name = $0
+                                //                            p.points = 0
+                                //                            return p
+                            })
+                        } else if usePlayer {
+                            // Not enough player names entered
+                            errNotEnoughPlayer.toggle()
+                            return
+                        }
                         gameConfig.gameRunning = true
                     }
                 }
@@ -188,12 +198,21 @@ internal struct GameConfigView: View {
         .onAppear {
             do {
                 allCategories = try Storage.loadCategoriesFromJSON()
-//                allCategories = try Storage.fetchCategories(with: context)
+                //                allCategories = try Storage.fetchCategories(with: context)
                 selectedCategories = allCategories
+                for category in allCategories {
+                    if let subs = category.subcategories {
+                        selectedCategories.append(contentsOf: subs)
+                    }
+                }
             } catch {
                 errFetchingCategories.toggle()
-                print(error)
             }
+        }
+        .alert("Not enough player", isPresented: $errNotEnoughPlayer) {
+            
+        } message: {
+            Text("You have to enter at least two player names, or play without player names")
         }
         .alert("Error fetching categories", isPresented: $errFetchingCategories) {
             

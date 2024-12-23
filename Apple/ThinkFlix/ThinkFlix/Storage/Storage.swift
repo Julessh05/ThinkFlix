@@ -20,13 +20,12 @@ internal struct Storage {
     
     internal static var questions : [QuestionJSON] = []
     
+    internal static var facts : [FactJSON] = []
+    
     internal static func loadCategoriesFromJSON() throws -> [CategoryJSON] {
         let decoder = JSONDecoder()
         let path = Bundle.main.path(forResource: "categories", ofType: "json")
-        print(path)
         let jsonData = try Data(contentsOf: URL(filePath: path!), options: .mappedIfSafe)
-        print(jsonData)
-        print(String(data: jsonData, encoding: .utf8))
         let cats = try decoder.decode([CategoryJSON].self, from: jsonData)
         categories = cats
         return cats
@@ -46,6 +45,22 @@ internal struct Storage {
             let _ = try loadQuestionsFromJSON()
         }
         return questions.filter { categories.map(\.id).contains($0.categoryID) }
+    }
+    
+    internal static func loadFactsFromJSON() throws -> [FactJSON] {
+        let decoder = JSONDecoder()
+        let path = Bundle.main.path(forResource: "facts", ofType: "json")
+        let jsonData = try Data(contentsOf: URL(filePath: path!), options: .mappedIfSafe)
+        let f = try decoder.decode([FactJSON].self, from: jsonData)
+        facts = f
+        return f
+    }
+    
+    internal static func loadFactsFor(categories : [CategoryJSON]) throws -> [FactJSON] {
+        if facts.isEmpty {
+            let _ = try loadFactsFromJSON()
+        }
+        return facts.filter { categories.map(\.id).contains($0.categoryID) }
     }
     
     

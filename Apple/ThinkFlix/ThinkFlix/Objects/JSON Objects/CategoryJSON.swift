@@ -13,7 +13,7 @@ internal struct CategoryJSON: Decodable, Equatable {
     
     internal let id : String
     
-    private let subCategories : [CategoryJSON]?
+    internal let subcategories : [CategoryJSON]?
     
     private let masterCategoryID : String?
 }
