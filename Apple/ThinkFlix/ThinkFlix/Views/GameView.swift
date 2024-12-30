@@ -103,12 +103,10 @@ internal struct GameView: View {
                     //                    with: gameContext,
                     //                    for: gameConfig.categories
                     //                )
-                    updateCurrentQuestion()
                 } else {
                     facts = try Storage.loadFactsFor(categories: gameConfig.categories)
-                    updateCurrentFact()
                 }
-                currentPlayer = gameConfig.player?[currentPlayerIndex]
+                nextTurn()
             } catch {
                 errFetchingQuestionsPresented.toggle()
                 print(error)
@@ -239,12 +237,17 @@ internal struct GameView: View {
                 if factCheckedIn {
                     updateCurrentFact()
                 } else {
-                    factCheckedIn = true
                     factCorrect = factNumberShownBig == currentFactVersions.firstIndex(where: { $0 == currentFact!.correct })
+                    if factCorrect! {
+                        answerCorrect()
+                    } else if factCheckedIn {
+                        nextTurn()
+                    }
+                    factCheckedIn = true
                 }
             } label: {
                 if factCheckedIn {
-                    Label("Next fact", systemImage: "arrow")
+                    Label("Next fact", systemImage: "arrow.clockwise")
                 } else {
                     Label("Check in", systemImage: "checkmark")
                 }
@@ -262,6 +265,7 @@ internal struct GameView: View {
             }
             .multilineTextAlignment(.center)
             Button("Skip fact") {
+                answerShown = false
                 updateCurrentFact()
             }
         }
@@ -287,8 +291,11 @@ internal struct GameView: View {
                     factShownBig.toggle()
                     factNumberShownBig = currentFactVersions.firstIndex(where: { $0 == fact })!
                 }
-            } else {
+            } else if factShownBig {
                 updateCurrentFact()
+            } else if answerShown {
+                // factShownBig is false and answerShown is true
+                answerShown = false
             }
         } label: {
             Text(fact)
@@ -328,6 +335,7 @@ internal struct GameView: View {
         factCheckedIn = false
         factCorrect = nil
         factShownBig = false
+        answerShown = false
         guard let fact = facts.randomElement() else {
             gameOver = true
             return
@@ -345,7 +353,11 @@ internal struct GameView: View {
     /// Function to use when entering next turn.
     /// This is only used when the game speed is set to roundUp
     private func nextTurn() -> Void {
-        updateCurrentQuestion()
+        if gameConfig.gameMode == .quizCore {
+            updateCurrentQuestion()
+        } else {
+            updateCurrentFact()
+        }
         if gameConfig.speed == .roundUp {
             guard gameConfig.player != nil else {
                 return
@@ -375,7 +387,11 @@ internal struct GameView: View {
         } else {
             currentPlayer?.points += 1
             currentPlayerStreak += 1
-            updateCurrentQuestion()
+            if gameConfig.gameMode == .quizCore {
+                updateCurrentQuestion()
+            } else {
+                factCorrect = true
+            }
         }
     }
 }

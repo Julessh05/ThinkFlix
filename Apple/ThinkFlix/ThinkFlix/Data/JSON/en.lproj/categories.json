@@ -1,10 +1,10 @@
 [
     {
-        "name": "sport",
+        "name": "Sport",
         "id": "sport"
     },
     {
-        "name": "decades",
+        "name": "Decades",
         "id": "decades",
         "subcategories": [
             {
@@ -45,54 +45,54 @@
         ]
     },
     {
-        "name": "film & tv",
+        "name": "Film & TV",
         "id": "film-tv",
         "subcategories": [
             {
-                "name": "superheroes",
+                "name": "Superheroes",
                 "id": "film-tv-superheroes",
                 "masterCategoryID": "film-tv"
             },
             {
-                "name": "tv shows",
+                "name": "TV shows",
                 "id": "film-tv-shows",
                 "masterCategoryID": "film-tv"
             }
         ]
     },
     {
-        "name": "geographie",
+        "name": "Geographie",
         "id": "geographie",
         "subcategories": [
             {
-                "name": "countries",
+                "name": "Countries",
                 "id": "geographie-countries",
                 "masterCategoryID": "geographie"
             }
         ]
     },
     {
-        "name": "internet",
+        "name": "Internet",
         "id": "internet",
         "subcategories": [
             {
-                "name": "memes",
+                "name": "Memes",
                 "id": "internet-memes",
                 "masterCategoryID": "internet"
             },
             {
-                "name": "influencer",
+                "name": "Influencer",
                 "id": "internet-influencer",
                 "masterCategoryID": "internet"
             }
         ]
     },
     {
-        "name": "tech",
+        "name": "Tech",
         "id": "tech"
     },
     {
-        "name": "general knowledge",
+        "name": "General knowledge",
         "id": "general-knowledge"
     }
 ]
