@@ -41,20 +41,25 @@ internal struct GameView: View {
     //    @State private var facts : [Fact] = []
     @State private var facts : [FactJSON] = []
     
+    /// The fact in the facts object
     @State private var currentFact : FactJSON? = nil
     
+    /// All the different versions of the fact as strings in an array to loop over
     @State private var currentFactVersions : [String] = Array(repeating: "", count: 4)
     
+    /// Whether a single fact version is shown in a big container in the middle of the screen or not
     @State private var factShownBig : Bool = false
     
+    /// The index of the fact version shown big, as index of the array 'currentFactVersions'
     @State private var factNumberShownBig : Int = 0
     
+    /// Whether or not the fact version that has been checked in by the user is correct
     @State private var factCorrect : Bool? = nil
     
+    /// Whether or not the user has checked in his answer
     @State private var factCheckedIn : Bool = false
     
-    
-    
+    /// Whether or not the correct answer is shown
     @State private var answerShown : Bool = false
     
     /// Whether the game is over or not
@@ -145,7 +150,7 @@ internal struct GameView: View {
         Spacer()
         Button {
             answerShown.toggle()
-            factCorrect = answerShown
+//            TODO: check this line: factCorrect = answerShown (Shouldn't be here, works with facts in quizCore View
         } label: {
             Label("Show \(answerShown ? "question" : "answer")", systemImage: "checkmark.bubble")
         }
@@ -234,15 +239,17 @@ internal struct GameView: View {
         if factShownBig {
             factContainer(currentFactVersions[factNumberShownBig])
             Button {
-                if factCheckedIn {
-                    updateCurrentFact()
-                } else {
-                    factCorrect = factNumberShownBig == currentFactVersions.firstIndex(where: { $0 == currentFact!.correct })
-                    if factCorrect! {
+                factCorrect = factNumberShownBig == currentFactVersions.firstIndex(where: { $0 == currentFact!.correct })
+                if factCorrect! {
+                    if factCheckedIn {
+                        updateCurrentFact()
+                    } else {
+                        factCheckedIn = true
                         answerCorrect()
-                    } else if factCheckedIn {
-                        nextTurn()
                     }
+                } else if factCheckedIn {
+                    nextTurn()
+                } else {
                     factCheckedIn = true
                 }
             } label: {
@@ -276,6 +283,7 @@ internal struct GameView: View {
                 factCorrect = true
             } else {
                 answerShown.toggle()
+                factCorrect = nil
             }
         } label: {
             Label("Show \(answerShown ? "fact" : "answer")", systemImage: "checkmark.bubble")
@@ -286,10 +294,12 @@ internal struct GameView: View {
     @ViewBuilder
     private func factContainer(_ fact : String) -> some View {
         Button {
-            if !factCheckedIn && !answerShown {
+            if !answerShown {
                 withAnimation {
                     factShownBig.toggle()
                     factNumberShownBig = currentFactVersions.firstIndex(where: { $0 == fact })!
+                    factCorrect = nil
+                    factCheckedIn = false
                 }
             } else if factShownBig {
                 updateCurrentFact()
@@ -390,7 +400,7 @@ internal struct GameView: View {
             if gameConfig.gameMode == .quizCore {
                 updateCurrentQuestion()
             } else {
-                factCorrect = true
+                // Do nothing, because fact is only updated when the user clicks "next fact"
             }
         }
     }
