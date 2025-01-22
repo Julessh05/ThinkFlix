@@ -23,6 +23,9 @@ struct MainView: View {
         if gameConfig.gameRunning {
             GameView()
                 .environmentObject(gameConfig)
+        } else if gameConfig.gameOver {
+            GameEndView()
+                .environmentObject(gameConfig)
         } else {
             Welcome()
                 .environmentObject(gameConfig)

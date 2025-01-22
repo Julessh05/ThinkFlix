@@ -21,6 +21,8 @@ internal final class GameConfig : ObservableObject {
     
     @Published internal var gameRunning : Bool = false
     
+    @Published internal var gameOver : Bool = false
+    
     internal init(
         categories : [CategoryJSON],
         player : [GamePlayer]?,

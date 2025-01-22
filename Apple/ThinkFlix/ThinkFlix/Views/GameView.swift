@@ -62,9 +62,6 @@ internal struct GameView: View {
     /// Whether or not the correct answer is shown
     @State private var answerShown : Bool = false
     
-    /// Whether the game is over or not
-    @State private var gameOver : Bool = false
-    
     
     // Error control variables
     @State private var errFetchingQuestionsPresented : Bool = false
@@ -334,7 +331,7 @@ internal struct GameView: View {
     
     private func updateCurrentQuestion() -> Void {
         guard let question = questions.randomElement() else {
-            gameOver = true
+            gameConfig.gameOver = true
             return
         }
         currentQuestion = question
@@ -347,7 +344,7 @@ internal struct GameView: View {
         factShownBig = false
         answerShown = false
         guard let fact = facts.randomElement() else {
-            gameOver = true
+            gameConfig.gameOver = true
             return
         }
         currentFact = fact
