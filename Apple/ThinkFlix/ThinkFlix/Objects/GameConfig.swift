@@ -19,6 +19,8 @@ internal final class GameConfig : ObservableObject {
     
     @Published internal var speed : GameSpeed
     
+    @Published internal var goal : Int = 0
+    
     @Published internal var gameRunning : Bool = false
     
     @Published internal var gameOver : Bool = false
@@ -40,5 +42,10 @@ internal final class GameConfig : ObservableObject {
         self.player = nil
         self.gameMode = .quizCore
         self.speed = .roundUp
+    }
+    
+    internal func endGame() -> Void {
+        gameRunning = false
+        gameOver = true
     }
 }

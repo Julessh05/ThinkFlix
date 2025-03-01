@@ -44,11 +44,34 @@ struct GameEndView: View {
         }
         .navigationTitle("Overview")
         .navigationBarTitleDisplayMode(.automatic)
+        .toolbarRole(.automatic)
+        .toolbar {
+            ToolbarItem(placement: .primaryAction) {
+                Button {
+                    gameConfig.gameOver = false
+                } label: {
+                    Image(systemName: "xmark")
+                }
+            }
+        }
         .onAppear {
             calculateBestPlayer()
         }
     }
     
+    @ViewBuilder
+    private func buildPlayerList() -> some View {
+        ForEach(gameConfig.player!, id: \.name) {
+            player in
+            HStack {
+                Text(player.name)
+                Spacer()
+                Text("\(player.points) Points")
+            }
+        }
+    }
+    
+    /// Calculate the best Player
     private func calculateBestPlayer() -> Void {
         guard gameConfig.player != nil else { return }
         bestPlayer = gameConfig.player!.first

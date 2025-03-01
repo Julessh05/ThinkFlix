@@ -115,7 +115,6 @@ internal struct GameView: View {
             }
         }
         .alert("End of streak", isPresented: $endOfStreakShown) {
-            
         } message: {
             Text("The maximum streak of 3 questions in a row has been reached for \(maxStreakPlayer?.name ?? "this player"). It's now \(currentPlayer?.name ?? "the next player")'s turn")
         }
@@ -287,7 +286,7 @@ internal struct GameView: View {
         }
     }
     
-    
+    /// Builds the container for the specified fact
     @ViewBuilder
     private func factContainer(_ fact : String) -> some View {
         Button {
@@ -315,6 +314,7 @@ internal struct GameView: View {
         .foregroundStyle(.primary)
     }
     
+    /// Returns the background color specified by the current state of the game
     private func getFactBackgroundColor(fact : String) -> Color {
         let isGreen : Bool = (factCorrect != nil && factCorrect!) || (answerShown && fact == currentFact!.correct)
         let isRed : Bool = factCorrect != nil && !factCorrect! || answerShown && fact != currentFact!.correct
@@ -329,6 +329,8 @@ internal struct GameView: View {
     
     /* Methods */
     
+    /// Updates the current question to a new, randomly selected, not yet displayed fact, included in the selected
+    /// question categories
     private func updateCurrentQuestion() -> Void {
         guard let question = questions.randomElement() else {
             gameConfig.gameOver = true
@@ -338,6 +340,8 @@ internal struct GameView: View {
         questions.removeAll(where: { $0.question == question.question })
     }
     
+    /// Updates the current fact to a new, randomly selected, not yet displayed fact, included in the selected
+    /// fact categories
     private func updateCurrentFact() -> Void {
         factCheckedIn = false
         factCorrect = nil
@@ -386,19 +390,24 @@ internal struct GameView: View {
         }
     }
     
+    /// Called when the answer is correct
     private func answerCorrect() -> Void {
         if currentPlayerStreak == 2 {
             maxStreakPlayer = currentPlayer
             nextTurn()
             endOfStreakShown.toggle()
         } else {
-            currentPlayer?.points += 1
+            // Increase points
+            currentPlayer?.answered += 1
             currentPlayerStreak += 1
             if gameConfig.gameMode == .quizCore {
                 updateCurrentQuestion()
             } else {
                 // Do nothing, because fact is only updated when the user clicks "next fact"
             }
+        }
+        if currentPlayer?.answered == gameConfig.goal {
+            gameConfig.endGame()
         }
     }
 }

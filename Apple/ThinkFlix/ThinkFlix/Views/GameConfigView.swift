@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-internal enum GameMode : String, CaseIterable, Identifiable {
+internal enum GameMode : CaseIterable, Identifiable {
     var id: Self { self }
     
     case quizCore
@@ -32,7 +32,7 @@ internal enum GameMode : String, CaseIterable, Identifiable {
     }
 }
 
-internal enum GameSpeed : String, CaseIterable, Identifiable {
+internal enum GameSpeed : CaseIterable, Identifiable {
     var id: Self { self }
     
     case rapidFire
@@ -53,6 +53,28 @@ internal enum GameSpeed : String, CaseIterable, Identifiable {
                 return "RapidFire"
             case .roundUp:
                 return "RoundUp"
+        }
+    }
+}
+
+private enum GameGoal : String, Identifiable, CaseIterable {
+    var id: Self { self }
+    
+    case short
+    case standard
+    case long
+    case custom
+    
+    fileprivate func getGoalValue() -> Int {
+        switch self {
+            case .short:
+                return 10
+            case .standard:
+                return 15
+            case .long:
+                return 30
+            case .custom:
+                return 0
         }
     }
 }
@@ -78,11 +100,15 @@ internal struct GameConfigView: View {
     
     @State private var selectedSpeed : GameSpeed = .roundUp
     
+    @State private var selectedGameGoal : GameGoal = .standard
+    
     @State private var selectedCategories : [CategoryJSON] = []
     
     @State private var usePlayer : Bool = true
     
     @State private var playerNames : [String] = Array(repeating: "", count: 2)
+    
+    @State private var customGoal : String = ""
     
     
     // Sheet control variables
@@ -110,10 +136,23 @@ internal struct GameConfigView: View {
                             Label(speed.getCorrectName(), systemImage: speed.getImage())
                         }
                     }
+                    Picker("Goal", selection: $selectedGameGoal) {
+                        ForEach(GameGoal.allCases, id: \.id) {
+                            goal in
+                            Text("\(goal.rawValue.capitalized) \(goal == .custom ? "" : "(\(goal.getGoalValue()))")")
+                        }
+                    }
+                    .onChange(of: selectedGameGoal) {
+                        guard selectedGameGoal != .custom else { return }
+                        customGoal = String(selectedGameGoal.getGoalValue())
+                    }
+                    if selectedGameGoal == .custom {
+                        TextField("Enter custom goal", text: $customGoal)
+                    }
                 } header: {
-                    Text("Game Mode")
+                    Text("Game")
                 } footer: {
-                    Text("Select your game mode and speed for this game")
+                    Text("Configure your game and its parameters")
                 }
                 Section {
                     Toggle("Use custom player", isOn: $usePlayer.animation())
@@ -177,6 +216,10 @@ internal struct GameConfigView: View {
                         gameConfig.categories = selectedCategories
                         gameConfig.gameMode = selectedGameMode
                         gameConfig.speed = selectedSpeed
+                        gameConfig.goal = selectedGameGoal == .custom ? Int(
+                            customGoal
+                        ) ?? GameGoal.standard.getGoalValue() : selectedGameGoal
+                            .getGoalValue()
                         if usePlayer && playerNames.count(where: { !$0.isEmpty }) > 1 {
                             gameConfig.player = playerNames.map({
                                 return GamePlayer(name: $0, points: 0)
