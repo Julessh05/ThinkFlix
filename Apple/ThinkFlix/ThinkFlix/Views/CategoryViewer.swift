@@ -18,13 +18,24 @@ internal struct CategoryViewer: View {
 //    private var selectedCategories : Binding<[Category]>
     private var selectedCategories : Binding<[CategoryJSON]>
     
+    private var edit : Bool
+    
     internal init(
         selectedCategories : Binding<[CategoryJSON]>,
         in allCategories : [CategoryJSON]
     ) {
+        self.edit = true
         self.allCategories = allCategories
         self.selectedCategories = selectedCategories
     }
+    
+    internal init(_ allCategories : [CategoryJSON]) {
+        self.edit = false
+        self.allCategories = allCategories
+        self.selectedCategories = .constant([])
+    }
+    
+    
     
     var body: some View {
         List {
@@ -34,10 +45,18 @@ internal struct CategoryViewer: View {
                     if let subs = category.subcategories {
                         ForEach(subs, id: \CategoryJSON.name) {
                             subcategory in
-                            SelectableRow(selection: selectedCategories, category: subcategory)
+                            if edit {
+                                SelectableRow(selection: selectedCategories, category: subcategory)
+                            } else {
+                                Text(subcategory.name)
+                            }
                         }
                     } else {
-                        SelectableRow(selection: selectedCategories, category: category)
+                        if edit {
+                            SelectableRow(selection: selectedCategories, category: category)
+                        } else {
+                            Text(category.name)
+                        }
                     }
                 }
             }

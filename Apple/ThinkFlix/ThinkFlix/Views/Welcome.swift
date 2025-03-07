@@ -13,6 +13,8 @@ struct Welcome: View {
     
     @State private var gameConfigShown : Bool = false
     
+    @State private var allCategories : [CategoryJSON] = []
+    
     
     var body: some View {
         VStack {
@@ -28,6 +30,15 @@ struct Welcome: View {
             .sheet(isPresented: $gameConfigShown) {
                 GameConfigView()
             }
+            NavigationLink {
+                CategoryViewer(allCategories)
+            } label: {
+                Label("Categories", systemImage: "pencil.and.list.clipboard")
+                    .foregroundStyle(.white)
+                    .frame(width: 210, height: 70)
+                    .background(in: .rect(cornerRadius: 20), fillStyle: .init(eoFill: true, antialiased: true))
+                    .backgroundStyle(colorScheme == .dark ? .gray : .blue)
+            }
 //            NavigationLink {
 //                StatisticsView()
 //            } label: {
@@ -39,6 +50,15 @@ struct Welcome: View {
 //            }
         }
         .navigationTitle("ThinkFlix")
+        .onAppear {
+            do {
+                allCategories = try Storage.loadCategoriesFromJSON()
+                //                allCategories = try Storage.fetchCategories(with: context)
+            } catch {
+                print("Error")
+                //                    errFetchingCategories.toggle()
+            }
+        }
     }
 }
 
