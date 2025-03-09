@@ -23,6 +23,10 @@ internal struct GameView: View {
     
     @State private var currentPlayerIndex : Int = 0
     
+    /// tracks the number of correct answers as a whole in the complete game.
+    /// This is only used when no players are active in the game to end the game sometime
+    @State private var allAnswersNumber : Int = 0
+    
     @State private var maxStreakPlayer : GamePlayer?
     
     
@@ -86,22 +90,17 @@ internal struct GameView: View {
         .toolbar {
             ToolbarItem(placement: .primaryAction) {
                 Button {
-                    gameConfig.gameRunning = false
+                    gameConfig.endGame()
                 } label: {
                     Image(systemName: "xmark")
                 }
-                //                Menu {
-                //
-                //                } label: {
-                //                    Image(systemName: "xmark")
-                //                }
             }
         }
         .onAppear {
             do {
                 if gameConfig.gameMode == .quizCore {
                     questions = try Storage.loadQuestionsFor(categories: gameConfig.categories)
-                    //                questions = try Storage.fetchQuestions(
+                        //                questions = try Storage.fetchQuestions(
                     //                    with: gameContext,
                     //                    for: gameConfig.categories
                     //                )
@@ -134,7 +133,11 @@ internal struct GameView: View {
         Text("Answer:")
             .font(.headline)
             .opacity(answerShown ? 1 : 0)
-        Text(answerShown ? (currentQuestion?.answer ?? "Answer loading...") : (currentQuestion?.question ?? "Question loading"))
+        Text(
+            answerShown ? (currentQuestion?.answer ?? "Answer loading...") : (
+                currentQuestion?.question ?? "Question loading"
+            )
+        )
             .multilineTextAlignment(.center)
             .foregroundStyle(.black)
             .frame(width: 300, height: 375)
@@ -145,7 +148,9 @@ internal struct GameView: View {
         }
         Spacer()
         Button {
-            answerShown.toggle()
+            withAnimation {
+                answerShown.toggle()
+            }
 //            TODO: check this line: factCorrect = answerShown (Shouldn't be here, works with facts in quizCore View
         } label: {
             Label("Show \(answerShown ? "question" : "answer")", systemImage: "checkmark.bubble")
@@ -370,6 +375,7 @@ internal struct GameView: View {
             updateCurrentFact()
         }
         if gameConfig.speed == .roundUp {
+            currentPlayerStreak = 0
             guard gameConfig.player != nil else {
                 return
             }
@@ -384,7 +390,6 @@ internal struct GameView: View {
                 currentPlayerIndex += 1
             }
             currentPlayer = gameConfig.player![currentPlayerIndex]
-            currentPlayerStreak = 0
         } else {
             // TODO: implement RapidFire Mode
         }
@@ -398,7 +403,11 @@ internal struct GameView: View {
             endOfStreakShown.toggle()
         } else {
             // Increase points
-            currentPlayer?.answered += 1
+            if gameConfig.player != nil {
+                currentPlayer?.answered += 1
+            } else {
+                allAnswersNumber += 1
+            }
             currentPlayerStreak += 1
             if gameConfig.gameMode == .quizCore {
                 updateCurrentQuestion()
@@ -406,7 +415,8 @@ internal struct GameView: View {
                 // Do nothing, because fact is only updated when the user clicks "next fact"
             }
         }
-        if currentPlayer?.answered == gameConfig.goal {
+        // End game if goal has been reached
+        if currentPlayer?.answered == gameConfig.goal || allAnswersNumber == gameConfig.goal {
             gameConfig.endGame()
         }
     }

@@ -27,6 +27,11 @@ struct GameEndView: View {
                         Spacer()
                         Text(String(bestPlayer?.points ?? 0))
                     }
+                    HStack {
+                        Text("Correct answers")
+                        Spacer()
+                        Text(String(bestPlayer?.answered ?? 0))
+                    }
                 }
                 Section("Player statistics") {
                     ForEach(gameConfig.player!, id: \GamePlayer.name) {

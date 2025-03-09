@@ -77,6 +77,19 @@ private enum GameGoal : String, Identifiable, CaseIterable {
                 return 0
         }
     }
+    
+    fileprivate func getImage() -> String {
+        switch self {
+            case .short:
+                return "10.arrow.trianglehead.clockwise"
+            case .standard:
+                return "15.arrow.trianglehead.clockwise"
+            case .long:
+                return "30.arrow.trianglehead.clockwise"
+            case .custom:
+                return "arrow.trianglehead.clockwise"
+        }
+    }
 }
 
 
@@ -139,7 +152,7 @@ internal struct GameConfigView: View {
                     Picker("Goal", selection: $selectedGameGoal) {
                         ForEach(GameGoal.allCases, id: \.id) {
                             goal in
-                            Text("\(goal.rawValue.capitalized) \(goal == .custom ? "" : "(\(goal.getGoalValue()))")")
+                            Label("\(goal.rawValue.capitalized) \(goal == .custom ? "" : "(\(goal.getGoalValue()))")", systemImage: goal.getImage())
                         }
                     }
                     .onChange(of: selectedGameGoal) {
@@ -148,6 +161,7 @@ internal struct GameConfigView: View {
                     }
                     if selectedGameGoal == .custom {
                         TextField("Enter custom goal", text: $customGoal)
+                            .keyboardType(.numberPad)
                     }
                 } header: {
                     Text("Game")
@@ -197,6 +211,7 @@ internal struct GameConfigView: View {
                         )
                     } label: {
                         Label("Edit categories", systemImage: "pencil.and.list.clipboard")
+                            .foregroundStyle(.primary)
                     }
                 } header: {
                     Text("Categories")
@@ -216,9 +231,9 @@ internal struct GameConfigView: View {
                         gameConfig.categories = selectedCategories
                         gameConfig.gameMode = selectedGameMode
                         gameConfig.speed = selectedSpeed
-                        gameConfig.goal = selectedGameGoal == .custom ? Int(
+                        gameConfig.goal = selectedGameGoal == .custom ? (Int(
                             customGoal
-                        ) ?? GameGoal.standard.getGoalValue() : selectedGameGoal
+                        ) ?? GameGoal.standard.getGoalValue()) : selectedGameGoal
                             .getGoalValue()
                         if usePlayer && playerNames.count(where: { !$0.isEmpty }) > 1 {
                             gameConfig.player = playerNames.map({
@@ -299,10 +314,18 @@ internal struct NameSheet : View {
                             }
                         }
                 }
-                Section("Names") {
+                Section {
                     ForEach(0..<getNumberPlayer(), id: \.self) {
                         index in
                         TextField("Player \(String(index + 1))", text: $localPlayerNames[index])
+                    }
+                } header: {
+                    Text("Names")
+                } footer: {
+                    if (Int(numberPlayer) ?? 2) < 1 || (
+                        Int(numberPlayerCache) ?? 2) < 1
+                    {
+                        Text("A number greater than 0 has to be entered. If you do not want to enter player names, disable the use of players")
                     }
                 }
             }
@@ -322,6 +345,7 @@ internal struct NameSheet : View {
                         playerNames = localPlayerNames
                         dismiss()
                     }
+                    .disabled((Int(numberPlayer) ?? 0) < 1)
                 }
             }
         }
