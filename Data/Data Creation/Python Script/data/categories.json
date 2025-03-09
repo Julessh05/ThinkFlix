@@ -1,0 +1,67 @@
+[
+  {
+    "name": "sport"
+  },
+  {
+    "name": "decades",
+    "subcategories": [
+      {
+        "name": "60s"
+      },
+      {
+        "name": "70s"
+      },
+      {
+        "name": "80s"
+      },
+      {
+        "name": "90s"
+      },
+      {
+        "name": "00s"
+      },
+      {
+        "name": "10s"
+      },
+      {
+        "name": "20s"
+      }
+    ]
+  },
+  {
+    "name": "film & tv",
+    "subcategories": [
+      {
+        "name": "superheroes"
+      },
+      {
+        "name": "tv shows"
+      }
+    ]
+  },
+  {
+    "name": "geographie",
+    "subcategories": [
+      {
+        "name": "countries"
+      }
+    ]
+  },
+  {
+    "name": "internet",
+    "subcategories": [
+      {
+        "name": "memes"
+      },
+      {
+        "name": "influencer"
+      }
+    ]
+  },
+  {
+    "name": "tech"
+  },
+  {
+    "name": "general knowledge"
+  }
+]

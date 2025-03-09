@@ -1,0 +1,98 @@
+[
+    {
+        "name": "Sport",
+        "id": "sport"
+    },
+    {
+        "name": "Decades",
+        "id": "decades",
+        "subcategories": [
+            {
+                "name": "60s",
+                "id": "decades-60s",
+                "masterCategoryID": "decades"
+            },
+            {
+                "name": "70s",
+                "id": "decades-70s",
+                "masterCategoryID": "decades"
+            },
+            {
+                "name": "80s",
+                "id": "decades-80s",
+                "masterCategoryID": "decades"
+            },
+            {
+                "name": "90s",
+                "id": "decades-90s",
+                "masterCategoryID": "decades"
+            },
+            {
+                "name": "00s",
+                "id": "decades-00s",
+                "masterCategoryID": "decades"
+            },
+            {
+                "name": "10s",
+                "id": "decades-10s",
+                "masterCategoryID": "decades"
+            },
+            {
+                "name": "20s",
+                "id": "decades-20s",
+                "masterCategoryID": "decades"
+            }
+        ]
+    },
+    {
+        "name": "Film & TV",
+        "id": "film-tv",
+        "subcategories": [
+            {
+                "name": "Superheroes",
+                "id": "film-tv-superheroes",
+                "masterCategoryID": "film-tv"
+            },
+            {
+                "name": "TV shows",
+                "id": "film-tv-shows",
+                "masterCategoryID": "film-tv"
+            }
+        ]
+    },
+    {
+        "name": "Geographie",
+        "id": "geographie",
+        "subcategories": [
+            {
+                "name": "Countries",
+                "id": "geographie-countries",
+                "masterCategoryID": "geographie"
+            }
+        ]
+    },
+    {
+        "name": "Internet",
+        "id": "internet",
+        "subcategories": [
+            {
+                "name": "Memes",
+                "id": "internet-memes",
+                "masterCategoryID": "internet"
+            },
+            {
+                "name": "Influencer",
+                "id": "internet-influencer",
+                "masterCategoryID": "internet"
+            }
+        ]
+    },
+    {
+        "name": "Tech",
+        "id": "tech"
+    },
+    {
+        "name": "General knowledge",
+        "id": "general-knowledge"
+    }
+]

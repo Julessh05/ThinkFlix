@@ -2,31 +2,34 @@
 //  ThinkFlixApp.swift
 //  ThinkFlix
 //
-//  Created by Julian Schumacher on 12.12.24.
+//  Created by Julian Schumacher on 15.12.24.
 //
 
 import SwiftUI
-import SwiftData
+import CoreData
 
 @main
 struct ThinkFlixApp: App {
-//    var sharedModelContainer: ModelContainer = {
-//        let schema = Schema([
-//            Item.self,
-//        ])
-//        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
-//
-//        do {
-//            return try ModelContainer(for: schema, configurations: [modelConfiguration])
-//        } catch {
-//            fatalError("Could not create ModelContainer: \(error)")
-//        }
-//    }()
+    
+//    private var persistence : PersistenceController = PersistenceController.shared
+    
+    @State private var errLoadingDataShown : Bool = false
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
+//                .environment(\.managedObjectContext, persistence.container.viewContext)
+                .onAppear {
+//                    do {
+//                        try Storage.checkDatabases(with: persistence.container.viewContext)
+//                    } catch {
+//                        errLoadingDataShown.toggle()
+//                    }
+                }
+                .alert("Error loading Data", isPresented: $errLoadingDataShown) {
+                } message: {
+                    Text("There's been an error while loading the quiz data from your system. Please restart the App and try again.\n If the Error persists, please contact the developer")
+                }
         }
-//        .modelContainer(sharedModelContainer)
     }
 }

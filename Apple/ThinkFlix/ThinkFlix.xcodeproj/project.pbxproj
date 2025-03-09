@@ -7,53 +7,53 @@
 	objects = {
 
 /* Begin PBXContainerItemProxy section */
-		8454138C2D0AD2450023BF68 /* PBXContainerItemProxy */ = {
+		8443ABB12D0F5151006D8AAF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 8454136F2D0AD2430023BF68 /* Project object */;
+			containerPortal = 8443AB912D0F514F006D8AAF /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 845413762D0AD2430023BF68;
+			remoteGlobalIDString = 8443AB982D0F514F006D8AAF;
 			remoteInfo = ThinkFlix;
 		};
-		845413962D0AD2450023BF68 /* PBXContainerItemProxy */ = {
+		8443ABBB2D0F5151006D8AAF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 8454136F2D0AD2430023BF68 /* Project object */;
+			containerPortal = 8443AB912D0F514F006D8AAF /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 845413762D0AD2430023BF68;
+			remoteGlobalIDString = 8443AB982D0F514F006D8AAF;
 			remoteInfo = ThinkFlix;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		845413772D0AD2430023BF68 /* ThinkFlix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThinkFlix.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8454138B2D0AD2450023BF68 /* ThinkFlixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThinkFlixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		845413952D0AD2450023BF68 /* ThinkFlixUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThinkFlixUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8443AB992D0F514F006D8AAF /* ThinkFlix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThinkFlix.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8443ABB02D0F5151006D8AAF /* ThinkFlixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThinkFlixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8443ABBA2D0F5151006D8AAF /* ThinkFlixUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThinkFlixUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		8454139D2D0AD2450023BF68 /* Exceptions for "ThinkFlix" folder in "ThinkFlix" target */ = {
+		8443ABC22D0F5151006D8AAF /* Exceptions for "ThinkFlix" folder in "ThinkFlix" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = 845413762D0AD2430023BF68 /* ThinkFlix */;
+			target = 8443AB982D0F514F006D8AAF /* ThinkFlix */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		845413792D0AD2430023BF68 /* ThinkFlix */ = {
+		8443AB9B2D0F514F006D8AAF /* ThinkFlix */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				8454139D2D0AD2450023BF68 /* Exceptions for "ThinkFlix" folder in "ThinkFlix" target */,
+				8443ABC22D0F5151006D8AAF /* Exceptions for "ThinkFlix" folder in "ThinkFlix" target */,
 			);
 			path = ThinkFlix;
 			sourceTree = "<group>";
 		};
-		8454138E2D0AD2450023BF68 /* ThinkFlixTests */ = {
+		8443ABB32D0F5151006D8AAF /* ThinkFlixTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = ThinkFlixTests;
 			sourceTree = "<group>";
 		};
-		845413982D0AD2450023BF68 /* ThinkFlixUITests */ = {
+		8443ABBD2D0F5151006D8AAF /* ThinkFlixUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = ThinkFlixUITests;
 			sourceTree = "<group>";
@@ -61,21 +61,21 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		845413742D0AD2430023BF68 /* Frameworks */ = {
+		8443AB962D0F514F006D8AAF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		845413882D0AD2450023BF68 /* Frameworks */ = {
+		8443ABAD2D0F5151006D8AAF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		845413922D0AD2450023BF68 /* Frameworks */ = {
+		8443ABB72D0F5151006D8AAF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -85,22 +85,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8454136E2D0AD2430023BF68 = {
+		8443AB902D0F514F006D8AAF = {
 			isa = PBXGroup;
 			children = (
-				845413792D0AD2430023BF68 /* ThinkFlix */,
-				8454138E2D0AD2450023BF68 /* ThinkFlixTests */,
-				845413982D0AD2450023BF68 /* ThinkFlixUITests */,
-				845413782D0AD2430023BF68 /* Products */,
+				8443AB9B2D0F514F006D8AAF /* ThinkFlix */,
+				8443ABB32D0F5151006D8AAF /* ThinkFlixTests */,
+				8443ABBD2D0F5151006D8AAF /* ThinkFlixUITests */,
+				8443AB9A2D0F514F006D8AAF /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		845413782D0AD2430023BF68 /* Products */ = {
+		8443AB9A2D0F514F006D8AAF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				845413772D0AD2430023BF68 /* ThinkFlix.app */,
-				8454138B2D0AD2450023BF68 /* ThinkFlixTests.xctest */,
-				845413952D0AD2450023BF68 /* ThinkFlixUITests.xctest */,
+				8443AB992D0F514F006D8AAF /* ThinkFlix.app */,
+				8443ABB02D0F5151006D8AAF /* ThinkFlixTests.xctest */,
+				8443ABBA2D0F5151006D8AAF /* ThinkFlixUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,134 +108,135 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		845413762D0AD2430023BF68 /* ThinkFlix */ = {
+		8443AB982D0F514F006D8AAF /* ThinkFlix */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8454139E2D0AD2450023BF68 /* Build configuration list for PBXNativeTarget "ThinkFlix" */;
+			buildConfigurationList = 8443ABC32D0F5151006D8AAF /* Build configuration list for PBXNativeTarget "ThinkFlix" */;
 			buildPhases = (
-				845413732D0AD2430023BF68 /* Sources */,
-				845413742D0AD2430023BF68 /* Frameworks */,
-				845413752D0AD2430023BF68 /* Resources */,
+				8443AB952D0F514F006D8AAF /* Sources */,
+				8443AB962D0F514F006D8AAF /* Frameworks */,
+				8443AB972D0F514F006D8AAF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				845413792D0AD2430023BF68 /* ThinkFlix */,
+				8443AB9B2D0F514F006D8AAF /* ThinkFlix */,
 			);
 			name = ThinkFlix;
 			packageProductDependencies = (
 			);
 			productName = ThinkFlix;
-			productReference = 845413772D0AD2430023BF68 /* ThinkFlix.app */;
+			productReference = 8443AB992D0F514F006D8AAF /* ThinkFlix.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8454138A2D0AD2450023BF68 /* ThinkFlixTests */ = {
+		8443ABAF2D0F5151006D8AAF /* ThinkFlixTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 845413A32D0AD2450023BF68 /* Build configuration list for PBXNativeTarget "ThinkFlixTests" */;
+			buildConfigurationList = 8443ABC82D0F5151006D8AAF /* Build configuration list for PBXNativeTarget "ThinkFlixTests" */;
 			buildPhases = (
-				845413872D0AD2450023BF68 /* Sources */,
-				845413882D0AD2450023BF68 /* Frameworks */,
-				845413892D0AD2450023BF68 /* Resources */,
+				8443ABAC2D0F5151006D8AAF /* Sources */,
+				8443ABAD2D0F5151006D8AAF /* Frameworks */,
+				8443ABAE2D0F5151006D8AAF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8454138D2D0AD2450023BF68 /* PBXTargetDependency */,
+				8443ABB22D0F5151006D8AAF /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				8454138E2D0AD2450023BF68 /* ThinkFlixTests */,
+				8443ABB32D0F5151006D8AAF /* ThinkFlixTests */,
 			);
 			name = ThinkFlixTests;
 			packageProductDependencies = (
 			);
 			productName = ThinkFlixTests;
-			productReference = 8454138B2D0AD2450023BF68 /* ThinkFlixTests.xctest */;
+			productReference = 8443ABB02D0F5151006D8AAF /* ThinkFlixTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		845413942D0AD2450023BF68 /* ThinkFlixUITests */ = {
+		8443ABB92D0F5151006D8AAF /* ThinkFlixUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 845413A62D0AD2450023BF68 /* Build configuration list for PBXNativeTarget "ThinkFlixUITests" */;
+			buildConfigurationList = 8443ABCB2D0F5151006D8AAF /* Build configuration list for PBXNativeTarget "ThinkFlixUITests" */;
 			buildPhases = (
-				845413912D0AD2450023BF68 /* Sources */,
-				845413922D0AD2450023BF68 /* Frameworks */,
-				845413932D0AD2450023BF68 /* Resources */,
+				8443ABB62D0F5151006D8AAF /* Sources */,
+				8443ABB72D0F5151006D8AAF /* Frameworks */,
+				8443ABB82D0F5151006D8AAF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				845413972D0AD2450023BF68 /* PBXTargetDependency */,
+				8443ABBC2D0F5151006D8AAF /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				845413982D0AD2450023BF68 /* ThinkFlixUITests */,
+				8443ABBD2D0F5151006D8AAF /* ThinkFlixUITests */,
 			);
 			name = ThinkFlixUITests;
 			packageProductDependencies = (
 			);
 			productName = ThinkFlixUITests;
-			productReference = 845413952D0AD2450023BF68 /* ThinkFlixUITests.xctest */;
+			productReference = 8443ABBA2D0F5151006D8AAF /* ThinkFlixUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		8454136F2D0AD2430023BF68 /* Project object */ = {
+		8443AB912D0F514F006D8AAF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
-					845413762D0AD2430023BF68 = {
+					8443AB982D0F514F006D8AAF = {
 						CreatedOnToolsVersion = 16.2;
 					};
-					8454138A2D0AD2450023BF68 = {
+					8443ABAF2D0F5151006D8AAF = {
 						CreatedOnToolsVersion = 16.2;
-						TestTargetID = 845413762D0AD2430023BF68;
+						TestTargetID = 8443AB982D0F514F006D8AAF;
 					};
-					845413942D0AD2450023BF68 = {
+					8443ABB92D0F5151006D8AAF = {
 						CreatedOnToolsVersion = 16.2;
-						TestTargetID = 845413762D0AD2430023BF68;
+						TestTargetID = 8443AB982D0F514F006D8AAF;
 					};
 				};
 			};
-			buildConfigurationList = 845413722D0AD2430023BF68 /* Build configuration list for PBXProject "ThinkFlix" */;
+			buildConfigurationList = 8443AB942D0F514F006D8AAF /* Build configuration list for PBXProject "ThinkFlix" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				de,
 			);
-			mainGroup = 8454136E2D0AD2430023BF68;
+			mainGroup = 8443AB902D0F514F006D8AAF;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 845413782D0AD2430023BF68 /* Products */;
+			productRefGroup = 8443AB9A2D0F514F006D8AAF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				845413762D0AD2430023BF68 /* ThinkFlix */,
-				8454138A2D0AD2450023BF68 /* ThinkFlixTests */,
-				845413942D0AD2450023BF68 /* ThinkFlixUITests */,
+				8443AB982D0F514F006D8AAF /* ThinkFlix */,
+				8443ABAF2D0F5151006D8AAF /* ThinkFlixTests */,
+				8443ABB92D0F5151006D8AAF /* ThinkFlixUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		845413752D0AD2430023BF68 /* Resources */ = {
+		8443AB972D0F514F006D8AAF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		845413892D0AD2450023BF68 /* Resources */ = {
+		8443ABAE2D0F5151006D8AAF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		845413932D0AD2450023BF68 /* Resources */ = {
+		8443ABB82D0F5151006D8AAF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -245,21 +246,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		845413732D0AD2430023BF68 /* Sources */ = {
+		8443AB952D0F514F006D8AAF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		845413872D0AD2450023BF68 /* Sources */ = {
+		8443ABAC2D0F5151006D8AAF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		845413912D0AD2450023BF68 /* Sources */ = {
+		8443ABB62D0F5151006D8AAF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -269,20 +270,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8454138D2D0AD2450023BF68 /* PBXTargetDependency */ = {
+		8443ABB22D0F5151006D8AAF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 845413762D0AD2430023BF68 /* ThinkFlix */;
-			targetProxy = 8454138C2D0AD2450023BF68 /* PBXContainerItemProxy */;
+			target = 8443AB982D0F514F006D8AAF /* ThinkFlix */;
+			targetProxy = 8443ABB12D0F5151006D8AAF /* PBXContainerItemProxy */;
 		};
-		845413972D0AD2450023BF68 /* PBXTargetDependency */ = {
+		8443ABBC2D0F5151006D8AAF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 845413762D0AD2430023BF68 /* ThinkFlix */;
-			targetProxy = 845413962D0AD2450023BF68 /* PBXContainerItemProxy */;
+			target = 8443AB982D0F514F006D8AAF /* ThinkFlix */;
+			targetProxy = 8443ABBB2D0F5151006D8AAF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		8454139F2D0AD2450023BF68 /* Debug */ = {
+		8443ABC42D0F5151006D8AAF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -292,39 +293,36 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ThinkFlix/Preview Content\"";
 				DEVELOPMENT_TEAM = Q87UDX5898;
-				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ThinkFlix/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = ThinkFlix;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.trivia-games";
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.jules.ThinkFlix;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				XROS_DEPLOYMENT_TARGET = 2.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 18.0;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
-		845413A02D0AD2450023BF68 /* Release */ = {
+		8443ABC52D0F5151006D8AAF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -334,39 +332,36 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ThinkFlix/Preview Content\"";
 				DEVELOPMENT_TEAM = Q87UDX5898;
-				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ThinkFlix/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = ThinkFlix;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.trivia-games";
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.jules.ThinkFlix;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				XROS_DEPLOYMENT_TARGET = 2.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 18.0;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
-		845413A12D0AD2450023BF68 /* Debug */ = {
+		8443ABC62D0F5151006D8AAF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -418,16 +413,18 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		845413A22D0AD2450023BF68 /* Release */ = {
+		8443ABC72D0F5151006D8AAF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -473,14 +470,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		845413A42D0AD2450023BF68 /* Debug */ = {
+		8443ABC92D0F5151006D8AAF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -489,21 +489,17 @@
 				DEVELOPMENT_TEAM = Q87UDX5898;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
-				MACOSX_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.jules.ThinkFlixTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThinkFlix.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ThinkFlix";
-				XROS_DEPLOYMENT_TARGET = 2.2;
 			};
 			name = Debug;
 		};
-		845413A52D0AD2450023BF68 /* Release */ = {
+		8443ABCA2D0F5151006D8AAF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,104 +508,90 @@
 				DEVELOPMENT_TEAM = Q87UDX5898;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
-				MACOSX_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.jules.ThinkFlixTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThinkFlix.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ThinkFlix";
-				XROS_DEPLOYMENT_TARGET = 2.2;
 			};
 			name = Release;
 		};
-		845413A72D0AD2450023BF68 /* Debug */ = {
+		8443ABCC2D0F5151006D8AAF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q87UDX5898;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
-				MACOSX_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.jules.ThinkFlixUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = ThinkFlix;
-				XROS_DEPLOYMENT_TARGET = 2.2;
 			};
 			name = Debug;
 		};
-		845413A82D0AD2450023BF68 /* Release */ = {
+		8443ABCD2D0F5151006D8AAF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q87UDX5898;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
-				MACOSX_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.jules.ThinkFlixUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = ThinkFlix;
-				XROS_DEPLOYMENT_TARGET = 2.2;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		845413722D0AD2430023BF68 /* Build configuration list for PBXProject "ThinkFlix" */ = {
+		8443AB942D0F514F006D8AAF /* Build configuration list for PBXProject "ThinkFlix" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				845413A12D0AD2450023BF68 /* Debug */,
-				845413A22D0AD2450023BF68 /* Release */,
+				8443ABC62D0F5151006D8AAF /* Debug */,
+				8443ABC72D0F5151006D8AAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8454139E2D0AD2450023BF68 /* Build configuration list for PBXNativeTarget "ThinkFlix" */ = {
+		8443ABC32D0F5151006D8AAF /* Build configuration list for PBXNativeTarget "ThinkFlix" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8454139F2D0AD2450023BF68 /* Debug */,
-				845413A02D0AD2450023BF68 /* Release */,
+				8443ABC42D0F5151006D8AAF /* Debug */,
+				8443ABC52D0F5151006D8AAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		845413A32D0AD2450023BF68 /* Build configuration list for PBXNativeTarget "ThinkFlixTests" */ = {
+		8443ABC82D0F5151006D8AAF /* Build configuration list for PBXNativeTarget "ThinkFlixTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				845413A42D0AD2450023BF68 /* Debug */,
-				845413A52D0AD2450023BF68 /* Release */,
+				8443ABC92D0F5151006D8AAF /* Debug */,
+				8443ABCA2D0F5151006D8AAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		845413A62D0AD2450023BF68 /* Build configuration list for PBXNativeTarget "ThinkFlixUITests" */ = {
+		8443ABCB2D0F5151006D8AAF /* Build configuration list for PBXNativeTarget "ThinkFlixUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				845413A72D0AD2450023BF68 /* Debug */,
-				845413A82D0AD2450023BF68 /* Release */,
+				8443ABCC2D0F5151006D8AAF /* Debug */,
+				8443ABCD2D0F5151006D8AAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 8454136F2D0AD2430023BF68 /* Project object */;
+	rootObject = 8443AB912D0F514F006D8AAF /* Project object */;
 }

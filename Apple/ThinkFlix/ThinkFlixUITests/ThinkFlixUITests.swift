@@ -2,7 +2,7 @@
 //  ThinkFlixUITests.swift
 //  ThinkFlixUITests
 //
-//  Created by Julian Schumacher on 12.12.24.
+//  Created by Julian Schumacher on 15.12.24.
 //
 
 import XCTest
