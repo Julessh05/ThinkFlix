@@ -74,6 +74,13 @@ internal struct GameView: View {
     // Dialog control variables
     @State private var endOfStreakShown : Bool = false
     
+    /// Toggles the dialog which enables the selection of which player answered correctly
+    @State private var playerCorrectShown : Bool = false
+    
+    /// Toggles between true and false as an indicator for RapidFire correct player change
+    @State private var correctPlayerToggle : Bool = false
+    
+    
     var body: some View {
         VStack {
             //            Text("Category: \(currentQuestion?.category?.name ?? "Category loading...")")
@@ -86,7 +93,7 @@ internal struct GameView: View {
                 factFusionView()
             }
         }
-        .navigationTitle(currentPlayer?.name ?? "ThinkFlix")
+        .navigationTitle(gameConfig.speed == .roundUp ? (currentPlayer?.name ?? "ThinkFlix") : "ThinkFlix")
         .toolbar {
             ToolbarItem(placement: .primaryAction) {
                 Button {
@@ -100,7 +107,7 @@ internal struct GameView: View {
             do {
                 if gameConfig.gameMode == .quizCore {
                     questions = try Storage.loadQuestionsFor(categories: gameConfig.categories)
-                        //                questions = try Storage.fetchQuestions(
+                    //                questions = try Storage.fetchQuestions(
                     //                    with: gameContext,
                     //                    for: gameConfig.categories
                     //                )
@@ -138,11 +145,11 @@ internal struct GameView: View {
                 currentQuestion?.question ?? "Question loading"
             )
         )
-            .multilineTextAlignment(.center)
-            .foregroundStyle(.black)
-            .frame(width: 300, height: 375)
-            .background(in: .rect(cornerRadius: 20), fillStyle: .init(eoFill: true, antialiased: true))
-            .backgroundStyle(.clear)
+        .multilineTextAlignment(.center)
+        .foregroundStyle(.black)
+        .frame(width: 300, height: 375)
+        .background(in: .rect(cornerRadius: 20), fillStyle: .init(eoFill: true, antialiased: true))
+        .backgroundStyle(.clear)
         Button("Skip question") {
             updateCurrentQuestion()
         }
@@ -151,7 +158,7 @@ internal struct GameView: View {
             withAnimation {
                 answerShown.toggle()
             }
-//            TODO: check this line: factCorrect = answerShown (Shouldn't be here, works with facts in quizCore View
+            //            TODO: check this line: factCorrect = answerShown (Shouldn't be here, works with facts in quizCore View
         } label: {
             Label("Show \(answerShown ? "question" : "answer")", systemImage: "checkmark.bubble")
         }
@@ -228,6 +235,41 @@ internal struct GameView: View {
                         )
                     )
                 //                        .shadow(radius: 10)
+            }
+            .alert("Correct player", isPresented: $playerCorrectShown) {
+                Section {
+                    ForEach(gameConfig.player!) {
+                        player in
+                        Button {
+                            currentPlayer = player
+                            correctPlayerToggle.toggle()
+                        } label: {
+                            Label(player.name, systemImage: "person.fill")
+                        }
+                    }
+                }
+                Section {
+                    Button("Cancel", role: .cancel) {
+                        // Do nothing to just close dialog
+                    }
+                }
+            } message: {
+                Text("Select the player which answered the question correctly")
+            }
+            // PROBLEM: Not called when same player answers second question in a row (cause no player change)
+            .onChange(of: correctPlayerToggle) {
+                guard gameConfig.speed == .rapidFire else { return }
+                guard currentPlayer != nil else { return }
+                currentPlayer?.answered += 1
+                // TODO: implement points for speed
+                if gameConfig.gameMode == .quizCore {
+                    updateCurrentQuestion()
+                } else {
+                    // Do nothing
+                }
+                if currentPlayer?.answered == gameConfig.goal || allAnswersNumber == gameConfig.goal {
+                    gameConfig.endGame()
+                }
             }
             Spacer()
         }
@@ -397,27 +439,67 @@ internal struct GameView: View {
     
     /// Called when the answer is correct
     private func answerCorrect() -> Void {
-        if currentPlayerStreak == 2 {
-            maxStreakPlayer = currentPlayer
-            nextTurn()
-            endOfStreakShown.toggle()
+        if gameConfig.speed == .roundUp {
+            if currentPlayerStreak == 2 {
+                maxStreakPlayer = currentPlayer
+                nextTurn()
+                endOfStreakShown.toggle()
+            } else {
+                // Increase points
+                if gameConfig.player != nil {
+                    currentPlayer?.answered += 1
+                } else {
+                    allAnswersNumber += 1
+                }
+                if gameConfig.gameMode == .quizCore {
+                    updateCurrentQuestion()
+                } else {
+                    // Do nothing, because fact is only updated when the user clicks "next fact"
+                }
+            }
         } else {
-            // Increase points
-            if gameConfig.player != nil {
-                currentPlayer?.answered += 1
-            } else {
-                allAnswersNumber += 1
-            }
-            currentPlayerStreak += 1
-            if gameConfig.gameMode == .quizCore {
-                updateCurrentQuestion()
-            } else {
-                // Do nothing, because fact is only updated when the user clicks "next fact"
-            }
+            playerCorrectShown.toggle()
         }
         // End game if goal has been reached
         if currentPlayer?.answered == gameConfig.goal || allAnswersNumber == gameConfig.goal {
             gameConfig.endGame()
+        }
+    }
+}
+
+
+private struct PlayerSelector : View {
+    
+    @Environment(\.dismiss) private var dismiss
+    
+    fileprivate var player : [GamePlayer]?
+    
+    @Binding fileprivate var selectedPlayer : GamePlayer?
+    
+    var body: some View {
+        NavigationStack {
+            List {
+                Section {
+                    ForEach(player!) {
+                        player in
+                        Button {
+                            // Setting nil to trigger actual change
+                            selectedPlayer = nil
+                            selectedPlayer = player
+                            dismiss()
+                        } label: {
+                            Label(player.name, systemImage: "person.fill")
+                        }
+                        .foregroundStyle(.primary)
+                    }
+                } header: {
+                    Text("Player")
+                } footer: {
+                    Text("Select the player, which answered the question correctly")
+                }
+            }
+            .navigationTitle("Correct Player")
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }
@@ -427,7 +509,8 @@ internal struct GameView: View {
     let gameConfig = GameConfig(
         categories: [],
         player: [
-            GamePlayer(name: "Test player")
+            GamePlayer(name: "Test player"),
+            GamePlayer(name: "Second player")
         ],
         gameMode: .quizCore,
         speed: .roundUp
@@ -444,7 +527,8 @@ internal struct GameView: View {
     let gameConfig = GameConfig(
         categories: [],
         player: [
-            GamePlayer(name: "Test player")
+            GamePlayer(name: "Test player"),
+            GamePlayer(name: "Second player")
         ],
         gameMode: .factFusion,
         speed: .roundUp

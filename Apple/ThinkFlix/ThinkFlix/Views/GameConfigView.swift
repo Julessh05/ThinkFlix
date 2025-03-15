@@ -143,10 +143,14 @@ internal struct GameConfigView: View {
                             Label(mode.getCorrectName(), systemImage: mode.getImage())
                         }
                     }
-                    Picker("Speed", selection: $selectedSpeed) {
-                        ForEach(GameSpeed.allCases, id: \.id) {
-                            speed in
-                            Label(speed.getCorrectName(), systemImage: speed.getImage())
+                    if usePlayer {
+                        withAnimation {
+                            Picker("Speed", selection: $selectedSpeed) {
+                                ForEach(GameSpeed.allCases, id: \.id) {
+                                    speed in
+                                    Label(speed.getCorrectName(), systemImage: speed.getImage())
+                                }
+                            }
                         }
                     }
                     Picker("Goal", selection: $selectedGameGoal) {
@@ -230,7 +234,7 @@ internal struct GameConfigView: View {
                     Button("Start") {
                         gameConfig.categories = selectedCategories
                         gameConfig.gameMode = selectedGameMode
-                        gameConfig.speed = selectedSpeed
+                        gameConfig.speed = usePlayer ? selectedSpeed : .roundUp
                         gameConfig.goal = selectedGameGoal == .custom ? (Int(
                             customGoal
                         ) ?? GameGoal.standard.getGoalValue()) : selectedGameGoal
@@ -322,6 +326,7 @@ internal struct NameSheet : View {
                 } header: {
                     Text("Names")
                 } footer: {
+                    // Display information / error message if a number smaller than 1 is entered as player number or is in cache of player number
                     if (Int(numberPlayer) ?? 2) < 1 || (
                         Int(numberPlayerCache) ?? 2) < 1
                     {

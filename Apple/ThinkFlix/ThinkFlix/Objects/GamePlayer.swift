@@ -8,7 +8,7 @@
 import Foundation
 
 /// A player in the game
-internal final class GamePlayer : ObservableObject {
+internal final class GamePlayer : ObservableObject, Identifiable, Equatable {
     
     /// The name of the player
     internal let name : String
@@ -26,5 +26,9 @@ internal final class GamePlayer : ObservableObject {
     internal convenience init(name : String, points : Int) {
         self.init(name: name)
         self.points = points
+    }
+    
+    static func == (lhs: GamePlayer, rhs: GamePlayer) -> Bool {
+        return lhs.name == rhs.name
     }
 }
