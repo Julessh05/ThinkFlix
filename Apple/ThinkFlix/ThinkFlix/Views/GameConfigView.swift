@@ -251,6 +251,8 @@ internal struct GameConfigView: View {
                             // Not enough player names entered
                             errNotEnoughPlayer.toggle()
                             return
+                        } else {
+                            gameConfig.player = nil
                         }
                         gameConfig.gameRunning = true
                     }

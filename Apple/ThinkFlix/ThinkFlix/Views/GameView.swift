@@ -238,7 +238,7 @@ internal struct GameView: View {
             }
             .alert("Correct player", isPresented: $playerCorrectShown) {
                 Section {
-                    ForEach(gameConfig.player!) {
+                    ForEach(gameConfig.player ?? []) {
                         player in
                         Button {
                             currentPlayer = player

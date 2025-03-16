@@ -23,7 +23,7 @@ struct MainView: View {
         if gameConfig.gameRunning {
             GameView()
                 .environmentObject(gameConfig)
-        } else if gameConfig.gameOver {
+        } else if gameConfig.gameOver && gameConfig.player != nil && !gameConfig.player!.isEmpty { // There has to be player, otherwise the GameEndView should not be shown
             GameEndView()
                 .environmentObject(gameConfig)
         } else {
