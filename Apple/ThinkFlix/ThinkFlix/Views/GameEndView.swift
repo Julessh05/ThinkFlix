@@ -53,6 +53,7 @@ struct GameEndView: View {
         .toolbar {
             ToolbarItem(placement: .primaryAction) {
                 Button {
+                    gameConfig.player = []
                     gameConfig.gameOver = false
                 } label: {
                     Image(systemName: "xmark")

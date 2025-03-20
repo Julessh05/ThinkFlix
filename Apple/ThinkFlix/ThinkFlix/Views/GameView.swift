@@ -93,6 +93,26 @@ internal struct GameView: View {
                 factFusionView()
             }
         }
+        .alert("Correct player", isPresented: $playerCorrectShown) {
+            Section {
+                ForEach(gameConfig.player ?? []) {
+                    player in
+                    Button {
+                        currentPlayer = player
+                        correctPlayerToggle.toggle()
+                    } label: {
+                        Label(player.name, systemImage: "person.fill")
+                    }
+                }
+            }
+            Section {
+                Button("Cancel", role: .cancel) {
+                    // Do nothing to just close dialog
+                }
+            }
+        } message: {
+            Text("Select the player which answered the question correctly")
+        }
         .navigationTitle(gameConfig.speed == .roundUp ? (currentPlayer?.name ?? "ThinkFlix") : "ThinkFlix")
         .toolbar {
             ToolbarItem(placement: .primaryAction) {
@@ -236,26 +256,6 @@ internal struct GameView: View {
                     )
                 //                        .shadow(radius: 10)
             }
-            .alert("Correct player", isPresented: $playerCorrectShown) {
-                Section {
-                    ForEach(gameConfig.player ?? []) {
-                        player in
-                        Button {
-                            currentPlayer = player
-                            correctPlayerToggle.toggle()
-                        } label: {
-                            Label(player.name, systemImage: "person.fill")
-                        }
-                    }
-                }
-                Section {
-                    Button("Cancel", role: .cancel) {
-                        // Do nothing to just close dialog
-                    }
-                }
-            } message: {
-                Text("Select the player which answered the question correctly")
-            }
             // PROBLEM: Not called when same player answers second question in a row (cause no player change)
             .onChange(of: correctPlayerToggle) {
                 guard gameConfig.speed == .rapidFire else { return }
@@ -390,6 +390,9 @@ internal struct GameView: View {
     /// Updates the current fact to a new, randomly selected, not yet displayed fact, included in the selected
     /// fact categories
     private func updateCurrentFact() -> Void {
+        if factCheckedIn {
+            playerCorrectShown.toggle()
+        }
         factCheckedIn = false
         factCorrect = nil
         factShownBig = false
@@ -432,8 +435,6 @@ internal struct GameView: View {
                 currentPlayerIndex += 1
             }
             currentPlayer = gameConfig.player![currentPlayerIndex]
-        } else {
-            // TODO: implement RapidFire Mode
         }
     }
     
@@ -457,7 +458,7 @@ internal struct GameView: View {
                     // Do nothing, because fact is only updated when the user clicks "next fact"
                 }
             }
-        } else {
+        } else if gameConfig.gameMode == .quizCore {
             playerCorrectShown.toggle()
         }
         // End game if goal has been reached

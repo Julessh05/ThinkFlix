@@ -48,7 +48,6 @@ internal final class GameConfig : ObservableObject {
         gameRunning = false
         gameOver = true
         categories = []
-        player = []
         goal = 15 // Standard Goal as fallback if something happens
     }
 }
