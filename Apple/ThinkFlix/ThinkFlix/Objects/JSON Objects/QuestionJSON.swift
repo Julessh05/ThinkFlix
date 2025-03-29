@@ -15,4 +15,6 @@ internal struct QuestionJSON : Decodable {
     internal let id : UUID?
     
     internal let categoryID : String
+    
+    internal let difficulty : Int
 }

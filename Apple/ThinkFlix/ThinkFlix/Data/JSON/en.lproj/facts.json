@@ -4,482 +4,551 @@
         "wrongFirst": "Vatican City is the largest country in the world in terms of territory.",
         "wrongSecond": "Vatican City has the highest population density of any major city worldwide.",
         "wrongThird": "Vatican City spans multiple continents and borders four different countries.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 1
     },
     {
         "correct": "Australia is the only country that occupies an entire continent on its own.",
         "wrongFirst": "Australia is the only country with no deserts at all.",
         "wrongSecond": "Australia is connected to Asia by a land bridge built in the 1900s.",
         "wrongThird": "Australia is completely uninhabited except for its coastal regions.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 1
     },
     {
         "correct": "Brazil contains the majority of the Amazon Rainforest, often called the “lungs of the Earth.”",
         "wrongFirst": "Brazil is entirely covered in rainforest and has no urban areas.",
         "wrongSecond": "Brazil’s rainforest has no indigenous communities living within it.",
         "wrongThird": "Brazil’s Amazon Rainforest is the smallest rainforest in South America.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 1
     },
     {
         "correct": "Nepal is home to Mount Everest, the highest mountain peak above sea level.",
         "wrongFirst": "Nepal is home to the world’s deepest ocean trench.",
         "wrongSecond": "Nepal’s major cities are all located at higher altitudes than Mount Everest’s summit.",
         "wrongThird": "Nepal does not share any borders with China or India.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 1
     },
     {
         "correct": "Canada has the longest coastline of any country, stretching over 200,000 kilometers.",
         "wrongFirst": "Canada has no direct access to any ocean, making it entirely landlocked.",
         "wrongSecond": "Canada’s coastline is shorter than that of Monaco.",
         "wrongThird": "Canada’s coastline is composed mostly of tropical beaches and coral reefs.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 2
     },
     {
         "correct": "Finland is often called the 'Land of a Thousand Lakes,' though it actually has over 180,000 lakes.",
         "wrongFirst": "Finland has no natural bodies of water and relies entirely on rivers from neighboring countries.",
         "wrongSecond": "Finland’s lakes are all connected, forming one single massive body of water.",
         "wrongThird": "Finland has more deserts than lakes within its borders.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 1
     },
     {
         "correct": "Saudi Arabia is the largest country in the world without any permanent rivers.",
         "wrongFirst": "Saudi Arabia has the most extensive river network in the Middle East.",
         "wrongSecond": "Saudi Arabia’s deserts are completely submerged under water half the year.",
         "wrongThird": "Saudi Arabia was formerly known for its lush rainforests until recent decades.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 3
     },
     {
         "correct": "Iceland uses almost 100% renewable energy, mainly geothermal and hydroelectric power.",
         "wrongFirst": "Iceland’s main source of energy is coal, which it imports from Antarctica.",
         "wrongSecond": "Iceland’s volcanic activity is entirely dormant and has never been used to generate power.",
         "wrongThird": "Iceland relies solely on solar power due to its year-round sunny climate.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 2
     },
     {
         "correct": "Japan experiences more earthquakes than most other countries due to its location on the Ring of Fire.",
         "wrongFirst": "Japan is entirely unaffected by tectonic activity and has never recorded an earthquake.",
         "wrongSecond": "Japan’s largest industry is ice road trucking across frozen seas.",
         "wrongThird": "Japan has no active volcanoes and sits at the center of a tectonically stable region.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 1
     },
     {
         "correct": "Indonesia is the world’s largest archipelagic country, with over 17,000 islands.",
         "wrongFirst": "Indonesia consists of only one large island and no smaller ones.",
         "wrongSecond": "Indonesia is located entirely in the Arctic Circle.",
         "wrongThird": "Indonesia is landlocked, sharing borders with China, India, and Thailand.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 2
     },
     {
         "correct": "The capital of France is Paris.",
         "wrongFirst": "The capital of France is Berlin.",
         "wrongSecond": "The capital of France is Madrid.",
         "wrongThird": "The capital of France is Rome.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 1
     },
     {
         "correct": "Vatican City is completely enclaved within Rome, Italy.",
         "wrongFirst": "Vatican City occupies half of Sicily.",
         "wrongSecond": "Vatican City is located on the coast of the Adriatic Sea.",
         "wrongThird": "Vatican City spans across the borders of Italy and Switzerland.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 1
     },
     {
         "correct": "Russia is the largest country in the world by land area.",
         "wrongFirst": "Canada is the largest country in the world by land area.",
         "wrongSecond": "China is the largest country in the world by land area.",
         "wrongThird": "Australia is the largest country in the world by land area.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 1
     },
     {
         "correct": "Egypt is home to the longest river in the world, the Nile.",
         "wrongFirst": "Argentina is home to the longest river in the world, the Nile.",
         "wrongSecond": "Pakistan is home to the longest river in the world, the Nile.",
         "wrongThird": "South Africa is home to the longest river in the world, the Nile.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 1
     },
     {
         "correct": "China has the highest population of any country in the world.",
         "wrongFirst": "India has the highest population of any country in the world.",
         "wrongSecond": "Indonesia has the highest population of any country in the world.",
         "wrongThird": "Pakistan has the highest population of any country in the world.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 1
     },
     {
         "correct": "Switzerland has four national languages: German, French, Italian, and Romansh.",
         "wrongFirst": "Switzerland has one national language: Latin.",
         "wrongSecond": "Switzerland’s official language is only German.",
         "wrongThird": "Switzerland has eight official languages, primarily African dialects.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 2
     },
     {
         "correct": "Belgium’s capital, Brussels, is considered the de facto capital of the European Union.",
         "wrongFirst": "Belgium’s capital, Antwerp, is considered the de facto capital of the European Union.",
         "wrongSecond": "Belgium has no central capital, only regional capitals.",
         "wrongThird": "Belgium’s capital, Liège, is the official seat of the United Nations.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 2
     },
     {
         "correct": "Chile is the longest country in the world from north to south.",
         "wrongFirst": "Brazil is the longest country in the world from north to south.",
         "wrongSecond": "Argentina is the longest country in the world from north to south.",
         "wrongThird": "Peru is the longest country in the world from north to south.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 2
     },
     {
         "correct": "Bhutan measures its development by Gross National Happiness instead of solely by GDP.",
         "wrongFirst": "Bangladesh measures its development by Gross National Happiness instead of solely by GDP.",
         "wrongSecond": "Maldives measures its development by Gross National Happiness instead of solely by GDP.",
         "wrongThird": "Laos measures its development by Gross National Happiness instead of solely by GDP.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 2
     },
     {
         "correct": "Bolivia has two official capitals: La Paz (administrative) and Sucre (constitutional).",
         "wrongFirst": "Colombia has two official capitals: Bogotá and Medellín.",
         "wrongSecond": "Venezuela has two official capitals: Caracas and Maracaibo.",
         "wrongThird": "Paraguay has two official capitals: Asunción and Ciudad del Este.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 3
     },
     {
         "correct": "New Zealand was the first country to grant women the right to vote, in 1893.",
         "wrongFirst": "Finland was the first country to grant women the right to vote, in 1893.",
         "wrongSecond": "Canada was the first country to grant women the right to vote, in 1893.",
         "wrongThird": "Iceland was the first country to grant women the right to vote, in 1893.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 2
     },
     {
         "correct": "Democratic Republic of the Congo has the second-largest rainforest in the world after the Amazon.",
         "wrongFirst": "Brazil has the second-largest rainforest in the world after the Amazon.",
         "wrongSecond": "Indonesia has the second-largest rainforest in the world after the Amazon.",
         "wrongThird": "Peru has the second-largest rainforest in the world after the Amazon.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 3
     },
     {
         "correct": "Nigeria is the most populous country in Africa.",
         "wrongFirst": "Egypt is the most populous country in Africa.",
         "wrongSecond": "South Africa is the most populous country in Africa.",
         "wrongThird": "Ethiopia is the most populous country in Africa.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 1
     },
     {
         "correct": "Mexico introduced chocolate to the world, as cacao was first cultivated by ancient Mesoamerican cultures.",
         "wrongFirst": "Belgium introduced chocolate to the world, as cacao was first cultivated there.",
         "wrongSecond": "Switzerland introduced chocolate to the world, as cacao was first cultivated there.",
         "wrongThird": "Ghana introduced chocolate to the world, as cacao was first cultivated there.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 2
     },
     {
         "correct": "Estonia was the first country to adopt nationwide online voting in general elections.",
         "wrongFirst": "Switzerland was the first country to adopt nationwide online voting in general elections.",
         "wrongSecond": "Canada was the first country to adopt nationwide online voting in general elections.",
         "wrongThird": "New Zealand was the first country to adopt nationwide online voting in general elections.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 3
     },
     {
         "correct": "Greenland, an autonomous territory of Denmark, is the world’s largest island.",
         "wrongFirst": "Greenland is an independent country with no ties to Denmark.",
         "wrongSecond": "Greenland is a small peninsula extending from northern Canada.",
         "wrongThird": "Greenland is classified as a subcontinent by the United Nations.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 2
     },
     {
         "correct": "South Sudan is the newest internationally recognized country, declaring independence in 2011.",
         "wrongFirst": "Kosovo is the newest internationally recognized country, declaring independence in 2011.",
         "wrongSecond": "East Timor is the newest internationally recognized country, declaring independence in 2011.",
         "wrongThird": "Eritrea is the newest internationally recognized country, declaring independence in 2011.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 2
     },
     {
         "correct": "Mongolia is the least densely populated country in the world.",
         "wrongFirst": "Argentina is the least densely populated country in the world.",
         "wrongSecond": "Sudan is the least densely populated country in the world.",
         "wrongThird": "Bolivia is the least densely populated country in the world.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 3
     },
     {
         "correct": "Monaco is the most densely populated sovereign country in the world.",
         "wrongFirst": "Singapore is the most densely populated sovereign country in the world.",
         "wrongSecond": "Malta is the most densely populated sovereign country in the world.",
         "wrongThird": "Bahrain is the most densely populated sovereign country in the world.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 2
     },
     {
         "correct": "South Africa has three capital cities: Pretoria (executive), Bloemfontein (judicial), and Cape Town (legislative).",
         "wrongFirst": "Nigeria has three capital cities: Abuja, Lagos, and Kano.",
         "wrongSecond": "Kenya has three capital cities: Nairobi, Mombasa, and Kisumu.",
         "wrongThird": "Ethiopia has three capital cities: Addis Ababa, Dire Dawa, and Mekelle.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 2
     },
     {
         "correct": "Malaysia is divided into Peninsular Malaysia and East Malaysia on the island of Borneo.",
         "wrongFirst": "Malaysia is divided into Peninsular Malaysia and the Philippine Archipelago.",
         "wrongSecond": "Malaysia is divided into Peninsular Malaysia and Java Island.",
         "wrongThird": "Malaysia is divided into Peninsular Malaysia and the island of Sumatra.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 2
     },
     {
         "correct": "Kazakhstan is the largest landlocked country in the world by area.",
         "wrongFirst": "Mongolia is the largest landlocked country in the world by area.",
         "wrongSecond": "Chad is the largest landlocked country in the world by area.",
         "wrongThird": "Niger is the largest landlocked country in the world by area.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 2
     },
     {
         "correct": "Papua New Guinea is one of the most linguistically diverse countries, with over 800 languages spoken.",
         "wrongFirst": "Switzerland is one of the most linguistically diverse countries, with over 800 languages spoken.",
         "wrongSecond": "India is one of the most linguistically diverse countries, with over 800 languages spoken.",
         "wrongThird": "South Africa is one of the most linguistically diverse countries, with over 800 languages spoken.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 3
     },
     {
         "correct": "Uganda is known as the 'Pearl of Africa,' a nickname popularized by Winston Churchill.",
         "wrongFirst": "Kenya is known as the 'Pearl of Africa,' a nickname popularized by Winston Churchill.",
         "wrongSecond": "Tanzania is known as the 'Pearl of Africa,' a nickname popularized by Winston Churchill.",
         "wrongThird": "Ghana is known as the 'Pearl of Africa,' a nickname popularized by Winston Churchill.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 2
     },
     {
         "correct": "Chile’s Atacama Desert is considered the driest non-polar desert on Earth.",
         "wrongFirst": "India’s Thar Desert is considered the driest non-polar desert on Earth.",
         "wrongSecond": "China’s Gobi Desert is considered the driest non-polar desert on Earth.",
         "wrongThird": "Saudi Arabia’s Rub’ al Khali is considered the driest non-polar desert on Earth.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 3
     },
     {
         "correct": "Belize is the only country in Central America without a Pacific coastline.",
         "wrongFirst": "Honduras is the only country in Central America without a Pacific coastline.",
         "wrongSecond": "El Salvador is the only country in Central America without a Pacific coastline.",
         "wrongThird": "Costa Rica is the only country in Central America without a Pacific coastline.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 3
     },
     {
         "correct": "Iran was historically known as Persia until 1935.",
         "wrongFirst": "Iraq was historically known as Persia until 1935.",
         "wrongSecond": "Saudi Arabia was historically known as Persia until 1935.",
         "wrongThird": "Kuwait was historically known as Persia until 1935.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 1
     },
     {
         "correct": "Uruguay was the first country to host the FIFA World Cup, in 1930.",
         "wrongFirst": "Brazil was the first country to host the FIFA World Cup, in 1930.",
         "wrongSecond": "Argentina was the first country to host the FIFA World Cup, in 1930.",
         "wrongThird": "Italy was the first country to host the FIFA World Cup, in 1930.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 3
     },
     {
         "correct": "Portugal is the oldest nation-state in Europe with defined borders since 1139.",
         "wrongFirst": "Austria is the oldest nation-state in Europe with defined borders since 1139.",
         "wrongSecond": "Sweden is the oldest nation-state in Europe with defined borders since 1139.",
         "wrongThird": "Denmark is the oldest nation-state in Europe with defined borders since 1139.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 3
     },
     {
         "correct": "Ecuador is named after the Spanish word for ‘equator,’ which passes through the country.",
         "wrongFirst": "Colombia is named after the Spanish word for ‘equator,’ which passes through the country.",
         "wrongSecond": "Bolivia is named after the Spanish word for ‘equator,’ which passes through the country.",
         "wrongThird": "Peru is named after the Spanish word for ‘equator,’ which passes through the country.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 1
     },
     {
         "correct": "Sri Lanka was formerly known as Ceylon until 1972.",
         "wrongFirst": "Myanmar was formerly known as Ceylon until 1972.",
         "wrongSecond": "Indonesia was formerly known as Ceylon until 1972.",
         "wrongThird": "Thailand was formerly known as Ceylon until 1972.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 2
     },
     {
         "correct": "Belgium is divided into three regions: Flanders, Wallonia, and the Brussels-Capital Region.",
         "wrongFirst": "Belgium is divided strictly by language, resulting in five separate countries.",
         "wrongSecond": "Belgium consists of a single province with no internal divisions.",
         "wrongThird": "Belgium is composed of ten independent city-states under the European Union.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 2
     },
     {
         "correct": "Singapore is a city-state known for its strict laws and modern economy.",
         "wrongFirst": "Singapore is a desert city-state with no laws regarding cleanliness.",
         "wrongSecond": "Singapore spans the entire island of Borneo and multiple atolls.",
         "wrongThird": "Singapore is shared territory between Malaysia and Indonesia.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 1
     },
     {
         "correct": "Iraq is often referred to as the 'Cradle of Civilization' due to ancient Mesopotamia.",
         "wrongFirst": "Egypt is often referred to as the 'Cradle of Civilization' due to ancient Mesopotamia.",
         "wrongSecond": "Italy is often referred to as the 'Cradle of Civilization' due to ancient Mesopotamia.",
         "wrongThird": "Turkey is often referred to as the 'Cradle of Civilization' due to ancient Mesopotamia.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 2
     },
     {
         "correct": "Armenia was the first country in the world to adopt Christianity as a state religion.",
         "wrongFirst": "Ethiopia was the first country in the world to adopt Christianity as a state religion.",
         "wrongSecond": "Greece was the first country in the world to adopt Christianity as a state religion.",
         "wrongThird": "Italy was the first country in the world to adopt Christianity as a state religion.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 3
     },
     {
         "correct": "Bhutan restricts mass tourism, requiring a daily fee to preserve its culture and environment.",
         "wrongFirst": "Thailand restricts mass tourism, requiring a daily fee to preserve its culture and environment.",
         "wrongSecond": "Nepal restricts mass tourism, requiring a daily fee to preserve its culture and environment.",
         "wrongThird": "Cambodia restricts mass tourism, requiring a daily fee to preserve its culture and environment.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 3
     },
     {
         "correct": "Peru includes a large portion of the Andes Mountains, which run along South America’s western coast.",
         "wrongFirst": "Chile is the only South American country containing all sections of the Andes Mountains.",
         "wrongSecond": "Ecuador does not have any Andean mountain regions within its borders.",
         "wrongThird": "Brazil is home to the highest peak in the Andes range.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 1
     },
     {
         "correct": "Tunisia was the home of ancient Carthage, a powerful civilization that rivaled Rome.",
         "wrongFirst": "Morocco was the home of ancient Carthage, a powerful civilization that rivaled Rome.",
         "wrongSecond": "Libya was the home of ancient Carthage, a powerful civilization that rivaled Rome.",
         "wrongThird": "Egypt was the home of ancient Carthage, a powerful civilization that rivaled Rome.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 2
     },
     {
         "correct": "The Philippines was named after King Philip II of Spain.",
         "wrongFirst": "The Philippines was named after King Louis XIV of France.",
         "wrongSecond": "The Philippines was named after King Henry VIII of England.",
         "wrongThird": "The Philippines was named after King Ferdinand II of Portugal.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 2
     },
     {
         "correct": "Cuba is the largest island in the Caribbean by land area.",
         "wrongFirst": "Haiti is the largest island in the Caribbean by land area.",
         "wrongSecond": "The Dominican Republic is the largest island in the Caribbean by land area.",
         "wrongThird": "Puerto Rico is the largest island in the Caribbean by land area.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 2
     },
     {
         "correct": "Botswana has one of Africa’s highest concentrations of elephants, especially in the Okavango Delta.",
         "wrongFirst": "Morocco has one of Africa’s highest concentrations of elephants in the Atlas Mountains.",
         "wrongSecond": "Algeria has one of Africa’s highest concentrations of elephants in the Sahara Desert.",
         "wrongThird": "Eritrea has one of Africa’s highest concentrations of elephants along the Red Sea coast.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 2
     },
     {
         "correct": "Sri Lanka is famous for its tea production, particularly Ceylon tea.",
         "wrongFirst": "Sri Lanka is entirely desert and has no agriculture.",
         "wrongSecond": "Sri Lanka is known for coffee as its only export product.",
         "wrongThird": "Sri Lanka has banned tea production since the 1800s.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 1
     },
     {
         "correct": "Norway regularly ranks among the world’s happiest countries, partly due to high living standards.",
         "wrongFirst": "Norway has one of the lowest Human Development Index scores in the world.",
         "wrongSecond": "Norway’s population lives exclusively in desert regions with minimal access to water.",
         "wrongThird": "Norway is known for its tropical climate and year-round beach tourism.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 2
     },
     {
         "correct": "Liechtenstein is a doubly landlocked country between Switzerland and Austria.",
         "wrongFirst": "Liechtenstein shares a border with Italy, giving it Mediterranean access.",
         "wrongSecond": "Liechtenstein is a coastal country with ports on the Baltic Sea.",
         "wrongThird": "Liechtenstein is located in the Pyrenees between France and Spain.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 3
     },
     {
         "correct": "Bolivia and Paraguay are the only two landlocked countries in South America.",
         "wrongFirst": "Chile and Ecuador are the only two landlocked countries in South America.",
         "wrongSecond": "Argentina and Brazil are the only two landlocked countries in South America.",
         "wrongThird": "Venezuela and Colombia are the only two landlocked countries in South America.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 3
     },
     {
         "correct": "Germany’s Autobahn is famous for certain sections without a general speed limit.",
         "wrongFirst": "Belgium’s highway system is called the Autobahn with unlimited speeds everywhere.",
         "wrongSecond": "France’s roads are all called Autobahn, and all are speed-limit-free.",
         "wrongThird": "Poland has the Autobahn with no speed limits on any highways.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 2
     },
     {
         "correct": "Sri Lanka’s Sigiriya rock fortress is considered by some as the 'Eighth Wonder of the World.'",
         "wrongFirst": "Sri Lanka’s Sigiriya is a coastal fortress built entirely under the sea.",
         "wrongSecond": "Sri Lanka’s Sigiriya is an active volcano discovered only in the 20th century.",
         "wrongThird": "Sri Lanka’s Sigiriya is an ice sculpture that melts each summer.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 2
     },
     {
         "correct": "Iceland is powered primarily by geothermal energy, thanks to its volcanic activity.",
         "wrongFirst": "Iceland is powered entirely by burning imported coral from tropical oceans.",
         "wrongSecond": "Iceland uses large coal mines in the mountains for most of its energy.",
         "wrongThird": "Iceland has no volcanic activity and relies on fossil fuels shipped from Antarctica.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 2
     },
     {
         "correct": "Bangladesh has one of the world’s largest river deltas, formed by the Ganges and Brahmaputra rivers.",
         "wrongFirst": "Japan has one of the world’s largest river deltas, formed by the Ganges and Brahmaputra rivers.",
         "wrongSecond": "Pakistan has one of the world’s largest river deltas, formed by the Ganges and Brahmaputra rivers.",
         "wrongThird": "Nepal has one of the world’s largest river deltas, formed by the Ganges and Brahmaputra rivers.",
-        "categoryID": "geographie-countries"
+        "categoryID": "geographie-countries",
+        "difficulty": 2
     },
     {
         "correct": "Soccer (football) is considered the most popular sport in the world by fan base.",
         "wrongFirst": "Basketball is considered the most popular sport in the world by fan base.",
         "wrongSecond": "Cricket is considered the most popular sport in the world by fan base.",
         "wrongThird": "Rugby is considered the most popular sport in the world by fan base.",
-        "categoryID": "sport"
+        "categoryID": "sport",
+        "difficulty": 1
     },
     {
         "correct": "Michael Phelps holds the record for the most Olympic medals ever won by a single athlete.",
         "wrongFirst": "Usain Bolt holds the record for the most Olympic medals ever won by a single athlete.",
         "wrongSecond": "Simone Biles holds the record for the most Olympic medals ever won by a single athlete.",
         "wrongThird": "Larisa Latynina holds the record for the most Olympic medals ever won by a single athlete.",
-        "categoryID": "sport"
+        "categoryID": "sport",
+        "difficulty": 1
     },
     {
         "correct": "The first modern Olympic Games were held in Athens, Greece, in 1896.",
         "wrongFirst": "The first modern Olympic Games were held in London, England, in 1852.",
         "wrongSecond": "The first modern Olympic Games were held in Paris, France, in 1924.",
         "wrongThird": "The first modern Olympic Games were held in Amsterdam, Netherlands, in 1789.",
-        "categoryID": "sport"
+        "categoryID": "sport",
+        "difficulty": 1
     },
     {
         "correct": "The Tour de France is the most prestigious and challenging cycling race in the world.",
         "wrongFirst": "Giro d'Italia is the only cycling race recognized globally.",
         "wrongSecond": "The Vuelta a España is the shortest cycling race in Europe.",
         "wrongThird": "The Tour of California is the oldest cycling race in history.",
-        "categoryID": "sport"
+        "categoryID": "sport",
+        "difficulty": 2
     },
     {
         "correct": "Usain Bolt holds the current men’s 100m and 200m world records in athletics (track and field).",
         "wrongFirst": "Carl Lewis holds the current men’s 100m and 200m world records in athletics.",
         "wrongSecond": "Justin Gatlin holds the current men’s 100m and 200m world records in athletics.",
         "wrongThird": "Yohan Blake holds the current men’s 100m and 200m world records in athletics.",
-        "categoryID": "sport"
+        "categoryID": "sport",
+        "difficulty": 1
     },
     {
         "correct": "The National Football League (NFL) is the most popular professional sports league in the United States by revenue.",
         "wrongFirst": "Major League Baseball (MLB) is the most popular professional sports league in the United States by revenue.",
         "wrongSecond": "The National Basketball Association (NBA) generates more revenue than any other sports league worldwide.",
         "wrongThird": "The National Hockey League (NHL) surpasses all other leagues in the United States by attendance.",
-        "categoryID": "sport"
+        "categoryID": "sport",
+        "difficulty": 2
     },
     {
         "correct": "Serena Williams has won 23 Grand Slam singles titles in the Open Era, the most of any tennis player (male or female).",
         "wrongFirst": "Venus Williams holds the record with 23 Grand Slam singles titles in the Open Era.",
         "wrongSecond": "Roger Federer holds the record with 23 Grand Slam singles titles in the Open Era.",
         "wrongThird": "Margaret Court holds the Open Era record with 23 Grand Slam singles titles.",
-        "categoryID": "sport"
+        "categoryID": "sport",
+        "difficulty": 2
     },
     {
         "correct": "Cricket matches in the Test format can last up to five days, making it one of the longest major sports formats.",
         "wrongFirst": "Rugby matches in the Test format can last up to five days.",
         "wrongSecond": "Ice hockey games can last several days due to penalty shootouts.",
         "wrongThird": "Basketball playoff series typically last between three to five days per match.",
-        "categoryID": "sport"
+        "categoryID": "sport",
+        "difficulty": 2
     },
     {
         "correct": "The FIFA World Cup is the most widely viewed single-sport event globally, surpassing even the Summer Olympics in total viewers.",
         "wrongFirst": "The Super Bowl draws the largest global audience of any sporting event.",
         "wrongSecond": "Wimbledon finals have more global viewers than any other sporting event.",
         "wrongThird": "The Tour de France has a larger worldwide viewership than the FIFA World Cup.",
-        "categoryID": "sport"
+        "categoryID": "sport",
+        "difficulty": 1
     },
     {
         "correct": "Boxing has been part of the modern Olympic program since 1904, missing only the 1912 Games due to Swedish law.",
         "wrongFirst": "Boxing was first introduced in the Olympics in 2008, making it a recent addition.",
         "wrongSecond": "Boxing has been a part of the Olympics continuously with no exceptions since 1896.",
         "wrongThird": "Boxing was never included in the modern Olympic Games until 2020.",
-        "categoryID": "sport"
+        "categoryID": "sport",
+        "difficulty": 3
     }
 ]

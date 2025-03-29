@@ -421,9 +421,7 @@ internal struct GameView: View {
         }
         if gameConfig.speed == .roundUp {
             currentPlayerStreak = 0
-            guard gameConfig.player != nil else {
-                return
-            }
+            guard gameConfig.player != nil else { return }
             guard currentPlayer != nil else {
                 currentPlayer = gameConfig.player!.first
                 currentPlayerIndex = 0
@@ -449,6 +447,9 @@ internal struct GameView: View {
                 // Increase points
                 if gameConfig.player != nil {
                     currentPlayer?.answered += 1
+                    // This adds up the difficulty of the question as points to the users points, and, if no question is set, the difficulty of the current fact, because then the mode is not QuizCore, but FactFusion. If none is available (should not be the case), the fallback is 1 point.
+                    currentPlayer?.points += currentQuestion?.difficulty ?? currentFact?.difficulty ?? 1
+                    currentPlayerStreak += 1
                 } else {
                     allAnswersNumber += 1
                 }

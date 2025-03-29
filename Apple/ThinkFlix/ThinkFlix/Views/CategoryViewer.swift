@@ -61,6 +61,8 @@ internal struct CategoryViewer: View {
                 }
             }
         }
+        .navigationTitle("Categories")
+        .navigationBarTitleDisplayMode(.automatic)
     }
 }
 

@@ -17,4 +17,6 @@ internal struct FactJSON : Decodable {
     internal let wrongThird : String
     
     internal let categoryID : String
+    
+    internal let difficulty : Int
 }
